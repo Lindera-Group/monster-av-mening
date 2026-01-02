@@ -246,6 +246,11 @@ build_website() {
   for chapter in "${CHAPTERS[@]}"; do
     filename=$(basename "$chapter" .md)
 
+    # Skip INDEX.md to avoid overwriting index.html (landing page) on case-insensitive filesystems
+    if [ "$filename" = "INDEX" ]; then
+      filename="glossary"
+    fi
+
     pandoc "$chapter" \
       --from markdown \
       --to html5 \
