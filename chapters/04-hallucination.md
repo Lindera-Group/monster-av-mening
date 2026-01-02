@@ -1,10 +1,20 @@
-# När minnet fyller i luckorna: AI:ns konfabulering
+# När minnet fyller i luckorna: AI:ns konfabulering {.chapter}
 
-![Kapitel 4: Hallucination](../assets/images/chapter-04.png)
+<div class="chapter-opening">
 
-> AI:ns "hallucinationer" liknar hjärnans konfabulering – att konstruera trovärdiga men falska svar för att fylla kunskapsluckor.
+<p class="chapter-number">Kapitel 4: Hallucination</p>
 
----
+![](../assets/images/chapter-04.png)
+
+<div class="chapter-ingress">
+
+*AI:ns "hallucinationer" liknar hjärnans konfabulering – att konstruera trovärdiga men falska svar för att fylla kunskapsluckor.*
+
+</div>
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 Din mormor berättar om somrarna på landet. Hon minns ängen med smörblommor, ladans doft av hö, hur hon cyklade till affären efter glass.
 
@@ -16,7 +26,7 @@ Det är inte att mormor ljuger. Det är att hjärnan gör det den alltid gör: s
 
 AI:n gör samma sak.
 
----
+
 
 ## Bryggan till AI
 
@@ -28,7 +38,7 @@ Hallucination i klinisk mening innebär att uppleva sinnesintryck som inte exist
 
 AI:n upplever ingenting. Den har inga sinnen. Ett bättre ord är *konfabulering*: att konstruera trovärdiga men falska svar utan avsikt att bedra.
 
----
+
 
 ## Hur det händer
 
@@ -42,7 +52,7 @@ I praktiken händer ofta något annat. Modellen har lärt sig att svar ska vara 
 
 Det är inte illvilja. Det är statistik.
 
----
+
 
 ## Riktiga exempel
 
@@ -56,7 +66,7 @@ Googles AI-sökfunktion föreslog vid ett tillfälle att man kunde tillsätta li
 
 AI:n kan inte skilja mellan fakta och fiktion. Den kan bara förutsäga vilka ord som statistiskt sett brukar följa varandra.
 
----
+
 
 ## Varför det är oundvikligt
 
@@ -68,7 +78,7 @@ Dessutom har modellerna tränats för att *alltid ge ett svar*. I utvärderingar
 
 Det är som om din mormor hade uppfostrats med regeln: "Säg aldrig att du inte minns. Berätta alltid en historia." Med den regeln blir konfabulering oundviklig.
 
----
+
 
 ## Mänsklig konfabulering
 
@@ -80,7 +90,7 @@ Svaret är påhittat på millisekunder, helt ärligt, helt övertygande – och 
 
 Hjärnan fyllde i en lucka med en rimlig förklaring. Den hade ingen aning om det verkliga skälet.
 
----
+
 
 ## Likheten är slående
 
@@ -96,7 +106,7 @@ Skillnaden är att din mormors hjärna och patientens hjärna åtminstone har *n
 
 Konfabuleringen är ännu mer mekanisk, ännu mer kallt statistisk.
 
----
+
 
 ## Hur vet man vad man kan lita på?
 
@@ -110,7 +120,7 @@ Det finns strategier, men inga garantier.
 
 **Den obehagliga tumregeln**: Om informationen verkligen spelar roll, verifiera den själv.
 
----
+
 
 ## Analogins gränser
 
@@ -122,7 +132,7 @@ AI:n har ingen sådan drivkraft. Den har inget behov av en sammanhängande berä
 
 Det gör AI-konfabuleringen på sätt och vis mer godartad – ingen försöker lura dig – men också mer oberäknelig. Det finns ingen djupare logik att förstå, inget mänskligt motiv att tolka. Bara matematik som ibland producerar fel.
 
----
+
 
 ## Slutord
 
@@ -134,9 +144,12 @@ Om du inte kan besvara den frågan, kanske inte AI:n heller kan det.
 
 Den kanske bara fyller i luckor med det som låter bäst – precis som din mormor som minns affären som aldrig fanns, med all uppriktig övertygelse om att det är sant.
 
----
 
-**Sammanfattning**
-- **AI-koncept**: Hallucination (bättre: konfabulering)
-- **Mänsklig motsvarighet**: Falska minnen / neurologisk konfabulering
-- **Kom ihåg**: AI:n ljuger inte medvetet – den konstruerar trovärdiga svar även när den saknar kunskap, precis som hjärnan fyller minnesluckor med påhittade detaljer.
+
+## Sammanfattning
+
+**AI-koncept**: Hallucination (bättre: konfabulering)<br />
+**Mänsklig motsvarighet**: Falska minnen / neurologisk konfabulering<br />
+**Kom ihåg**: AI:n ljuger inte medvetet – den konstruerar trovärdiga svar även när den saknar kunskap, precis som hjärnan fyller minnesluckor med påhittade detaljer.
+
+<div style="page-break-after: always;"></div>

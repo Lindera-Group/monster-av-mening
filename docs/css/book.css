@@ -51,8 +51,9 @@ body {
   line-height: var(--line-height);
   color: var(--color-text);
   background-color: var(--color-background);
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 2rem 5%;
+  max-width: var(--content-width);
 }
 
 /* ========================================
@@ -83,25 +84,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 h2 {
-  font-size: 1.6rem;
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--color-border);
+  font-size: 1.3rem;
+  margin-top: 2.5rem;
+  padding-top: 0;
+  border-top: none;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -203,6 +204,33 @@ pre code {
 }
 
 /* ========================================
+   Images
+   ======================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+/* Cover image - full width with some breathing room */
+body > p:first-of-type img,
+img[src*="cover"] {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+/* Chapter images */
+img[src*="chapter"] {
+  max-width: 100%;
+  width: 100%;
+  margin: 1.5rem auto;
+  border-radius: 4px;
+}
+
+/* ========================================
    Tables
    ======================================== */
 
@@ -252,7 +280,71 @@ hr {
 }
 
 /* ========================================
-   Chapter Header
+   Chapter Opening Page
+   ======================================== */
+
+/* Chapter title with .chapter class - style for ePUB splitting */
+h1.chapter {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  page-break-before: always;
+}
+
+.chapter-opening {
+  text-align: center;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 0;
+}
+
+.chapter-opening h1 {
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.chapter-opening img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  margin: 1.5rem auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.chapter-number {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+}
+
+.chapter-ingress {
+  background-color: var(--color-background-alt);
+  border-left: 4px solid var(--color-accent-light);
+  padding: 1.5rem 2rem;
+  margin: 2rem auto;
+  max-width: 90%;
+  border-radius: 0 8px 8px 0;
+}
+
+.chapter-ingress em {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  display: block;
+}
+
+/* ========================================
+   Chapter Header (legacy)
    ======================================== */
 
 .chapter-header {
@@ -260,14 +352,6 @@ hr {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--color-border);
-}
-
-.chapter-number {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--color-text-muted);
-  margin-bottom: 0.5rem;
 }
 
 .chapter-header h1 {

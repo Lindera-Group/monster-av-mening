@@ -1,10 +1,20 @@
-# Arbetsminnet: Varför AI:n "glömmer"
+# Arbetsminnet: Varför AI:n "glömmer" {.chapter}
 
-![Kapitel 1: Context Window](../assets/images/chapter-01.png)
+<div class="chapter-opening">
 
-> En AI:s context window är som ditt arbetsminne – begränsat, flyktigt, och ibland frustrerande litet.
+<p class="chapter-number">Kapitel 1: Context Window</p>
 
----
+![](../assets/images/chapter-01.png)
+
+<div class="chapter-ingress">
+
+*En AI:s context window är som ditt arbetsminne – begränsat, flyktigt, och ibland frustrerande litet.*
+
+</div>
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 Du sitter i ett viktigt möte. Din chef radar upp punkter: budgeten för nästa kvartal, den nya rekryteringen, projektdeadlines, feedbacken från kunden. Du nickar, antecknar, försöker hänga med.
 
@@ -14,7 +24,7 @@ Du vet att det nämndes. Du vet att det var viktigt. Men orden har redan glidit 
 
 Välkommen till context window.
 
----
+
 
 ## Bryggan till AI
 
@@ -24,7 +34,7 @@ När du chattar med Claude eller GPT känns det som att föra en konversation me
 
 Och det måste rymmas i fönstret.
 
----
+
 
 ## Hur stort är fönstret?
 
@@ -38,7 +48,7 @@ För moderna språkmodeller mäts skrivbordets storlek i "tokens" – ungefär t
 
 Det låter som mycket. Och det är det, för de flesta samtal. Men tänk dig att du vill att AI:n ska analysera en hel bok, eller komma ihåg en komplicerad teknisk diskussion från i förrgår. Då blir gränserna snabbt påtagliga.
 
----
+
 
 ## Den avgörande skillnaden
 
@@ -50,7 +60,7 @@ AI:ns context window är *obönhörligt exakt*. Inte en token mer. Och det som r
 
 Det är som om du hade ett arbetsminne som var matematiskt precist – och inget långtidsminne alls.
 
----
+
 
 ## Strategier för begränsningen
 
@@ -65,7 +75,7 @@ Både du och AI:n har utvecklat strategier för att hantera begränsningen.
 
 Det är faktiskt ganska likt hur du förbereder dig för det där mötet: du läser igenom agendan innan, håller de viktigaste punkterna överst i tanken, och hoppas att kollegorna skriver bra protokoll.
 
----
+
 
 ## Varför det spelar roll
 
@@ -82,7 +92,7 @@ De instruktionerna fanns i början av konversationen. De har pressats ut av allt
 
 Det är inte dumhet eller slarv. Det är matematik.
 
----
+
 
 ## Framtidens fönster
 
@@ -90,7 +100,7 @@ Context window växer snabbt. För några år sedan var 4 000 tokens imponerande
 
 Tänk på det som skillnaden mellan att ha ett skrivbord och ett kontor och ett helt bibliotek. Mer utrymme hjälper. Men även bibliotek har väggar.
 
----
+
 
 ## Slutord
 
@@ -100,9 +110,12 @@ AI:n har inte blivit dum eller slarvig. Den har bara ett skrivbord som blev för
 
 Fast till skillnad från dig kan den inte böja sig ner och plocka upp dem.
 
----
 
-**Sammanfattning**
-- **AI-koncept**: Context window
-- **Mänsklig motsvarighet**: Arbetsminne
-- **Kom ihåg**: AI:ns "minne" är ett skrivbord med exakt storlek – när det blir fullt, försvinner det äldsta för alltid.
+
+## Sammanfattning
+
+**AI-koncept**: Context window<br />
+**Mänsklig motsvarighet**: Arbetsminne<br />
+**Kom ihåg**: AI:ns "minne" är ett skrivbord med exakt storlek – när det blir fullt, försvinner det äldsta för alltid.
+
+<div style="page-break-after: always;"></div>

@@ -2,7 +2,11 @@
 
 *det artificiella sinnet speglat i vårt*
 
----
+## Läs boken
+
+- [HTML-version](dist/monster-av-mening.html) – för webben
+- [ePUB-version](dist/monster-av-mening.epub) – för läsplattor
+- [PDF-version](dist/monster-av-mening.pdf) – för utskrift
 
 ## Om Boken
 
@@ -21,8 +25,6 @@ Bildade läsare utan teknisk bakgrund som vill förstå hur modern AI fungerar �
 - Ärlig om analogiernas begränsningar
 - Teknisk korrekthet utan teknisk jargong
 
----
-
 ## Kapitelöversikt
 
 | # | Kapitel | AI-Koncept | Mänsklig Analogi |
@@ -35,8 +37,6 @@ Bildade läsare utan teknisk bakgrund som vill förstå hur modern AI fungerar �
 | 6 | [Tankens landskap](chapters/06-embeddings.md) | Embeddings | Mental karta, associationsnätverk |
 | 7 | [Från nybörjare till expert](chapters/07-training-weights.md) | Training & Weights | Uppväxt, muskelminne |
 | 8 | [Specialisten](chapters/08-fine-tuning.md) | Fine-tuning | Specialistutbildning |
-
----
 
 ## Kärnöversättningar
 
@@ -53,8 +53,6 @@ Bildade läsare utan teknisk bakgrund som vill förstå hur modern AI fungerar �
 | Fine-tuning | Specialistutbildning |
 
 Se [ordlistan](glossary/INDEX.md) för fullständig lista med detaljerade förklaringar.
-
----
 
 ## Projektstruktur
 
@@ -80,13 +78,17 @@ ai-human-translator/
 │   └── fine-tuning.md
 ├── glossary/           # Ordlista
 │   └── INDEX.md
+├── assets/             # CSS och bilder
+│   ├── css/
+│   └── images/
+├── build/              # Byggskript
+├── dist/               # Genererade filer (HTML, ePUB, PDF)
+├── docs/               # GitHub Pages webbplats
 ├── artwork/            # Bildprompter
 └── .claude/            # Agentdefinitioner
     ├── agents/
     └── commands/
 ```
-
----
 
 ## Kapitelstruktur
 
@@ -98,8 +100,6 @@ Varje kapitel följer samma mönster:
 4. **Begränsningar**: Var analogin brister
 5. **Varför det spelar roll**: Praktiska konsekvenser
 6. **Sammanfattning**: Koncept + motsvarighet + nyckelinsikt
-
----
 
 ## Arbetsflöde
 
@@ -120,7 +120,19 @@ Boken skapas med hjälp av specialiserade AI-agenter:
 3. **Skrivande**: Skapa kapitel som följer strukturen
 4. **Granskning**: Editor och fact-checker säkerställer kvalitet
 
----
+## Bygg boken
+
+```bash
+# Bygg alla format
+bash build/build.sh all
+
+# Eller enskilda format
+bash build/build.sh html
+bash build/build.sh epub
+bash build/build.sh pdf
+```
+
+Kräver: [Pandoc](https://pandoc.org/), XeLaTeX (för PDF)
 
 ## Framtida Kapitel
 
@@ -133,8 +145,6 @@ Potentiella ämnen för utbyggnad:
 - **Latent space** → Det undermedvetna
 - **Overfitting** → Fixering / övertänkande
 
----
-
 ## Bidra
 
 Boken är ett pågående projekt. Förslag på:
@@ -145,14 +155,10 @@ Boken är ett pågående projekt. Förslag på:
 
 ...är välkomna via GitHub issues.
 
----
-
 ## Licens
 
-CC BY 4.0 – Martin Linderå Nordström
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) – Martin Linderå Nordström
 
----
-
-**Författare:** Claude (Opus 4.5), Anthropic
-**Projektledare:** Martin Linderå Nordström
+**Författare:** Claude Opus 4.5, Anthropic<br />
+**Projektledare:** Martin Linderå Nordström<br />
 **Ett projekt av:** Linderå Group AB, 2026

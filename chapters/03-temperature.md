@@ -1,10 +1,20 @@
-# Risktagaren i oss: AI:ns modighetsknapp
+# Risktagaren i oss: AI:ns modighetsknapp {.chapter}
 
-![Kapitel 3: Temperature](../assets/images/chapter-03.png)
+<div class="chapter-opening">
 
-> Temperature styr hur AI:n väljer mellan säkra och vågade ordval – precis som du väljer mellan det invanda och det oväntade.
+<p class="chapter-number">Kapitel 3: Temperature</p>
 
----
+![](../assets/images/chapter-03.png)
+
+<div class="chapter-ingress">
+
+*Temperature styr hur AI:n väljer mellan säkra och vågade ordval – precis som du väljer mellan det invanda och det oväntade.*
+
+</div>
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 Du står vid frukostbuffén på ett hotell i ett främmande land. Framför dig: bekanta croissanter och exotiska rätter du aldrig sett förut.
 
@@ -16,7 +26,7 @@ I det ögonblicket fattar du ett beslut på en glidande skala mellan trygghet oc
 
 AI:n har samma skala. Den kallas *temperature*.
 
----
+
 
 ## Bryggan till AI
 
@@ -28,7 +38,7 @@ Låg temperature: Välj det mest sannolika. Spela säkert. Ta croissanten.
 
 Hög temperature: Överväg även ovanliga alternativ. Ta en chans. Smaka på det gröna.
 
----
+
 
 ## Hur det fungerar
 
@@ -47,7 +57,7 @@ Tänk dig att du ska välja bland tre alternativ:
 
 I extremfallet närmar sig temperature noll: modellen blir helt förutsägbar och väljer *alltid* det mest sannolika. Temperature högt: modellen blir nästan slumpmässig.
 
----
+
 
 ## Att välja rätt läge
 
@@ -68,7 +78,7 @@ Här vill du inte ha samma svar varje gång. Du vill ha idéer, alternativ, öve
 
 Här kan det vara läge att skruva upp temperature – men inte för högt, annars tappar texten sammanhang.
 
----
+
 
 ## Missförståndet om kreativitet
 
@@ -82,7 +92,7 @@ Det är som skillnaden mellan en jazzmusiker som tar kontrollerade risker inom h
 
 Verklig kreativitet kräver mer än slump. Den kräver att slumpen *filtreras* genom kunskap och omdöme.
 
----
+
 
 ## Din inre temperature
 
@@ -96,7 +106,7 @@ När du brainstormar ensam kan du tillåta dig att tänka det absurda, det omöj
 
 Skillnaden är att du kan *växla* medvetet. Du vet när det är dags att vara försiktig och när det är dags att experimentera. AI:n behöver bli *instruerad* att göra det.
 
----
+
 
 ## Den obehagliga sanningen
 
@@ -108,7 +118,7 @@ Det är inte att AI:n är dum. Det är att temperature är en trubbig kontroll �
 
 En människa känner detta intuitivt. AI:n måste övervakas.
 
----
+
 
 ## Varför det spelar roll
 
@@ -123,7 +133,7 @@ Om temperature var nära noll valde AI:n bara de mest uppenbara orden, utan vari
 **"Varför skiljer sig svaren åt varje gång?"**
 Med temperature över noll finns alltid en slumpfaktor. Samma fråga ger inte garanterat samma svar.
 
----
+
 
 ## Analogins gränser
 
@@ -137,7 +147,7 @@ Det är som om du vid frukostbuffén valde helt mekaniskt – utan känsla, utan
 
 Effektiv. Men inte riktigt mänsklig.
 
----
+
 
 ## Slutord
 
@@ -153,9 +163,12 @@ Temperature = 2.0: Du sluter ögonen och pekar blint.
 
 Ingen av dessa är objektivt rätt. Det beror på vad du vill ha ut av måltiden – eller av samtalet med AI:n.
 
----
 
-**Sammanfattning**
-- **AI-koncept**: Temperature
-- **Mänsklig motsvarighet**: Riskvillighet i beslutsfattande
-- **Kom ihåg**: Temperature styr inte hur "smart" AI:n är – bara hur försiktig eller vågad den är när den väljer ord.
+
+## Sammanfattning
+
+**AI-koncept**: Temperature<br />
+**Mänsklig motsvarighet**: Riskvillighet i beslutsfattande<br />
+**Kom ihåg**: Temperature styr inte hur "smart" AI:n är – bara hur försiktig eller vågad den är när den väljer ord.
+
+<div style="page-break-after: always;"></div>

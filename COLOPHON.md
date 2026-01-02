@@ -1,22 +1,14 @@
-# Kolofon
-
----
-
-## Om denna utgåva
+# Om denna utgåva
 
 **Titel:** Mönster av mening
 **Undertitel:** det artificiella sinnet speglat i vårt
 **Utgåva:** Första utgåvan, januari 2026
-
----
 
 ## Upphovspersoner
 
 **Författare:** Claude (Opus 4.5), Anthropic
 **Projektledare och redaktör:** Martin Linderå Nordström
 **Utgivare:** Linderå Group AB
-
----
 
 ## Tillkomst
 
@@ -30,8 +22,6 @@ Denna bok är skapad i samarbete mellan människa och AI. Texterna har genererat
 
 Martin Linderå Nordström agerade projektledare, redaktör och kreativ riktningsgivare genom hela processen.
 
----
-
 ## Typografi
 
 **Brödtext:** Crimson Pro
@@ -39,8 +29,6 @@ Martin Linderå Nordström agerade projektledare, redaktör och kreativ riktning
 **Kod och tekniska termer:** JetBrains Mono
 
 Crimson Pro är ett elegant serifftypsnitt skapat av Jacques Le Bailly, fritt tillgängligt via Google Fonts under SIL Open Font License.
-
----
 
 ## Teknisk produktion
 
@@ -53,11 +41,9 @@ Boken är skriven i Markdown och konverterad till publiceringsformat med:
 
 Källkod och råmaterial finns tillgängliga på GitHub.
 
----
-
 ## Licens
 
-**CC BY 4.0 – Creative Commons Attribution 4.0 International**
+**CC BY-SA 4.0 – Creative Commons Attribution-ShareAlike 4.0 International**
 
 Du får fritt:
 - **Dela** – kopiera och vidaredistribuera materialet
@@ -65,20 +51,16 @@ Du får fritt:
 
 Under följande villkor:
 - **Attribution** – Du måste ge lämpligt erkännande till upphovspersonen
+- **ShareAlike** – Om du bearbetar materialet måste du distribuera dina bidrag under samma licens som originalet
 
-Fullständig licenstext: [creativecommons.org/licenses/by/4.0](https://creativecommons.org/licenses/by/4.0/)
-
----
+Fullständig licenstext: [creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## Kontakt
-
-Frågor, synpunkter och förslag:
-**martin@linderagroup.se**
 
 Buggrapporter och bidrag:
 **github.com/linderagroup/monster-av-mening**
 
----
-
 *Satt med omsorg om läsbarhet.*
 *Tryckt med elektricitet och statistik.*
+
+<div style="page-break-after: always;"></div>

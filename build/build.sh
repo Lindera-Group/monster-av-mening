@@ -4,7 +4,7 @@
 # Mönster av mening - Build Script
 # ============================================
 #
-# Generates PDF, HTML, ePUB and Markdown bundle
+# Generates PDF, HTML and ePUB
 # Requires: pandoc, xelatex (for PDF)
 #
 # Usage: ./build.sh [format]
@@ -12,7 +12,6 @@
 #   ./build.sh pdf      - Build PDF only
 #   ./build.sh html     - Build HTML only
 #   ./build.sh epub     - Build ePUB only
-#   ./build.sh markdown - Build Markdown bundle
 #   ./build.sh website  - Build website (docs/)
 #
 # ============================================
@@ -35,14 +34,18 @@ ASSETS_DIR="$ROOT_DIR/assets"
 
 # Book metadata
 TITLE="Mönster av mening"
-SUBTITLE="det artificiella sinnet speglat i vårt"
-AUTHOR="Claude (Opus 4.5)"
+SUBTITLE="– det artificiella sinnet speglat i vårt"
+AUTHOR="Claude Opus 4.5"
 PUBLISHER="Linderå Group AB"
 YEAR="2026"
 LANG="sv"
 
-# Chapter order
+# Cover image for ePUB
+COVER_IMAGE="$ASSETS_DIR/images/cover-monster-av-mening.png"
+
+# Chapter order (FRONT-COVER excluded from ePUB - handled via --epub-cover-image)
 CHAPTERS=(
+  "$ROOT_DIR/FRONT-COVER.md"
   "$ROOT_DIR/TITLE-PAGE.md"
   "$ROOT_DIR/FOREWORD.md"
   "$CHAPTERS_DIR/01-context-window.md"
@@ -55,6 +58,24 @@ CHAPTERS=(
   "$CHAPTERS_DIR/08-fine-tuning.md"
   "$ROOT_DIR/glossary/INDEX.md"
   "$ROOT_DIR/COLOPHON.md"
+  "$ROOT_DIR/BACK-COVER.md"
+)
+
+# Chapters for ePUB (without FRONT-COVER, cover handled separately)
+CHAPTERS_EPUB=(
+  "$ROOT_DIR/TITLE-PAGE.md"
+  "$ROOT_DIR/FOREWORD.md"
+  "$CHAPTERS_DIR/01-context-window.md"
+  "$CHAPTERS_DIR/02-tokens.md"
+  "$CHAPTERS_DIR/03-temperature.md"
+  "$CHAPTERS_DIR/04-hallucination.md"
+  "$CHAPTERS_DIR/05-attention.md"
+  "$CHAPTERS_DIR/06-embeddings.md"
+  "$CHAPTERS_DIR/07-training-weights.md"
+  "$CHAPTERS_DIR/08-fine-tuning.md"
+  "$ROOT_DIR/glossary/INDEX.md"
+  "$ROOT_DIR/COLOPHON.md"
+  "$ROOT_DIR/BACK-COVER.md"
 )
 
 # ============================================
@@ -124,12 +145,7 @@ build_pdf() {
     --pdf-engine=$PDF_ENGINE \
     $PDF_OPTS \
     --variable lang=$LANG \
-    --variable title="$TITLE" \
-    --variable subtitle="$SUBTITLE" \
-    --variable author="$AUTHOR" \
     --resource-path="$ROOT_DIR:$ASSETS_DIR" \
-    --toc \
-    --toc-depth=2 \
     --output "$DIST_DIR/monster-av-mening.pdf"
 
   log_info "PDF created: $DIST_DIR/monster-av-mening.pdf"
@@ -145,16 +161,21 @@ build_html() {
 
   ensure_dist_dir
 
+  # Copy assets to dist for standalone HTML
+  mkdir -p "$DIST_DIR/assets/images"
+  mkdir -p "$DIST_DIR/assets/css"
+  cp -r "$ASSETS_DIR/images/"* "$DIST_DIR/assets/images/" 2>/dev/null || true
+  cp "$ASSETS_DIR/css/book.css" "$DIST_DIR/assets/css/"
+
+  cd "$ROOT_DIR"
+
   pandoc "${CHAPTERS[@]}" \
     --from markdown \
     --to html5 \
     --standalone \
-    --css="../assets/css/book.css" \
+    --css="assets/css/book.css" \
     --variable lang=$LANG \
-    --variable title="$TITLE" \
-    --metadata title="$TITLE - $SUBTITLE" \
-    --toc \
-    --toc-depth=2 \
+    --resource-path="$ROOT_DIR:$ASSETS_DIR" \
     --output "$DIST_DIR/monster-av-mening.html"
 
   log_info "HTML created: $DIST_DIR/monster-av-mening.html"
@@ -173,28 +194,17 @@ build_epub() {
   # Build from root directory so relative image paths resolve correctly
   cd "$ROOT_DIR"
 
-  pandoc "${CHAPTERS[@]}" \
+  pandoc "${CHAPTERS_EPUB[@]}" \
     --from markdown \
     --to epub3 \
-    --css="$ASSETS_DIR/css/book.css" \
+    --split-level=1 \
+    --css="$ASSETS_DIR/css/epub.css" \
     --epub-metadata="$ROOT_DIR/build/epub-metadata.xml" \
+    --epub-cover-image="$COVER_IMAGE" \
     --resource-path="$ROOT_DIR:$ASSETS_DIR" \
-    --toc \
-    --toc-depth=2 \
     --output "$DIST_DIR/monster-av-mening.epub"
 
   log_info "ePUB created: $DIST_DIR/monster-av-mening.epub"
-}
-
-build_markdown() {
-  log_info "Building Markdown bundle..."
-
-  ensure_dist_dir
-
-  # Concatenate all chapters into single markdown file
-  cat "${CHAPTERS[@]}" > "$DIST_DIR/monster-av-mening.md"
-
-  log_info "Markdown bundle created: $DIST_DIR/monster-av-mening.md"
 }
 
 build_website() {
@@ -238,7 +248,6 @@ build_website() {
 
 build_all() {
   log_info "Building all formats..."
-  build_markdown
   build_html
   build_epub
   build_pdf
@@ -260,9 +269,6 @@ case "${1:-all}" in
   epub)
     build_epub
     ;;
-  markdown)
-    build_markdown
-    ;;
   website)
     build_website
     ;;
@@ -270,7 +276,7 @@ case "${1:-all}" in
     build_all
     ;;
   *)
-    echo "Usage: $0 [pdf|html|epub|markdown|website|all]"
+    echo "Usage: $0 [pdf|html|epub|website|all]"
     exit 1
     ;;
 esac

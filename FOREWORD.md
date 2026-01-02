@@ -6,7 +6,7 @@ Eller rättare sagt: du läser en bok skriven av ett samarbete mellan en maskin 
 
 Det är ett passande ursprung för just denna bok.
 
----
+
 
 För några år sedan var "artificiell intelligens" ett begrepp reserverat för science fiction och forskningslaboratorier. Idag är det något du kanske använder innan frukost. Du frågar ChatGPT om vädret, ber Claude förklara ett juridiskt dokument, låter Copilot skriva din kod.
 
@@ -16,7 +16,7 @@ De flesta har en vag känsla av att AI är "datorer som tänker" eller "program 
 
 Den här boken försöker fylla det gapet – inte genom att lära dig programmera eller förstå matematik, utan genom att visa att du redan förstår mer än du tror.
 
----
+
 
 Varje AI-koncept har en mänsklig motsvarighet.
 
@@ -28,7 +28,7 @@ Varje AI-koncept har en mänsklig motsvarighet.
 
 När du ser dessa kopplingar händer något. AI slutar vara en mystisk svart låda och blir något begripligt. Inte mindre imponerande – men mindre skrämmande, och lättare att använda klokt.
 
----
+
 
 Ett ord om hur boken kom till.
 
@@ -40,7 +40,7 @@ Ironiskt nog illustrerar processen bokens poäng. AI:n bidrar med mönster och s
 
 Ingen av oss kunde skapat boken ensam. Tillsammans kunde vi.
 
----
+
 
 En varning innan du läser vidare.
 
@@ -52,7 +52,9 @@ Om du efter att ha läst ett kapitel tänker "Aha, så *det* är vad som händer
 
 Välkommen till mönstren av mening.
 
----
+
 
 *Martin Linderå Nordström*
 *Januari 2026*
+
+<div style="page-break-after: always;"></div>

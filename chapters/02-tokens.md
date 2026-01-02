@@ -1,10 +1,20 @@
-# Lego för språk: Hur AI:n stavar
+# Lego för språk: Hur AI:n stavar {.chapter}
 
-![Kapitel 2: Tokens](../assets/images/chapter-02.png)
+<div class="chapter-opening">
 
-> En token är som en Lego-bit – den minsta byggstenen som AI:n använder för att förstå och bygga text.
+<p class="chapter-number">Kapitel 2: Tokens</p>
 
----
+![](../assets/images/chapter-02.png)
+
+<div class="chapter-ingress">
+
+*En token är som en Lego-bit – den minsta byggstenen som AI:n använder för att förstå och bygga text.*
+
+</div>
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 Du är fem år och lär dig läsa. Fingret följer bokstäverna: K-A-T-T. Fyra ljud. Ett ord. En katt.
 
@@ -14,7 +24,7 @@ Vuxna tänker sällan på det, men vi delar automatiskt upp långa ord i hanterb
 
 AI:n gör samma sak – fast på sitt eget, märkliga sätt.
 
----
+
 
 ## Bryggan till AI
 
@@ -24,7 +34,7 @@ Tänk på det som Lego. När du bygger ett Lego-hus ser du helheten: väggar, ta
 
 Tokens fungerar likadant. Vanliga ord som "the", "is" och "cat" blir en enda token – en hel Lego-bit. Men ovanliga eller sammansatta ord delas upp i mindre bitar som modellen redan känner igen.
 
----
+
 
 ## Hur uppdelningen går till
 
@@ -38,7 +48,7 @@ Det beror på att AI:n under sin träning lärde sig att "tro" är en vanlig sek
 
 Tumregeln för engelska är att en token motsvarar ungefär tre fjärdedelar av ett ord. Men – och detta är viktigt – regeln gäller inte för alla språk.
 
----
+
 
 ## Språkets orättvisa
 
@@ -55,7 +65,7 @@ I praktiken betyder detta:
 - Det kostar mer att använda AI på vissa språk
 - Kvaliteten kan bli sämre när varje ord kräver fler bearbetningssteg
 
----
+
 
 ## Varför inte bara använda ord?
 
@@ -67,7 +77,7 @@ Om AI:n bara förstod hela ord skulle den stå handfallen inför nya ord. Först
 
 Det är som skillnaden mellan att bara kunna rita färdiga figurer och att kunna teckna fritt. Med byggstenar blir du kreativ.
 
----
+
 
 ## Den matematiska hemligheten
 
@@ -77,7 +87,7 @@ AI:n "läser" aldrig text. Den navigerar i ett matematiskt landskap där liknand
 
 Men det är en annan historia. Det vi behöver förstå här är att tokens är *porten in* – det första steget där mänskligt språk översätts till något en dator kan arbeta med.
 
----
+
 
 ## Varför det spelar roll
 
@@ -95,7 +105,7 @@ Svenska kräver fler tokens för samma innehåll, vilket gör bearbetningen mind
 **"Varför kan AI ibland inte räkna bokstäver?"**
 När du frågar "hur många r finns i 'jordgubbe'?" ser AI:n inte bokstäver – den ser tokens. Och "jordgubbe" har brutits ner till bitar som inte nödvändigtvis följer bokstavsgränserna.
 
----
+
 
 ## Analogins gränser
 
@@ -109,7 +119,7 @@ En token kan vara ett helt ord, halva ett ord, eller en meningslös sekvens av t
 
 Det är som om Lego-bitarna designat sig själva baserat på vad barn oftast bygger, utan att någon människa fattade besluten.
 
----
+
 
 ## Slutord
 
@@ -125,9 +135,12 @@ Det är inte magi. Men det är inte heller riktigt läsning.
 
 Det är något helt nytt.
 
----
 
-**Sammanfattning**
-- **AI-koncept**: Tokens
-- **Mänsklig motsvarighet**: Lego-bitar / stavelser
-- **Kom ihåg**: AI:n läser inte ord – den bygger med bitar av text, och vissa språk får mindre bitar än andra.
+
+## Sammanfattning
+
+**AI-koncept**: Tokens<br />
+**Mänsklig motsvarighet**: Lego-bitar / stavelser<br />
+**Kom ihåg**: AI:n läser inte ord – den bygger med bitar av text, och vissa språk får mindre bitar än andra.
+
+<div style="page-break-after: always;"></div>

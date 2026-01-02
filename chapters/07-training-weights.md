@@ -1,10 +1,20 @@
-# Från nybörjare till expert: AI:ns uppväxt
+# Från nybörjare till expert: AI:ns uppväxt {.chapter}
 
-![Kapitel 7: Training & Weights](../assets/images/chapter-07.png)
+<div class="chapter-opening">
 
-> Training är AI:ns barndom – en intensiv period av övning och korrigering som formar dess "personlighet" för alltid. Weights är de inristade lärdomarna.
+<p class="chapter-number">Kapitel 7: Training & Weights</p>
 
----
+![](../assets/images/chapter-07.png)
+
+<div class="chapter-ingress">
+
+*Training är AI:ns barndom – en intensiv period av övning och korrigering som formar dess "personlighet" för alltid. Weights är de inristade lärdomarna.*
+
+</div>
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 Ditt barn lär sig cykla.
 
@@ -18,7 +28,7 @@ Neurologer kallar det synaptisk plasticitet – hjärnans kopplingar stärks och
 
 AI:n genomgår samma process. Skillnaden är att den gör det miljoner gånger snabbare – och aldrig igen efter att "barndomen" är över.
 
----
+
 
 ## Bryggan till AI
 
@@ -32,7 +42,7 @@ Modellen får se miljontals exempel på text. Den försöker förutsäga nästa 
 
 Upprepa detta miljardtals gånger.
 
----
+
 
 ## Hur det fungerar
 
@@ -48,7 +58,7 @@ Backpropagation gör exakt detta. Den spårar felet bakåt genom nätverket och 
 
 Sen justeras varje vikt en liten bit. Inte för mycket – det skulle förstöra det som redan fungerar. Bara tillräckligt för att nästa gång göra något bättre.
 
----
+
 
 ## Weights: Den frusna erfarenheten
 
@@ -60,7 +70,7 @@ Det är som muskelminne. En professionell pianist minns inte varje fingerrörels
 
 AI:ns vikter är samma sak. De kodar mönster, inte fakta. Statistik, inte minnen.
 
----
+
 
 ## Det fruktansvärda ögonblicket
 
@@ -74,7 +84,7 @@ Ditt barn som lärde sig cykla fortsätter lära sig hela livet. Nya färdighete
 
 AI:ns "barndom" har ett definitivt slut. Efter det: samma vikter, samma modell, oförändrad.
 
----
+
 
 ## Vad träningen kostar
 
@@ -86,7 +96,7 @@ Det är som skillnaden mellan att uppfostra ett barn (långsamt, dyrt, kräver �
 
 När modellen väl är tränad kan den kopieras oändligt. Men träningen i sig är dyr, långsam, och kan inte tas tillbaka.
 
----
+
 
 ## Vad vikterna "vet"
 
@@ -98,7 +108,7 @@ Det är som att fråga en expert: "Hur vet du att det här är rätt lösning?" 
 
 Men det finns en djup skillnad. Experten har erfarenheter. Minnen. Kontext. AI:n har bara mönster. Statistik. Genomsnitt.
 
----
+
 
 ## När analogin brister
 
@@ -110,7 +120,7 @@ Det är som om pianisten kunde spela perfekt men inte mindes en enda pianolektio
 
 Kunskapen finns. Minnet av att ha förvärvat kunskapen finns inte.
 
----
+
 
 ## Varför det spelar roll
 
@@ -125,7 +135,7 @@ Träningen skedde vid ett visst datum. Allt efter det existerar inte i vikterna.
 **"Varför blir AI:n inte smartare av att användas?"**
 Användning ändrar inte vikterna. Bara ny träning gör det.
 
----
+
 
 ## Slutord
 
@@ -139,9 +149,12 @@ Det är dess styrka: en konstant, reproducerbar expertis.
 
 Det är dess begränsning: en oförmåga att växa.
 
----
 
-**Sammanfattning**
-- **AI-koncept**: Training & Weights
-- **Mänsklig motsvarighet**: Uppväxt & muskelminne/synaptisk plasticitet
-- **Kom ihåg**: Vikterna är AI:ns "frusna erfarenheter" – allt den lärde sig under träningen, men inget efter. Den lär sig aldrig av att användas.
+
+## Sammanfattning
+
+**AI-koncept**: Training & Weights<br />
+**Mänsklig motsvarighet**: Uppväxt & muskelminne/synaptisk plasticitet<br />
+**Kom ihåg**: Vikterna är AI:ns "frusna erfarenheter" – allt den lärde sig under träningen, men inget efter. Den lär sig aldrig av att användas.
+
+<div style="page-break-after: always;"></div>

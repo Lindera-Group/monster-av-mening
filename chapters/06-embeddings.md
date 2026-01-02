@@ -1,10 +1,20 @@
-# Tankens landskap: Där ord blir platser
+# Tankens landskap: Där ord blir platser {.chapter}
 
-![Kapitel 6: Embeddings](../assets/images/chapter-06.png)
+<div class="chapter-opening">
 
-> Embeddings är som en mental karta där ord ligger nära varandra om de betyder liknande saker – precis som städer i samma land ligger nära på en karta.
+<p class="chapter-number">Kapitel 6: Embeddings</p>
 
----
+![](../assets/images/chapter-06.png)
+
+<div class="chapter-ingress">
+
+*Embeddings är som en mental karta där ord ligger nära varandra om de betyder liknande saker – precis som städer i samma land ligger nära på en karta.*
+
+</div>
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 Vad är en hund?
 
@@ -20,7 +30,7 @@ Dina begrepp lever inte som isolerade definitioner. De lever i relation till var
 
 AI:n organiserar ord på exakt samma sätt. Det kallas *embeddings*.
 
----
+
 
 ## Bryggan till AI
 
@@ -34,7 +44,7 @@ Ord med liknande betydelse får liknande vektorer. De hamnar nära varandra i de
 
 Det är som en karta. Stockholm och Uppsala ligger nära varandra på kartan för att de ligger nära i verkligheten. På samma sätt ligger "kung" och "drottning" nära varandra i embedding-rummet för att de har liknande betydelse.
 
----
+
 
 ## Hur det fungerar
 
@@ -48,7 +58,7 @@ Notera att "tassar" förekommer nära båda. Så i embedding-rummet kommer "katt
 
 Det är just denna struktur som gör embeddings så kraftfulla.
 
----
+
 
 ## Ordets matematik
 
@@ -68,7 +78,7 @@ Liknande relationer dyker upp överallt:
 
 Modellen har inte lärts att dessa relationer finns. Den har upptäckt dem själv, ur mönstren i hur ord används.
 
----
+
 
 ## Mentala kartor
 
@@ -80,7 +90,7 @@ När du försöker komma på ett ord ligger det på tungspetsen – "det börjar
 
 AI:ns embeddings är en matematisk version av samma princip.
 
----
+
 
 ## Vad embeddings inte förstår
 
@@ -92,7 +102,7 @@ AI:ns embedding för "hund" är bara statistik. Den vet att "hund" ofta förekom
 
 Det är som skillnaden mellan att ha en karta och att ha rest genom landskapet. Kartan kan visa var städerna ligger – men den kan inte berätta hur det känns att vara i Stockholm.
 
----
+
 
 ## Varför det spelar roll
 
@@ -104,7 +114,7 @@ Embeddings är grunden för nästan allt som moderna AI-system gör.
 
 **Rekommendationer**: Netflix och Spotify använder embeddings för att hitta filmer och låtar som "liknar" det du gillat förut.
 
----
+
 
 ## Det märkliga med dimensioner
 
@@ -116,7 +126,7 @@ Men kombinationen av alla dimensioner fångar något som *fungerar* – den fån
 
 Det är som färger. En färg kan beskrivas med tre tal (röd, grön, blå) – men inget av talen ensamt beskriver färgen. Det är kombinationen som skapar upplevelsen. Embedding-dimensioner fungerar likadant.
 
----
+
 
 ## Likheten och begränsningen
 
@@ -128,7 +138,7 @@ AI:n vet att "2% avkastning" och "20% avkastning" har nästan identiska embeddin
 
 Matematisk närhet är inte samma sak som mänsklig förståelse.
 
----
+
 
 ## Slutord
 
@@ -140,9 +150,12 @@ AI:n har byggt sin egen version av detta rum, ur miljontals texter, utan att nå
 
 Strukturen är häpnadsväckande lik. Resan dit var fundamentalt annorlunda.
 
----
 
-**Sammanfattning**
-- **AI-koncept**: Embeddings
-- **Mänsklig motsvarighet**: Mentala associationsnätverk / kognitiva kartor
-- **Kom ihåg**: Embeddings placerar ord som punkter i ett matematiskt rum där närhet motsvarar likhet i betydelse – precis som dina begrepp lever i nätverk av associationer.
+
+## Sammanfattning
+
+**AI-koncept**: Embeddings<br />
+**Mänsklig motsvarighet**: Mentala associationsnätverk / kognitiva kartor<br />
+**Kom ihåg**: Embeddings placerar ord som punkter i ett matematiskt rum där närhet motsvarar likhet i betydelse – precis som dina begrepp lever i nätverk av associationer.
+
+<div style="page-break-after: always;"></div>

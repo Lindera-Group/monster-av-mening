@@ -1,10 +1,20 @@
-# Vad tänker du på nu? AI:ns fokusmaskin
+# Vad tänker du på nu? AI:ns fokusmaskin {.chapter}
 
-![Kapitel 5: Attention](../assets/images/chapter-05.png)
+<div class="chapter-opening">
 
-> Attention-mekanismen är AI:ns sätt att väga vilka ord som är viktigast för att förstå varje annat ord – som ditt sinne som automatiskt kopplar ihop "hen" med rätt person i en mening.
+<p class="chapter-number">Kapitel 5: Attention</p>
 
----
+![](../assets/images/chapter-05.png)
+
+<div class="chapter-ingress">
+
+*Attention-mekanismen är AI:ns sätt att väga vilka ord som är viktigast för att förstå varje annat ord – som ditt sinne som automatiskt kopplar ihop "hen" med rätt person i en mening.*
+
+</div>
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 Du läser en mening: "Maria gav boken till Erik fast han redan hade läst den."
 
@@ -18,7 +28,7 @@ Det är uppmärksamhet – förmågan att fokusera på rätt sak vid rätt tillf
 
 AI:n har sin egen version av detta. Den kallas *attention*.
 
----
+
 
 ## Bryggan till AI
 
@@ -30,7 +40,7 @@ Attention löste detta. Plötsligt kunde varje ord "titta på" alla andra ord i 
 
 Resultatet var revolutionerande. Det blev grunden för GPT, BERT, Claude och alla moderna språkmodeller.
 
----
+
 
 ## Hur det fungerar
 
@@ -48,7 +58,7 @@ Attention beräknar hur väl varje query matchar varje key. Starka matchningar f
 
 Resultatet? Varje ord får en ny betydelse som är en blandning av alla relevanta ord, viktade efter hur viktiga de är.
 
----
+
 
 ## Ett exempel
 
@@ -65,7 +75,7 @@ Attention-vikterna speglar detta. "Jagade" kommer att ha starka kopplingar till 
 
 På detta sätt förstår modellen att det är hunden som jagar, inte katten – trots att "som bröt sig lös" kommer mellan dem.
 
----
+
 
 ## Multi-head attention: Att fokusera på flera saker samtidigt
 
@@ -81,7 +91,7 @@ I praktiken körs flera attention-operationer parallellt. Varje "huvud" kan spec
 
 Resultaten kombineras sedan. Det är som att ha flera experter som analyserar meningen samtidigt och sedan sammanfattar sina insikter.
 
----
+
 
 ## Den överraskande enkelheten
 
@@ -95,7 +105,7 @@ Det är allt. Ingen djup kognitiv modell. Ingen förståelse i mänsklig mening.
 
 Ur denna enkelhet uppstår förmågan att följa långa resonemang, lösa upp tvetydigheter, och producera sammanhängande text.
 
----
+
 
 ## Skillnaden från mänsklig uppmärksamhet
 
@@ -113,7 +123,7 @@ Här måste vi vara ärliga med analogin. Trots namnet är AI-attention inte mä
 
 **AI:n beräknar alla vikter.** Även det irrelevanta får en vikt – den är bara väldigt låg.
 
----
+
 
 ## Varför det spelar roll
 
@@ -128,7 +138,7 @@ Attention har sina gränser. Med extremt långa texter "späds" uppmärksamheten
 **"Varför är moderna språkmodeller så stora?"**
 En stor del av parametrarna i GPT eller Claude är attention-vikter – de mönster som avgör vilka ord som ska kopplas ihop.
 
----
+
 
 ## Analogins kärna
 
@@ -142,7 +152,7 @@ Du väljer inte detta. Det bara händer. Din hjärna drar osynliga trådar mella
 
 Det är vad attention gör. Varje ord drar trådar till andra ord. Trådarna är starkare eller svagare beroende på vad modellen lärt sig om hur ord brukar höra ihop.
 
----
+
 
 ## Slutord
 
@@ -156,9 +166,12 @@ Formen är häpnadsväckande lik. Innehållet är fundamentalt olika.
 
 Men resultatet – förmågan att förstå sammanhang – är vad som gör moderna språkmodeller så kraftfulla.
 
----
 
-**Sammanfattning**
-- **AI-koncept**: Attention (uppmärksamhetsmekanism)
-- **Mänsklig motsvarighet**: Automatiska associationer / kontextmedvetet fokus
-- **Kom ihåg**: Attention låter varje ord "titta på" alla andra ord och väga deras relevans – som din hjärna automatiskt kopplar ihop "hen" med rätt person.
+
+## Sammanfattning
+
+**AI-koncept**: Attention (uppmärksamhetsmekanism)<br />
+**Mänsklig motsvarighet**: Automatiska associationer / kontextmedvetet fokus<br />
+**Kom ihåg**: Attention låter varje ord "titta på" alla andra ord och väga deras relevans – som din hjärna automatiskt kopplar ihop "hen" med rätt person.
+
+<div style="page-break-after: always;"></div>

@@ -28,17 +28,21 @@
   <link rel="stylesheet" href="css/book.css" />
 </head>
 <body>
-<h1 id="lego-för-språk-hur-ain-stavar">Lego för språk: Hur AI:n
-stavar</h1>
-<figure>
-<img src="../assets/images/chapter-02.png" alt="Kapitel 2: Tokens" />
-<figcaption aria-hidden="true">Kapitel 2: Tokens</figcaption>
-</figure>
-<blockquote>
-<p>En token är som en Lego-bit – den minsta byggstenen som AI:n använder
-för att förstå och bygga text.</p>
-</blockquote>
-<hr />
+<h1 class="chapter" id="lego-för-språk-hur-ain-stavar">Lego för språk:
+Hur AI:n stavar</h1>
+<div class="chapter-opening">
+<p class="chapter-number">
+Kapitel 2: Tokens
+</p>
+<p><img src="../assets/images/chapter-02.png" /></p>
+<div class="chapter-ingress">
+<p><em>En token är som en Lego-bit – den minsta byggstenen som AI:n
+använder för att förstå och bygga text.</em></p>
+</div>
+</div>
+<div style="page-break-after: always;">
+
+</div>
 <p>Du är fem år och lär dig läsa. Fingret följer bokstäverna: K-A-T-T.
 Fyra ljud. Ett ord. En katt.</p>
 <p>Men vänta. Vad händer när ordet blir längre? “Kattunge”? Då är det
@@ -47,7 +51,6 @@ inte lika självklart längre. Katt-unge? Ka-ttunge? Kat-tun-ge?</p>
 hanterbara bitar. Vi <em>tokeniserar</em> språket utan att tänka på
 det.</p>
 <p>AI:n gör samma sak – fast på sitt eget, märkliga sätt.</p>
-<hr />
 <h2 id="bryggan-till-ai">Bryggan till AI</h2>
 <p>En språkmodell som GPT eller Claude läser inte text som du gör. Den
 ser inte ord. Den ser inte ens bokstäver, egentligen. Den ser
@@ -60,7 +63,6 @@ specifika situationer.</p>
 <p>Tokens fungerar likadant. Vanliga ord som “the”, “is” och “cat” blir
 en enda token – en hel Lego-bit. Men ovanliga eller sammansatta ord
 delas upp i mindre bitar som modellen redan känner igen.</p>
-<hr />
 <h2 id="hur-uppdelningen-går-till">Hur uppdelningen går till</h2>
 <p>Låt oss ta ett konkret exempel. Ordet “otrolig” kan se ut så här för
 en AI:</p>
@@ -73,7 +75,6 @@ aldrig sett förut.</p>
 <p>Tumregeln för engelska är att en token motsvarar ungefär tre
 fjärdedelar av ett ord. Men – och detta är viktigt – regeln gäller inte
 för alla språk.</p>
-<hr />
 <h2 id="språkets-orättvisa">Språkets orättvisa</h2>
 <p>Här avslöjar tokens något obehagligt om hur AI byggs.</p>
 <p>Engelska är extremt gynnat. De flesta språkmodeller tränas på enorma
@@ -88,7 +89,6 @@ stora, bekväma bitar.</p>
 engelska (context window fylls snabbare) - Det kostar mer att använda AI
 på vissa språk - Kvaliteten kan bli sämre när varje ord kräver fler
 bearbetningssteg</p>
-<hr />
 <h2 id="varför-inte-bara-använda-ord">Varför inte bara använda ord?</h2>
 <p>En rimlig fråga: varför gör man det så komplicerat? Varför inte bara
 låta AI:n läsa ord för ord?</p>
@@ -100,7 +100,6 @@ modellen bara se: [OKÄNT ORD]. Men med tokens kan den bryta ner det:
 igen.</p>
 <p>Det är som skillnaden mellan att bara kunna rita färdiga figurer och
 att kunna teckna fritt. Med byggstenar blir du kreativ.</p>
-<hr />
 <h2 id="den-matematiska-hemligheten">Den matematiska hemligheten</h2>
 <p>Bakom kulisserna händer något fascinerande. Varje token omvandlas
 till en lång rad siffror – en matematisk position i ett enormt rum av
@@ -111,7 +110,6 @@ där liknande betydelser ligger nära varandra.</p>
 <p>Men det är en annan historia. Det vi behöver förstå här är att tokens
 är <em>porten in</em> – det första steget där mänskligt språk översätts
 till något en dator kan arbeta med.</p>
-<hr />
 <h2 id="varför-det-spelar-roll">Varför det spelar roll</h2>
 <p>Förståelsen av tokens förklarar flera saker som annars verkar
 mystiska:</p>
@@ -127,7 +125,6 @@ separat token.</p>
 frågar “hur många r finns i ‘jordgubbe’?” ser AI:n inte bokstäver – den
 ser tokens. Och “jordgubbe” har brutits ner till bitar som inte
 nödvändigtvis följer bokstavsgränserna.</p>
-<hr />
 <h2 id="analogins-gränser">Analogins gränser</h2>
 <p>Det finns en viktig skillnad mellan Lego och tokens.</p>
 <p>Lego-bitar är designade med avsikt. Någon har tänkt: “Den här biten
@@ -141,7 +138,6 @@ sekvens av tecken – allt beror på vad som var statistiskt effektivt att
 lära sig.</p>
 <p>Det är som om Lego-bitarna designat sig själva baserat på vad barn
 oftast bygger, utan att någon människa fattade besluten.</p>
-<hr />
 <h2 id="slutord">Slutord</h2>
 <p>Nästa gång du chattar med en AI, tänk på att dina ord passerar genom
 en märklig förvandling innan de når fram.</p>
@@ -153,10 +149,13 @@ universum. Och någonstans i det universumet försöker AI:n lista ut vad
 du menar.</p>
 <p>Det är inte magi. Men det är inte heller riktigt läsning.</p>
 <p>Det är något helt nytt.</p>
-<hr />
-<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>: Tokens
-- <strong>Mänsklig motsvarighet</strong>: Lego-bitar / stavelser -
-<strong>Kom ihåg</strong>: AI:n läser inte ord – den bygger med bitar av
-text, och vissa språk får mindre bitar än andra.</p>
+<h2 id="sammanfattning">Sammanfattning</h2>
+<p><strong>AI-koncept</strong>: Tokens<br /> <strong>Mänsklig
+motsvarighet</strong>: Lego-bitar / stavelser<br /> <strong>Kom
+ihåg</strong>: AI:n läser inte ord – den bygger med bitar av text, och
+vissa språk får mindre bitar än andra.</p>
+<div style="page-break-after: always;">
+
+</div>
 </body>
 </html>

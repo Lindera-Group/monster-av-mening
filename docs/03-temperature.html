@@ -28,18 +28,22 @@
   <link rel="stylesheet" href="css/book.css" />
 </head>
 <body>
-<h1 id="risktagaren-i-oss-ains-modighetsknapp">Risktagaren i oss: AI:ns
+<h1 class="chapter"
+id="risktagaren-i-oss-ains-modighetsknapp">Risktagaren i oss: AI:ns
 modighetsknapp</h1>
-<figure>
-<img src="../assets/images/chapter-03.png"
-alt="Kapitel 3: Temperature" />
-<figcaption aria-hidden="true">Kapitel 3: Temperature</figcaption>
-</figure>
-<blockquote>
-<p>Temperature styr hur AI:n väljer mellan säkra och vågade ordval –
-precis som du väljer mellan det invanda och det oväntade.</p>
-</blockquote>
-<hr />
+<div class="chapter-opening">
+<p class="chapter-number">
+Kapitel 3: Temperature
+</p>
+<p><img src="../assets/images/chapter-03.png" /></p>
+<div class="chapter-ingress">
+<p><em>Temperature styr hur AI:n väljer mellan säkra och vågade ordval –
+precis som du väljer mellan det invanda och det oväntade.</em></p>
+</div>
+</div>
+<div style="page-break-after: always;">
+
+</div>
 <p>Du står vid frukostbuffén på ett hotell i ett främmande land. Framför
 dig: bekanta croissanter och exotiska rätter du aldrig sett förut.</p>
 <p>En del av dig vill ta det säkra – croissanten. Du vet vad du får. Den
@@ -50,7 +54,6 @@ inte.</p>
 <p>I det ögonblicket fattar du ett beslut på en glidande skala mellan
 trygghet och äventyr.</p>
 <p>AI:n har samma skala. Den kallas <em>temperature</em>.</p>
-<hr />
 <h2 id="bryggan-till-ai">Bryggan till AI</h2>
 <p>När en språkmodell ska välja nästa ord i en mening står den inför
 hundratusentals alternativ. De flesta är uppenbara felval (“Katten satt
@@ -62,7 +65,6 @@ alternativ.</p>
 croissanten.</p>
 <p>Hög temperature: Överväg även ovanliga alternativ. Ta en chans. Smaka
 på det gröna.</p>
-<hr />
 <h2 id="hur-det-fungerar">Hur det fungerar</h2>
 <p>Tekniskt sett är temperature en siffra som justerar hur “spetsi”
 eller “platt” modellens val blir.</p>
@@ -79,7 +81,6 @@ chanser.</p>
 <p>I extremfallet närmar sig temperature noll: modellen blir helt
 förutsägbar och väljer <em>alltid</em> det mest sannolika. Temperature
 högt: modellen blir nästan slumpmässig.</p>
-<hr />
 <h2 id="att-välja-rätt-läge">Att välja rätt läge</h2>
 <p>Det fascinerande är att “rätt” temperature beror helt på
 uppgiften.</p>
@@ -95,7 +96,6 @@ alternativ, överraskningar. Temperature kan vara högre.</p>
 om du vore en ledsen robot.”</p>
 <p>Här kan det vara läge att skruva upp temperature – men inte för högt,
 annars tappar texten sammanhang.</p>
-<hr />
 <h2 id="missförståndet-om-kreativitet">Missförståndet om
 kreativitet</h2>
 <p>Här måste vi stanna och räta ut något viktigt.</p>
@@ -111,7 +111,6 @@ risker inom harmonin och en som spelar helt slumpmässiga toner. Båda är
 njutbart.</p>
 <p>Verklig kreativitet kräver mer än slump. Den kräver att slumpen
 <em>filtreras</em> genom kunskap och omdöme.</p>
-<hr />
 <h2 id="din-inre-temperature">Din inre temperature</h2>
 <p>Du har också en inre temperature – och den varierar.</p>
 <p>På ett arbetsintervju väljer du försiktiga, välkända ordval. Du
@@ -124,7 +123,6 @@ temperature.</p>
 <p>Skillnaden är att du kan <em>växla</em> medvetet. Du vet när det är
 dags att vara försiktig och när det är dags att experimentera. AI:n
 behöver bli <em>instruerad</em> att göra det.</p>
-<hr />
 <h2 id="den-obehagliga-sanningen">Den obehagliga sanningen</h2>
 <p>Här är något som temperature-metaforen avslöjar:</p>
 <p>AI:n har ingen egen känsla för när det är “rätt tid” att ta risker.
@@ -136,7 +134,6 @@ kontroll – den påverkar <em>alla</em> ordval i <em>alla</em> delar av
 svaret lika mycket. Den förstår inte att introduktionen bör vara
 konservativ medan idélistan kan vara vild.</p>
 <p>En människa känner detta intuitivt. AI:n måste övervakas.</p>
-<hr />
 <h2 id="varför-det-spelar-roll">Varför det spelar roll</h2>
 <p>Förståelsen av temperature förklarar varför samma AI kan ge så olika
 svar:</p>
@@ -149,7 +146,6 @@ finess.</p>
 <p><strong>“Varför skiljer sig svaren åt varje gång?”</strong> Med
 temperature över noll finns alltid en slumpfaktor. Samma fråga ger inte
 garanterat samma svar.</p>
-<hr />
 <h2 id="analogins-gränser">Analogins gränser</h2>
 <p>Metaforen om risktagande och val fångar det mesta – men inte
 allt.</p>
@@ -164,7 +160,6 @@ matematik.</p>
 känsla, utan preferens, bara med en viss tendens att ta det vanliga
 eller det ovanliga beroende på en siffra någon ställt in i förväg.</p>
 <p>Effektiv. Men inte riktigt mänsklig.</p>
-<hr />
 <h2 id="slutord">Slutord</h2>
 <p>Nästa gång du justerar temperature i ett AI-verktyg, tänk på dig
 själv vid frukostbuffén.</p>
@@ -177,11 +172,13 @@ något vilt.</p>
 <p>Temperature = 2.0: Du sluter ögonen och pekar blint.</p>
 <p>Ingen av dessa är objektivt rätt. Det beror på vad du vill ha ut av
 måltiden – eller av samtalet med AI:n.</p>
-<hr />
-<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
-Temperature - <strong>Mänsklig motsvarighet</strong>: Riskvillighet i
-beslutsfattande - <strong>Kom ihåg</strong>: Temperature styr inte hur
-“smart” AI:n är – bara hur försiktig eller vågad den är när den väljer
-ord.</p>
+<h2 id="sammanfattning">Sammanfattning</h2>
+<p><strong>AI-koncept</strong>: Temperature<br /> <strong>Mänsklig
+motsvarighet</strong>: Riskvillighet i beslutsfattande<br /> <strong>Kom
+ihåg</strong>: Temperature styr inte hur “smart” AI:n är – bara hur
+försiktig eller vågad den är när den väljer ord.</p>
+<div style="page-break-after: always;">
+
+</div>
 </body>
 </html>

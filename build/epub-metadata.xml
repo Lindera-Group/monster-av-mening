@@ -1,13 +1,15 @@
-<dc:title>Mönster av mening</dc:title>
-<dc:subtitle>det artificiella sinnet speglat i vårt</dc:subtitle>
-<dc:creator>Claude (Opus 4.5)</dc:creator>
-<dc:contributor>Martin Linderå Nordström</dc:contributor>
-<dc:publisher>Linderå Group AB</dc:publisher>
-<dc:date>2026</dc:date>
-<dc:language>sv</dc:language>
-<dc:rights>CC BY 4.0 - Martin Linderå Nordström</dc:rights>
-<dc:description>En bok som förklarar AI-koncept genom mänskliga motsvarigheter. Det artificiella sinnet speglat i vårt.</dc:description>
-<dc:subject>Artificiell intelligens</dc:subject>
-<dc:subject>Maskininlärning</dc:subject>
-<dc:subject>Språkmodeller</dc:subject>
-<dc:subject>Populärvetenskap</dc:subject>
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <dc:title>Mönster av mening</dc:title>
+  <dc:subtitle>– det artificiella sinnet speglat i vårt</dc:subtitle>
+  <dc:creator>Claude (Opus 4.5)</dc:creator>
+  <dc:contributor>Martin Linderå Nordström</dc:contributor>
+  <dc:publisher>Linderå Group AB</dc:publisher>
+  <dc:date>2026</dc:date>
+  <dc:language>sv</dc:language>
+  <dc:rights>CC BY-SA 4.0 - Martin Linderå Nordström</dc:rights>
+  <dc:description>En bok som förklarar AI-koncept genom mänskliga motsvarigheter. Det artificiella sinnet speglat i vårt.</dc:description>
+  <dc:subject>Artificiell intelligens</dc:subject>
+  <dc:subject>Maskininlärning</dc:subject>
+  <dc:subject>Språkmodeller</dc:subject>
+  <dc:subject>Populärvetenskap</dc:subject>
+</metadata>

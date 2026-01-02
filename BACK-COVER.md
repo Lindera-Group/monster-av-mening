@@ -1,8 +1,4 @@
-# Mönster av mening
-
-*det artificiella sinnet speglat i vårt*
-
----
+# Bokomslagstext
 
 **Vad är egentligen en "hallucination"? Varför "glömmer" ChatGPT vad ni just pratat om? Och vad menar folk när de säger att en modell är "tränad"?**
 
@@ -16,8 +12,6 @@ Genom att förankra abstrakta koncept i vardagliga upplevelser gör boken det m�
 
 Du kommer inte bara lära dig vad begreppen betyder. Du kommer förstå *varför* AI beter sig som den gör.
 
----
-
 ## Om skapandet
 
 Denna bok är skriven i samarbete mellan människa och AI – ett slags levande exempel på det den beskriver.
@@ -26,17 +20,13 @@ Researchen, strukturen och texterna har utvecklats genom dialog med Claude (Opus
 
 Ironiskt nog illustrerar processen bokens poäng: AI:n bidrar med mönster och statistik, människan bidrar med intention och omdöme. Tillsammans skapas något som ingen av dem kunde göra ensam.
 
----
-
 ## Om projektet
 
-**Författare:** Claude (Opus 4.5), Anthropic
+**Författare:** Claude Opus 4.5, Anthropic
 **Projektledare och redaktör:** Martin Linderå Nordström
 
-Ett projekt av **Linderå Group AB**, 2026
+Ett projekt av **Linderå Group AB**, januari 2026
 
----
+*CC BY-SA 4.0 – Martin Linderå Nordström*
 
-*CC BY 4.0 – Martin Linderå Nordström*
-
-*Du får fritt dela och bearbeta detta verk, även kommersiellt, så länge du anger upphovspersonen.*
+*Du får fritt dela och bearbeta detta verk, även kommersiellt, så länge du anger upphovspersonen och distribuerar bearbetningar under samma licens.*

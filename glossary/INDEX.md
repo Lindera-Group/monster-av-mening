@@ -8,21 +8,23 @@
 |------------|----------------------|---------|
 | Context window | Arbetsminne / närminne | 1 |
 | Token | Lego-bit / tankeenhet | 2 |
+| Softmax | Omvandla poäng till sannolikheter | 3 |
 | Temperature | Riskvillighet i beslutsfattande | 3 |
 | Hallucination | Konfabulering / falska minnen | 4 |
 | Attention | Automatiska associationer | 5 |
+| Query/Key/Value | Fråga, erbjudande, innehåll | 5 |
 | Embedding | Mental karta / associationsnätverk | 6 |
+| Backpropagation | Analysera vad som gick fel | 7 |
+| Gradient descent | Korrigering i rätt riktning | 7 |
+| Loss function | Mått på hur fel man hade | 7 |
 | Training | Uppväxt / barndom | 7 |
 | Weights | Frusna erfarenheter / muskelminne | 7 |
+| Catastrophic forgetting | Glömska vid specialisering | 8 |
 | Fine-tuning | Specialistutbildning | 8 |
-| Backpropagation | Analysera vad som gick fel | 7 |
 | LoRA | Tillägg utan förändring | 8 |
 | RLHF | Coachning / mentorskap | 8 |
-| Loss function | Mått på hur fel man hade | 7 |
-| Gradient descent | Korrigering i rätt riktning | 7 |
-| Softmax | Omvandla poäng till sannolikheter | 3 |
-| Query/Key/Value | Fråga, erbjudande, innehåll | 5 |
-| Catastrophic forgetting | Glömska vid specialisering | 8 |
+
+<div style="page-break-after: always;"></div>
 
 ## Detaljerade Beskrivningar
 
@@ -120,9 +122,7 @@ Processen där modellen går från slumpmässiga vikter till en fungerande språ
 De numeriska värdena som avgör modellens beteende. Alla lärdomar från träningen lagras i vikterna – ingen separat kunskapsbas, inga enskilda minnen, bara aggregerade statistiska mönster.
 *Se kapitel 7*
 
----
-
-## Koncept som inte behandlas i boken (ännu)
+## Koncept som inte behandlas i denna första upplaga
 
 | Koncept | Tänkbar motsvarighet |
 |---------|---------------------|
@@ -134,3 +134,5 @@ De numeriska värdena som avgör modellens beteende. Alla lärdomar från träni
 | Latent space | Det omedvetna |
 | Prompt | Frågeställning / instruktion |
 | RAG | Att slå upp innan man svarar |
+
+<div style="page-break-after: always;"></div>

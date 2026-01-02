@@ -28,18 +28,22 @@
   <link rel="stylesheet" href="css/book.css" />
 </head>
 <body>
-<h1 id="vad-tänker-du-på-nu-ains-fokusmaskin">Vad tänker du på nu? AI:ns
-fokusmaskin</h1>
-<figure>
-<img src="../assets/images/chapter-05.png" alt="Kapitel 5: Attention" />
-<figcaption aria-hidden="true">Kapitel 5: Attention</figcaption>
-</figure>
-<blockquote>
-<p>Attention-mekanismen är AI:ns sätt att väga vilka ord som är
+<h1 class="chapter" id="vad-tänker-du-på-nu-ains-fokusmaskin">Vad tänker
+du på nu? AI:ns fokusmaskin</h1>
+<div class="chapter-opening">
+<p class="chapter-number">
+Kapitel 5: Attention
+</p>
+<p><img src="../assets/images/chapter-05.png" /></p>
+<div class="chapter-ingress">
+<p><em>Attention-mekanismen är AI:ns sätt att väga vilka ord som är
 viktigast för att förstå varje annat ord – som ditt sinne som
-automatiskt kopplar ihop “hen” med rätt person i en mening.</p>
-</blockquote>
-<hr />
+automatiskt kopplar ihop “hen” med rätt person i en mening.</em></p>
+</div>
+</div>
+<div style="page-break-after: always;">
+
+</div>
 <p>Du läser en mening: “Maria gav boken till Erik fast han redan hade
 läst den.”</p>
 <p>Utan att tänka på det gör din hjärna något remarkabelt. Den kopplar
@@ -53,7 +57,6 @@ tillfälle, att dra linjer mellan ord som hör ihop trots att de står
 långt ifrån varandra.</p>
 <p>AI:n har sin egen version av detta. Den kallas
 <em>attention</em>.</p>
-<hr />
 <h2 id="bryggan-till-ai">Bryggan till AI</h2>
 <p>Innan attention-mekanismen uppfanns 2017 hade AI-modeller ett
 allvarligt problem. De läste text som en ström – ord för ord, från
@@ -66,7 +69,6 @@ andra ord i meningen och bedöma: Hur relevant är det här ordet för att
 förstå just det jag tittar på nu?</p>
 <p>Resultatet var revolutionerande. Det blev grunden för GPT, BERT,
 Claude och alla moderna språkmodeller.</p>
-<hr />
 <h2 id="hur-det-fungerar">Hur det fungerar</h2>
 <p>Tänk dig att du läser ordet “hen” i en text. För att förstå vem “hen”
 syftar på måste du titta bakåt (eller framåt) och hitta ett namn.</p>
@@ -83,7 +85,6 @@ matchningar får höga vikter. Svaga matchningar ignoreras nästan
 helt.</p>
 <p>Resultatet? Varje ord får en ny betydelse som är en blandning av alla
 relevanta ord, viktade efter hur viktiga de är.</p>
-<hr />
 <h2 id="ett-exempel">Ett exempel</h2>
 <p>Meningen: “Hunden som bröt sig lös jagade katten.”</p>
 <p>När modellen bearbetar ordet “jagade”, vad är mest relevant?</p>
@@ -97,7 +98,6 @@ relevanta ord, viktade efter hur viktiga de är.</p>
 kopplingar till “hunden” och “katten”, svagare till resten.</p>
 <p>På detta sätt förstår modellen att det är hunden som jagar, inte
 katten – trots att “som bröt sig lös” kommer mellan dem.</p>
-<hr />
 <h2
 id="multi-head-attention-att-fokusera-på-flera-saker-samtidigt">Multi-head
 attention: Att fokusera på flera saker samtidigt</h2>
@@ -114,7 +114,6 @@ huset)</li>
 </ul>
 <p>Resultaten kombineras sedan. Det är som att ha flera experter som
 analyserar meningen samtidigt och sedan sammanfattar sina insikter.</p>
-<hr />
 <h2 id="den-överraskande-enkelheten">Den överraskande enkelheten</h2>
 <p>Bakom all komplexitet är attention matematiskt sett förvånansvärt
 enkelt. Det är i princip:</p>
@@ -128,7 +127,6 @@ mening. Bara jämförelser och genomsnitt – upprepade miljontals gånger,
 över hundratals lager.</p>
 <p>Ur denna enkelhet uppstår förmågan att följa långa resonemang, lösa
 upp tvetydigheter, och producera sammanhängande text.</p>
-<hr />
 <h2 id="skillnaden-från-mänsklig-uppmärksamhet">Skillnaden från mänsklig
 uppmärksamhet</h2>
 <p>Här måste vi vara ärliga med analogin. Trots namnet är AI-attention
@@ -147,7 +145,6 @@ inget mål. Den beräknar bara vikter baserade på inlärda mönster.</p>
 kan du aktivt välja bort det.</p>
 <p><strong>AI:n beräknar alla vikter.</strong> Även det irrelevanta får
 en vikt – den är bara väldigt låg.</p>
-<hr />
 <h2 id="varför-det-spelar-roll">Varför det spelar roll</h2>
 <p>Förståelsen av attention förklarar flera saker om hur AI beter
 sig:</p>
@@ -160,7 +157,6 @@ viktiga kopplingar kan gå förlorade.</p>
 <p><strong>“Varför är moderna språkmodeller så stora?”</strong> En stor
 del av parametrarna i GPT eller Claude är attention-vikter – de mönster
 som avgör vilka ord som ska kopplas ihop.</p>
-<hr />
 <h2 id="analogins-kärna">Analogins kärna</h2>
 <p>Den bästa analogin är inte egentligen “uppmärksamhet” i betydelsen
 att fokusera.</p>
@@ -173,7 +169,6 @@ trådar mellan relaterade koncept baserat på kontext.</p>
 <p>Det är vad attention gör. Varje ord drar trådar till andra ord.
 Trådarna är starkare eller svagare beroende på vad modellen lärt sig om
 hur ord brukar höra ihop.</p>
-<hr />
 <h2 id="slutord">Slutord</h2>
 <p>Nästa gång du läser en komplicerad mening och din hjärna automatiskt
 kopplar ihop rätt subjekt med rätt verb, rätt pronomen med rätt person –
@@ -186,12 +181,14 @@ betyder.</p>
 <p>Formen är häpnadsväckande lik. Innehållet är fundamentalt olika.</p>
 <p>Men resultatet – förmågan att förstå sammanhang – är vad som gör
 moderna språkmodeller så kraftfulla.</p>
-<hr />
-<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
-Attention (uppmärksamhetsmekanism) - <strong>Mänsklig
-motsvarighet</strong>: Automatiska associationer / kontextmedvetet fokus
-- <strong>Kom ihåg</strong>: Attention låter varje ord “titta på” alla
-andra ord och väga deras relevans – som din hjärna automatiskt kopplar
-ihop “hen” med rätt person.</p>
+<h2 id="sammanfattning">Sammanfattning</h2>
+<p><strong>AI-koncept</strong>: Attention (uppmärksamhetsmekanism)<br />
+<strong>Mänsklig motsvarighet</strong>: Automatiska associationer /
+kontextmedvetet fokus<br /> <strong>Kom ihåg</strong>: Attention låter
+varje ord “titta på” alla andra ord och väga deras relevans – som din
+hjärna automatiskt kopplar ihop “hen” med rätt person.</p>
+<div style="page-break-after: always;">
+
+</div>
 </body>
 </html>

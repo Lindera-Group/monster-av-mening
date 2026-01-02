@@ -1,10 +1,20 @@
-# Specialisten: När AI:n går vidare till högre studier
+# Specialisten: När AI:n går vidare till högre studier {.chapter}
 
-![Kapitel 8: Fine-tuning](../assets/images/chapter-08.png)
+<div class="chapter-opening">
 
-> Fine-tuning är AI:ns specialistutbildning – att ta en allmänutbildad modell och forma den för ett specifikt yrke, precis som en läkare som specialiserar sig till kirurg.
+<p class="chapter-number">Kapitel 8: Fine-tuning</p>
 
----
+![](../assets/images/chapter-08.png)
+
+<div class="chapter-ingress">
+
+*Fine-tuning är AI:ns specialistutbildning – att ta en allmänutbildad modell och forma den för ett specifikt yrke, precis som en läkare som specialiserar sig till kirurg.*
+
+</div>
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 Emma har gått ut läkarutbildningen. Sex års studier, praktik på sjukhus, tentamen efter tentamen. Hon kan grunderna: anatomi, fysiologi, diagnostik, behandling. Hon är en kompetent allmänläkare.
 
@@ -16,7 +26,7 @@ Det tar år, inte årtionden. Det är specialisering, inte omstart.
 
 Och det är exakt vad fine-tuning är för AI.
 
----
+
 
 ## Bryggan till AI
 
@@ -28,7 +38,7 @@ Processen är snabbare och billigare än grundträningen. Istället för miljone
 
 Det är som skillnaden mellan att uppfostra ett barn från födseln och att vidareutbilda en vuxen.
 
----
+
 
 ## Hur det fungerar
 
@@ -40,7 +50,7 @@ Det viktiga är att du inte börjar om. Vikterna är inte slumpmässiga, de är 
 
 Typiskt använder man en lägre inlärningshastighet. Om grundträningen tog stora kliv genom viktrummet, tar fine-tuning små, försiktiga steg. Annars förstörs den befintliga kunskapen.
 
----
+
 
 ## Tre typer av specialisering
 
@@ -52,7 +62,7 @@ Fine-tuning kan göras på olika sätt, beroende på vad du vill uppnå.
 
 **RLHF (Reinforcement Learning from Human Feedback)**: Människor bedömer modellens svar. Modellen lär sig producera svar som människor föredrar. Det är detta som gör moderna chatbots hjälpsamma, vänliga och säkra.
 
----
+
 
 ## RLHF: Coachning, inte undervisning
 
@@ -68,7 +78,7 @@ RLHF fungerar som mentorn. Människor jämför modellens olika svar och väljer 
 
 Det är därför ChatGPT känns så annorlunda än GPT-3, trots att de bygger på samma grund.
 
----
+
 
 ## Risken: Att glömma det gamla
 
@@ -82,7 +92,7 @@ En modell som fine-tunas hårt på juridiska texter kan bli sämre på att prata
 
 Det finns sätt att mildra detta – bland annat en teknik kallad LoRA som lägger på ett separat "lager" av specialisering utan att röra originalvikterna – men problemet försvinner aldrig helt.
 
----
+
 
 ## LoRA: Att lära sig ett nytt språk
 
@@ -96,7 +106,7 @@ LoRA fungerar likadant. Istället för att ändra modellens originalvikter lägg
 
 Det gör det möjligt att snabbt växla mellan specialiseringar – samma grundmodell kan ha en "juridik-adapter", en "medicin-adapter", och en "kodnings-adapter", utan att någon av dem förstör de andra.
 
----
+
 
 ## När behövs fine-tuning?
 
@@ -110,7 +120,7 @@ Fine-tuning är en sista utväg. Dyrt, tidskrävande, med risk för oförutsedda
 
 Den rekommenderade progressionen är: Prompt engineering → RAG → Fine-tuning.
 
----
+
 
 ## Vad fine-tuning inte gör
 
@@ -122,7 +132,7 @@ En fine-tunad GPT-3.5 kan bli bättre på att skriva juridiska avtal. Men den bl
 
 Det är som att Emma blir en skicklig hjärtkirurg utan att hennes allmänna IQ förändras. Hon vet mer om hjärtan, men hon blir inte smartare som person.
 
----
+
 
 ## Analogins gränser
 
@@ -134,7 +144,7 @@ AI:n är mer sårbar. Fine-tuning kan dra modellen för långt i en riktning. De
 
 Och Emma har ett långtidsminne. Hon minns fallet som gick fel förra året. Modellen har bara vikter – aggregerad statistik, inga specifika minnen.
 
----
+
 
 ## Slutord
 
@@ -148,9 +158,12 @@ Men kom ihåg: specialisten är fortfarande bunden av generalistens ursprungliga
 
 Det är fortfarande samma hjärna – bara med annan fokusering.
 
----
 
-**Sammanfattning**
-- **AI-koncept**: Fine-tuning
-- **Mänsklig motsvarighet**: Specialistutbildning / vidareutbildning
-- **Kom ihåg**: Fine-tuning specialiserar en redan utbildad modell för specifika uppgifter – snabbare och billigare än grundträning, men med risk att förlora generalistkunskap.
+
+## Sammanfattning
+
+**AI-koncept**: Fine-tuning<br />
+**Mänsklig motsvarighet**: Specialistutbildning / vidareutbildning<br />
+**Kom ihåg**: Fine-tuning specialiserar en redan utbildad modell för specifika uppgifter – snabbare och billigare än grundträning, men med risk att förlora generalistkunskap.
+
+<div style="page-break-after: always;"></div>
