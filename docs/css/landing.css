@@ -1,0 +1,524 @@
+/*
+ * Mönster av mening - Landing Page
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap');
+
+/* ========================================
+   CSS Variables
+   ======================================== */
+
+:root {
+  /* Colors */
+  --color-text: #2c2c2c;
+  --color-text-light: #5a5a5a;
+  --color-text-muted: #888;
+  --color-background: #fdfcfa;
+  --color-background-alt: #f5f3ef;
+  --color-accent: #d56f66;
+  --color-accent-light: #e8a29b;
+  --color-accent-hover: #b85a52;
+  --color-border: #e0dcd4;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-display: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+
+  /* Sizing */
+  --content-width: 68rem;
+  --content-width-narrow: 44rem;
+  --line-height: 1.6;
+  --line-height-display: 1.2;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem;
+  --spacing-2xl: 6rem;
+
+  /* Effects */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+/* ========================================
+   Reset & Base
+   ======================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: var(--line-height);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: var(--line-height-display);
+  color: var(--color-text);
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========================================
+   Containers
+   ======================================== */
+
+.container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* ========================================
+   Navigation
+   ======================================== */
+
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 100;
+  padding: var(--spacing-sm) 0;
+}
+
+.nav-container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+}
+
+.nav a {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--color-accent);
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+
+.hero {
+  padding: var(--spacing-2xl) 0;
+  background: linear-gradient(
+    to bottom,
+    var(--color-white) 0%,
+    var(--color-background) 100%
+  );
+}
+
+.hero-container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.hero-cover img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.hero-content .subtitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-content .lead {
+  font-size: 1.15rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+
+.btn {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* ========================================
+   Sections
+   ======================================== */
+
+.section {
+  padding: var(--spacing-2xl) 0;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.section-intro {
+  font-size: 1.15rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin: 0 auto var(--spacing-xl);
+  max-width: var(--content-width-narrow);
+}
+
+/* Alternating section backgrounds */
+.section:nth-child(even) {
+  background-color: var(--color-background-alt);
+}
+
+/* ========================================
+   About Section
+   ======================================== */
+
+.about-content {
+  max-width: var(--content-width-narrow);
+  margin: 0 auto;
+}
+
+.about-content .intro {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.concept-examples {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.concept-examples h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.example-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  background-color: var(--color-background-alt);
+  border-radius: var(--radius-md);
+}
+
+.example-concept {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-accent);
+  flex: 1;
+}
+
+.example-arrow {
+  color: var(--color-text-muted);
+  font-weight: 300;
+}
+
+.example-human {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--color-text);
+  flex: 1;
+}
+
+/* ========================================
+   Download Section
+   ======================================== */
+
+.section-download {
+  background-color: var(--color-white);
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.download-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-lg);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.download-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.download-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.download-card:hover .download-icon {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.download-format {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-xs);
+}
+
+.download-description {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+/* ========================================
+   Project Section
+   ======================================== */
+
+.project-content {
+  max-width: var(--content-width-narrow);
+  margin: 0 auto;
+  display: grid;
+  gap: var(--spacing-xl);
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-info p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.project-info ul {
+  margin: var(--spacing-sm) 0;
+  padding-left: 1.5rem;
+}
+
+.project-info li {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.footer {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-background-alt);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-credits {
+  font-style: italic;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .hero-cover {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-cover img {
+    max-width: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  :root {
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+  }
+
+  .nav-container {
+    gap: var(--spacing-md);
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .examples-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+}
