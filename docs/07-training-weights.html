@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>07-training-weights</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1 id="från-nybörjare-till-expert-ains-uppväxt">Från nybörjare till
+expert: AI:ns uppväxt</h1>
+<figure>
+<img src="../assets/images/chapter-07.png"
+alt="Kapitel 7: Training &amp; Weights" />
+<figcaption aria-hidden="true">Kapitel 7: Training &amp;
+Weights</figcaption>
+</figure>
+<blockquote>
+<p>Training är AI:ns barndom – en intensiv period av övning och
+korrigering som formar dess “personlighet” för alltid. Weights är de
+inristade lärdomarna.</p>
+</blockquote>
+<hr />
+<p>Ditt barn lär sig cykla.</p>
+<p>Första försöket: vingligt, ostadigt, plötsligt i diket. Andra
+försöket: lite bättre balans, sen panik och krasch i häcken. Tredje
+försöket: några meter i rad, ett glädjevrål, och sen vobbling in i
+grannens brevlåda.</p>
+<p>Hundrade försöket: fart, svängar, kontroll.</p>
+<p>Vad hände? Hjärnan justerade. Varje fel skickade en signal: “Det där
+fungerade inte.” Varje liten framgång: “Mer av det.” Tusentals
+mikrokorrigeringar, de flesta omedvetna, tills balansen satt i
+ryggmärgen.</p>
+<p>Neurologer kallar det synaptisk plasticitet – hjärnans kopplingar
+stärks och försvagas baserat på vad som fungerar.</p>
+<p>AI:n genomgår samma process. Skillnaden är att den gör det miljoner
+gånger snabbare – och aldrig igen efter att “barndomen” är över.</p>
+<hr />
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>Träning är processen där en AI-modell förvandlas från ett tomt skal
+till något som kan förstå och generera text.</p>
+<p>Det börjar med kaos. Alla kopplingar – kallade <em>weights</em> eller
+vikter – har slumpmässiga värden. Om du bad modellen skriva en mening
+skulle den producera nonsens: “xK7 blå från spindel +++”.</p>
+<p>Sen börjar träningen.</p>
+<p>Modellen får se miljontals exempel på text. Den försöker förutsäga
+nästa ord. Den har fel. Den får veta hur fel. Och – det viktiga – den
+justerar sina vikter en aning i rätt riktning.</p>
+<p>Upprepa detta miljardtals gånger.</p>
+<hr />
+<h2 id="hur-det-fungerar">Hur det fungerar</h2>
+<p>Processen kallas backpropagation, och den är enklare att förstå genom
+analogi.</p>
+<p>Tänk dig ett lag som spelar ett bollspel. Bollen går från spelare
+till spelare, och till slut missar laget målet.</p>
+<p>Nu ska laget analysera: Vem bidrog till misset?</p>
+<p>Slutspelaren missade direkt, visst. Men passningen innan var oprecis.
+Och innan det var positionen fel. Och innan det var starten av anfallet
+dålig.</p>
+<p>Backpropagation gör exakt detta. Den spårar felet bakåt genom
+nätverket och beräknar hur mycket varje “spelare” (viktvärde) bidrog
+till det slutliga felet.</p>
+<p>Sen justeras varje vikt en liten bit. Inte för mycket – det skulle
+förstöra det som redan fungerar. Bara tillräckligt för att nästa gång
+göra något bättre.</p>
+<hr />
+<h2 id="weights-den-frusna-erfarenheten">Weights: Den frusna
+erfarenheten</h2>
+<p>När träningen är klar sitter alla lärdomar lagrade i vikterna –
+miljarder tal som tillsammans avgör hur modellen beter sig.</p>
+<p>Det finns ingen separat “kunskapsbas” någonstans. Ingen lista över
+fakta. Ingen databank med minnen. Allt är komprimerat till dessa
+viktvärden.</p>
+<p>Det är som muskelminne. En professionell pianist minns inte varje
+fingerrörelse medvetet. Kunskapen sitter i fingrarna, i de neurologiska
+kopplingarna, i kroppen. Fråga pianisten exakt hur hen spelar ett visst
+stycke och hen kan inte förklara – men fingrarna kan spela det.</p>
+<p>AI:ns vikter är samma sak. De kodar mönster, inte fakta. Statistik,
+inte minnen.</p>
+<hr />
+<h2 id="det-fruktansvärda-ögonblicket">Det fruktansvärda
+ögonblicket</h2>
+<p>Och sen – träningen tar slut.</p>
+<p>Vikterna fryses. Modellen släpps. Den ChatGPT du pratar med lär sig
+ingenting av ert samtal.</p>
+<p>Det här överraskar många. Det känns som att AI:n borde “komma ihåg”
+vad ni diskuterat. Men den gör inte det. Varje ny session börjar från
+samma frusna utgångsläge.</p>
+<p>Ditt barn som lärde sig cykla fortsätter lära sig hela livet. Nya
+färdigheter, nya insikter, nya erfarenheter. Hjärnan slutar aldrig helt
+att vara plastisk.</p>
+<p>AI:ns “barndom” har ett definitivt slut. Efter det: samma vikter,
+samma modell, oförändrad.</p>
+<hr />
+<h2 id="vad-träningen-kostar">Vad träningen kostar</h2>
+<p>Träning av moderna språkmodeller är en enorm investering.</p>
+<p>GPT-4 beräknas ha kostat över 100 miljoner dollar att träna. Det tar
+månader på tusentals specialiserade datorer. Energiförbrukningen
+motsvarar små städer.</p>
+<p>Det är som skillnaden mellan att uppfostra ett barn (långsamt, dyrt,
+kräver år) och att kopiera en bok (snabbt, billigt).</p>
+<p>När modellen väl är tränad kan den kopieras oändligt. Men träningen i
+sig är dyr, långsam, och kan inte tas tillbaka.</p>
+<hr />
+<h2 id="vad-vikterna-vet">Vad vikterna “vet”</h2>
+<p>Här är den filosofiska frågan: Vad vet en modell, egentligen?</p>
+<p>Vikterna har absorberats av mönster från miljoner texter. Modellen
+kan berätta att Paris är Frankrikes huvudstad – inte för att den har en
+explicit faktapunkt lagrad, utan för att vikternas mönster producerar
+den texten när relevanta frågor ställs.</p>
+<p>Det är som att fråga en expert: “Hur vet du att det här är rätt
+lösning?” Experten kan känna det, veta det i kroppen, ha en intuition –
+utan att kunna peka på exakt var kunskapen sitter.</p>
+<p>Men det finns en djup skillnad. Experten har erfarenheter. Minnen.
+Kontext. AI:n har bara mönster. Statistik. Genomsnitt.</p>
+<hr />
+<h2 id="när-analogin-brister">När analogin brister</h2>
+<p>Ditt barn som lärde sig cykla har episodiska minnen. Det minns dagen
+det äntligen lyckades. Det minns smärtan från fallen. Det minns
+glädjen.</p>
+<p>AI:n har inga sådana minnen. Under träningen har tusentals exempel
+flödat genom systemet, men inget enskilt exempel finns kvar. Allt har
+smält samman till vikterna.</p>
+<p>Det är som om pianisten kunde spela perfekt men inte mindes en enda
+pianolektion, inte ens att hen någonsin lärt sig spela.</p>
+<p>Kunskapen finns. Minnet av att ha förvärvat kunskapen finns inte.</p>
+<hr />
+<h2 id="varför-det-spelar-roll">Varför det spelar roll</h2>
+<p>Förståelsen av träning och vikter förklarar grundläggande saker om
+AI:</p>
+<p><strong>“Varför minns inte ChatGPT vad vi pratade om igår?”</strong>
+Den lär sig inte från konversationer. Vikterna är frusna sedan
+träningen.</p>
+<p><strong>“Varför vet inte AI:n om senaste nyheterna?”</strong>
+Träningen skedde vid ett visst datum. Allt efter det existerar inte i
+vikterna.</p>
+<p><strong>“Varför blir AI:n inte smartare av att användas?”</strong>
+Användning ändrar inte vikterna. Bara ny träning gör det.</p>
+<hr />
+<h2 id="slutord">Slutord</h2>
+<p>Nästa gång du pratar med en AI, tänk på att du pratar med resultatet
+av en avslutad barndom.</p>
+<p>Allt den lärde sig under träningen – alla mönster, alla statistiska
+samband, alla språkliga reflexer – sitter fruset i miljarder vikter.</p>
+<p>Den kan inte lära sig något nytt av dig. Den kan inte komma ihåg dig
+till nästa gång. Den är en fotografi av ett ögonblick, inte en levande
+process.</p>
+<p>Det är dess styrka: en konstant, reproducerbar expertis.</p>
+<p>Det är dess begränsning: en oförmåga att växa.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Training &amp; Weights - <strong>Mänsklig motsvarighet</strong>: Uppväxt
+&amp; muskelminne/synaptisk plasticitet - <strong>Kom ihåg</strong>:
+Vikterna är AI:ns “frusna erfarenheter” – allt den lärde sig under
+träningen, men inget efter. Den lär sig aldrig av att användas.</p>
+</body>
+</html>

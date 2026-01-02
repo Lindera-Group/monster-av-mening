@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>INDEX</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1 id="ordlista-ai-människa">Ordlista: AI → Människa</h1>
+<blockquote>
+<p>Alla översättningar samlade på ett ställe</p>
+</blockquote>
+<h2 id="snabbguide">Snabbguide</h2>
+<table>
+<thead>
+<tr>
+<th>AI-Koncept</th>
+<th>Mänsklig Motsvarighet</th>
+<th>Kapitel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Context window</td>
+<td>Arbetsminne / närminne</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Token</td>
+<td>Lego-bit / tankeenhet</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Riskvillighet i beslutsfattande</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Hallucination</td>
+<td>Konfabulering / falska minnen</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Attention</td>
+<td>Automatiska associationer</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Embedding</td>
+<td>Mental karta / associationsnätverk</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Training</td>
+<td>Uppväxt / barndom</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Weights</td>
+<td>Frusna erfarenheter / muskelminne</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Fine-tuning</td>
+<td>Specialistutbildning</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Backpropagation</td>
+<td>Analysera vad som gick fel</td>
+<td>7</td>
+</tr>
+<tr>
+<td>LoRA</td>
+<td>Tillägg utan förändring</td>
+<td>8</td>
+</tr>
+<tr>
+<td>RLHF</td>
+<td>Coachning / mentorskap</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Loss function</td>
+<td>Mått på hur fel man hade</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Gradient descent</td>
+<td>Korrigering i rätt riktning</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Softmax</td>
+<td>Omvandla poäng till sannolikheter</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Query/Key/Value</td>
+<td>Fråga, erbjudande, innehåll</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Catastrophic forgetting</td>
+<td>Glömska vid specialisering</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detaljerade-beskrivningar">Detaljerade Beskrivningar</h2>
+<h3 id="a">A</h3>
+<p><strong>Attention</strong> → <em>Automatiska associationer /
+kontextmedvetet fokus</em> Mekanismen som låter varje ord “titta på”
+alla andra ord och väga deras relevans. Som när din hjärna automatiskt
+kopplar ihop “hen” med rätt person i en mening utan att du tänker på
+det. <em>Se kapitel 5</em></p>
+<h3 id="b">B</h3>
+<p><strong>Backpropagation</strong> → <em>Spåra felet bakåt</em>
+Algoritmen som beräknar hur varje viktparameter bidrog till modellens
+fel, genom att propagera felgradienten bakåt genom nätverket. Som att
+analysera ett misslyckat projekt och identifiera var i kedjan det gick
+snett. <em>Se kapitel 7</em></p>
+<h3 id="c">C</h3>
+<p><strong>Catastrophic forgetting</strong> → <em>Glömska vid
+överspecialisering</em> När en modell som fine-tunas på ny data förlorar
+sin tidigare kunskap. Människor behåller oftast bred kunskap under
+specialisering; AI-modeller är mer sårbara för detta. <em>Se kapitel
+8</em></p>
+<p><strong>Context window</strong> → <em>Arbetsminne / tillfälligt
+skrivbord</em> Den begränsade mängd information modellen kan hålla i
+“huvudet” under en konversation. När fönstret fylls försvinner äldre
+information för alltid – till skillnad från människans arbetsminne som
+kan spara viktigt till långtidsminnet. <em>Se kapitel 1</em></p>
+<h3 id="e">E</h3>
+<p><strong>Embedding</strong> → <em>Mental karta /
+associationsnätverk</em> En numerisk representation där ord placeras som
+punkter i ett matematiskt rum. Ord med liknande betydelse ligger nära
+varandra. Som hur dina begrepp lever i nätverk av associationer där
+“hund” automatiskt kopplas till “valp”, “svans”, “skälla”. <em>Se
+kapitel 6</em></p>
+<h3 id="f">F</h3>
+<p><strong>Fine-tuning</strong> → <em>Specialistutbildning</em> Att ta
+en allmänutbildad modell och träna den vidare på specifik data. Snabbare
+och billigare än grundträning, men med risk att förlora
+generalistkunskap. Som när en läkare specialiserar sig till kirurg.
+<em>Se kapitel 8</em></p>
+<h3 id="g">G</h3>
+<p><strong>Gradient descent</strong> → <em>Korrigering i rätt
+riktning</em> Optimeringsalgoritmen som stegvis justerar vikterna i den
+riktning som minskar felet. Som att ta små steg nedför en kulle i dimma,
+alltid i den riktning som lutar mest neråt. <em>Se kapitel 7</em></p>
+<h3 id="h">H</h3>
+<p><strong>Hallucination</strong> → <em>Konfabulering / falska
+minnen</em> När modellen genererar information som låter trovärdig men
+är påhittad. Bättre beskrivet som “konfabulering” – att fylla
+kunskapsluckor med trovärdiga men felaktiga svar, utan avsikt att bedra.
+<em>Se kapitel 4</em></p>
+<h3 id="l">L</h3>
+<p><strong>LoRA (Low-Rank Adaptation)</strong> → <em>Tillägg utan
+förändring</em> En teknik för fine-tuning som lägger till små separata
+viktmatriser utan att röra originalvikterna. Som att lära sig ett nytt
+datasystem på jobbet utan att glömma sitt ursprungliga yrke. <em>Se
+kapitel 8</em></p>
+<p><strong>Loss function</strong> → <em>Mått på hur fel man hade</em>
+Den matematiska funktionen som beräknar skillnaden mellan modellens
+förutsägelse och det korrekta svaret. Drivkraften bakom allt lärande –
+modellen strävar efter att minimera denna siffra. <em>Se kapitel
+7</em></p>
+<h3 id="q">Q</h3>
+<p><strong>Query/Key/Value</strong> → <em>Fråga, erbjudande,
+innehåll</em> De tre komponenterna i attention-mekanismen. Query är vad
+ett ord “letar efter”, Key är vad det “erbjuder”, och Value är dess
+faktiska innehåll. Tillsammans bestämmer de hur ord kopplas ihop. <em>Se
+kapitel 5</em></p>
+<h3 id="r">R</h3>
+<p><strong>RLHF (Reinforcement Learning from Human Feedback)</strong> →
+<em>Coachning / mentorskap</em> En fine-tuning-metod där människor
+bedömer modellens svar och modellen lär sig producera svar som
+uppskattas. Mer som coaching än traditionell undervisning – fokus på
+<em>hur</em> man svarar, inte bara <em>vad</em>. <em>Se kapitel
+8</em></p>
+<h3 id="s">S</h3>
+<p><strong>Softmax</strong> → <em>Omvandla poäng till sannolikheter</em>
+Den matematiska funktionen som omvandlar modellens råa poäng till en
+sannolikhetsfördelning. Temperature påverkar hur “spetsig” eller “platt”
+denna fördelning blir. <em>Se kapitel 3</em></p>
+<h3 id="t">T</h3>
+<p><strong>Temperature</strong> → <em>Riskvillighet / modighet</em> En
+parameter som styr hur försiktig eller vågad modellen är när den väljer
+nästa ord. Låg temperature = välj det säkra, höjd temperature = överväg
+även ovanliga alternativ. Som skillnaden mellan att ta croissanten och
+att prova den exotiska rätten. <em>Se kapitel 3</em></p>
+<p><strong>Token</strong> → <em>Lego-bit / språkbyggsten</em> Den minsta
+enheten modellen arbetar med. Kan vara ett helt ord, en del av ett ord,
+eller ett enskilt tecken. Engelska ord kräver färre tokens än svenska;
+vissa språk drabbas hårt av denna bias. <em>Se kapitel 2</em></p>
+<p><strong>Training</strong> → <em>Uppväxt / barndom</em> Processen där
+modellen går från slumpmässiga vikter till en fungerande språkmodell
+genom att se miljontals exempel och iterativt justera sina parametrar.
+Avslutas innan modellen används – den lär sig sedan aldrig mer. <em>Se
+kapitel 7</em></p>
+<h3 id="w">W</h3>
+<p><strong>Weights</strong> → <em>Frusna erfarenheter / muskelminne</em>
+De numeriska värdena som avgör modellens beteende. Alla lärdomar från
+träningen lagras i vikterna – ingen separat kunskapsbas, inga enskilda
+minnen, bara aggregerade statistiska mönster. <em>Se kapitel 7</em></p>
+<hr />
+<h2 id="koncept-som-inte-behandlas-i-boken-ännu">Koncept som inte
+behandlas i boken (ännu)</h2>
+<table>
+<thead>
+<tr>
+<th>Koncept</th>
+<th>Tänkbar motsvarighet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transformer</td>
+<td>Kontextmedveten tänkare</td>
+</tr>
+<tr>
+<td>Inference</td>
+<td>Tänkande / resonerande</td>
+</tr>
+<tr>
+<td>Overfitting</td>
+<td>Övertänkande / fixering</td>
+</tr>
+<tr>
+<td>Batch</td>
+<td>Inlärningsgrupp</td>
+</tr>
+<tr>
+<td>Epoch</td>
+<td>Repetitionscykel</td>
+</tr>
+<tr>
+<td>Latent space</td>
+<td>Det omedvetna</td>
+</tr>
+<tr>
+<td>Prompt</td>
+<td>Frågeställning / instruktion</td>
+</tr>
+<tr>
+<td>RAG</td>
+<td>Att slå upp innan man svarar</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>04-hallucination</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1 id="när-minnet-fyller-i-luckorna-ains-konfabulering">När minnet
+fyller i luckorna: AI:ns konfabulering</h1>
+<figure>
+<img src="../assets/images/chapter-04.png"
+alt="Kapitel 4: Hallucination" />
+<figcaption aria-hidden="true">Kapitel 4: Hallucination</figcaption>
+</figure>
+<blockquote>
+<p>AI:ns “hallucinationer” liknar hjärnans konfabulering – att
+konstruera trovärdiga men falska svar för att fylla kunskapsluckor.</p>
+</blockquote>
+<hr />
+<p>Din mormor berättar om somrarna på landet. Hon minns ängen med
+smörblommor, ladans doft av hö, hur hon cyklade till affären efter
+glass.</p>
+<p>Men hennes syster invänder: “Det fanns ingen affär i byn. Vi köpte
+alltid glass i stan.”</p>
+<p>Mormor insisterar inte. Hon verkar nästan förvånad. Minnet kändes så
+verkligt – och ändå var det delvis påhittat. Hjärnan hade, utan medveten
+avsikt, fyllt i luckor i historien med detaljer som
+<em>passade</em>.</p>
+<p>Det är inte att mormor ljuger. Det är att hjärnan gör det den alltid
+gör: skapar sammanhang, även när informationen saknas.</p>
+<p>AI:n gör samma sak.</p>
+<hr />
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>När en språkmodell inte har tillräcklig information för att svara
+korrekt, stannar den sällan upp och säger “jag vet inte.” Istället
+genererar den ett svar som <em>låter</em> rätt – som passar mönstret,
+som flyter naturligt – men som kan vara helt påhittat.</p>
+<p>Det kallas <em>hallucination</em> på engelska. Men det är ett
+missvisande ord.</p>
+<p>Hallucination i klinisk mening innebär att uppleva sinnesintryck som
+inte existerar – att höra röster eller se saker som inte finns. Det
+förutsätter en upplevelse, ett medvetande.</p>
+<p>AI:n upplever ingenting. Den har inga sinnen. Ett bättre ord är
+<em>konfabulering</em>: att konstruera trovärdiga men falska svar utan
+avsikt att bedra.</p>
+<hr />
+<h2 id="hur-det-händer">Hur det händer</h2>
+<p>Tänk dig att du frågar AI:n: “Vad heter Anna Lindhs mördare?”</p>
+<p>Om modellen har den informationen i sin träningsdata kan den svara
+korrekt. Men vad händer om den inte har det – eller om informationen är
+osäker?</p>
+<p>I en idealisk värld skulle den svara: “Jag är osäker på det.”</p>
+<p>I praktiken händer ofta något annat. Modellen har lärt sig att svar
+ska vara fullständiga och hjälpsamma. Den har tränats på miljoner texter
+där frågor följs av svar, inte av “vet inte.” Så den producerar ett svar
+– ett namn som låter rimligt, kanske till och med ett riktigt namn fast
+tillhörande fel person.</p>
+<p>Det är inte illvilja. Det är statistik.</p>
+<hr />
+<h2 id="riktiga-exempel">Riktiga exempel</h2>
+<p>Konsekvenserna är inte alltid harmlösa.</p>
+<p>En amerikansk advokat använde ChatGPT för att förbereda ett mål. AI:n
+levererade sex rättsfall som perfekt stödde hans argument. Domstolen
+hittade dem inte i registren. Det visade sig att fallen inte existerade
+– AI:n hade <em>konstruerat</em> dem, komplett med fiktiva domslut och
+sidnummer.</p>
+<p>Advokaten fick 90 dagars avstängning.</p>
+<p>Googles AI-sökfunktion föreslog vid ett tillfälle att man kunde
+tillsätta lim i pizzasås för att få osten att fästa bättre. Information
+plockad från en skämtkommentar på internet – men presenterad som om det
+vore ett seriöst tips.</p>
+<p>AI:n kan inte skilja mellan fakta och fiktion. Den kan bara förutsäga
+vilka ord som statistiskt sett brukar följa varandra.</p>
+<hr />
+<h2 id="varför-det-är-oundvikligt">Varför det är oundvikligt</h2>
+<p>Här kommer något obehagligt: konfabulering är inte en bugg som kan
+åtgärdas. Det är en djupt rotad egenskap i hur språkmodeller
+fungerar.</p>
+<p>Forskare har visat att om ett faktum bara förekommer en enda gång i
+träningsdatan, kan modellen inte säkert skilja det från falsk
+information. Och enormt många fakta förekommer just en enda gång.</p>
+<p>Dessutom har modellerna tränats för att <em>alltid ge ett svar</em>.
+I utvärderingar belönas “jag vet inte” med noll poäng – så modellen lär
+sig att ett osäkert svar är bättre än inget svar alls.</p>
+<p>Det är som om din mormor hade uppfostrats med regeln: “Säg aldrig att
+du inte minns. Berätta alltid en historia.” Med den regeln blir
+konfabulering oundviklig.</p>
+<hr />
+<h2 id="mänsklig-konfabulering">Mänsklig konfabulering</h2>
+<p>Neurologisk forskning har studerat konfabulering i årtionden,
+särskilt hos patienter med skador på frontalloberna eller vid vissa
+demenssjukdomar.</p>
+<p>Det klassiska exemplet: En patient med “split-brain” (delad hjärna)
+visas ett kommando endast till höger hjärnhalva: “Gå ut genom dörren.”
+Patienten reser sig och börjar gå mot dörren. Men vänster hjärnhalva –
+som hanterar språk – vet inte varför. När forskaren frågar “Varför reser
+du dig?” svarar patienten med övertygelse: “Jag ska hämta en läsk.”</p>
+<p>Svaret är påhittat på millisekunder, helt ärligt, helt övertygande –
+och helt fel.</p>
+<p>Hjärnan fyllde i en lucka med en rimlig förklaring. Den hade ingen
+aning om det verkliga skälet.</p>
+<hr />
+<h2 id="likheten-är-slående">Likheten är slående</h2>
+<p>AI:ns konfabulering följer samma mönster:</p>
+<ol type="1">
+<li>En fråga ställs</li>
+<li>Tillräcklig information saknas</li>
+<li>Men ett svar förväntas</li>
+<li>Så ett trovärdigt svar konstrueras</li>
+<li>Utan medvetenhet om att det är fel</li>
+</ol>
+<p>Skillnaden är att din mormors hjärna och patientens hjärna åtminstone
+har <em>något</em> – en upplevelse, en självbild att bevara, ett behov
+av sammanhang. AI:n har ingenting. Den bara optimerar för nästa ord.</p>
+<p>Konfabuleringen är ännu mer mekanisk, ännu mer kallt statistisk.</p>
+<hr />
+<h2 id="hur-vet-man-vad-man-kan-lita-på">Hur vet man vad man kan lita
+på?</h2>
+<p>Det finns strategier, men inga garantier.</p>
+<p><strong>RAG (Retrieval-Augmented Generation)</strong> låter AI:n
+hämta aktuell information från externa källor innan den svarar. Det
+minskar konfabulering med kanske 40–70% – men eliminerar den inte
+helt.</p>
+<p><strong>Korsreferenser</strong>: Be AI:n ange källor. Kontrollera
+dem. Om den inte kan ange specifika, verifierbara källor är svaret
+misstänkt.</p>
+<p><strong>Kalibrerat förtroende</strong>: Lär dig att AI:n är bättre på
+somliga saker än andra. Generella fakta, stor konfidens. Specifika
+datum, namn, siffror – var skeptisk.</p>
+<p><strong>Den obehagliga tumregeln</strong>: Om informationen verkligen
+spelar roll, verifiera den själv.</p>
+<hr />
+<h2 id="analogins-gränser">Analogins gränser</h2>
+<p>Konfabuleringen hos människor och AI är slående lik i form, men
+skiljer sig i väsen.</p>
+<p>Din mormor har ett <em>jag</em> som vill bevara en sammanhängande
+livshistoria. Patienten med delad hjärna har en hjärna som <em>strävar
+efter</em> koherens. Det finns en drivkraft bakom konstruktionen.</p>
+<p>AI:n har ingen sådan drivkraft. Den har inget behov av en
+sammanhängande berättelse om sig själv. Den bara gör det den tränats
+för: producera ord som statistiskt brukar komma efter varandra.</p>
+<p>Det gör AI-konfabuleringen på sätt och vis mer godartad – ingen
+försöker lura dig – men också mer oberäknelig. Det finns ingen djupare
+logik att förstå, inget mänskligt motiv att tolka. Bara matematik som
+ibland producerar fel.</p>
+<hr />
+<h2 id="slutord">Slutord</h2>
+<p>Nästa gång AI:n ger dig ett svar som låter perfekt – en exakt siffra,
+ett specifikt namn, ett övertygande citat – stanna upp en sekund.</p>
+<p>Fråga dig själv: Hur vet den det här?</p>
+<p>Om du inte kan besvara den frågan, kanske inte AI:n heller kan
+det.</p>
+<p>Den kanske bara fyller i luckor med det som låter bäst – precis som
+din mormor som minns affären som aldrig fanns, med all uppriktig
+övertygelse om att det är sant.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Hallucination (bättre: konfabulering) - <strong>Mänsklig
+motsvarighet</strong>: Falska minnen / neurologisk konfabulering -
+<strong>Kom ihåg</strong>: AI:n ljuger inte medvetet – den konstruerar
+trovärdiga svar även när den saknar kunskap, precis som hjärnan fyller
+minnesluckor med påhittade detaljer.</p>
+</body>
+</html>

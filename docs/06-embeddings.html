@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>06-embeddings</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1 id="tankens-landskap-där-ord-blir-platser">Tankens landskap: Där ord
+blir platser</h1>
+<figure>
+<img src="../assets/images/chapter-06.png"
+alt="Kapitel 6: Embeddings" />
+<figcaption aria-hidden="true">Kapitel 6: Embeddings</figcaption>
+</figure>
+<blockquote>
+<p>Embeddings är som en mental karta där ord ligger nära varandra om de
+betyder liknande saker – precis som städer i samma land ligger nära på
+en karta.</p>
+</blockquote>
+<hr />
+<p>Vad är en hund?</p>
+<p>Du kan ge en definition: “Ett fyrfota däggdjur av arten Canis
+familiaris, domesticerat av människan för tusentals år sedan.”</p>
+<p>Men det är inte så du <em>egentligen</em> förstår vad en hund är.</p>
+<p>I ditt huvud existerar “hund” i ett nätverk av associationer. Hund
+kopplar till valp, svans, skäll, koppel, lojal, vän, matte, tass,
+hundpark, Ben, Lansen, den där golden retrievern som grannarna har…</p>
+<p>Varje associationstråd har olika styrka. “Valp” är nära. “Däggdjur”
+är längre bort, mer abstrakt. “Kanarie” är ännu längre – men fortfarande
+närmare än “gardin”.</p>
+<p>Dina begrepp lever inte som isolerade definitioner. De lever i
+relation till varandra, i ett mentalt landskap.</p>
+<p>AI:n organiserar ord på exakt samma sätt. Det kallas
+<em>embeddings</em>.</p>
+<hr />
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>En språkmodell ser inte ord. Den ser siffror.</p>
+<p>Varje ord (eller token) omvandlas till en lång rad tal – kanske 1000
+siffror i följd. Denna talrad kallas en <em>vektor</em>, och vektorn är
+ordets <em>embedding</em>.</p>
+<p>Det fascinerande är hur dessa vektorer organiseras.</p>
+<p>Ord med liknande betydelse får liknande vektorer. De hamnar nära
+varandra i det matematiska rummet. “Hund” och “valp” får vektorer som
+pekar i ungefär samma riktning. “Hund” och “demokrati” pekar åt helt
+olika håll.</p>
+<p>Det är som en karta. Stockholm och Uppsala ligger nära varandra på
+kartan för att de ligger nära i verkligheten. På samma sätt ligger
+“kung” och “drottning” nära varandra i embedding-rummet för att de har
+liknande betydelse.</p>
+<hr />
+<h2 id="hur-det-fungerar">Hur det fungerar</h2>
+<p>Under träning lär sig modellen att placera ord i detta matematiska
+rum.</p>
+<p>Principen är enkel: ord som ofta förekommer i samma sammanhang bör
+ligga nära varandra.</p>
+<p>“Katt” förekommer ofta nära “mjuk”, “tassar”, “mjölk”, “sover”.
+“Hund” förekommer nära “skäller”, “tassar”, “svans”, “springer”.</p>
+<p>Notera att “tassar” förekommer nära båda. Så i embedding-rummet
+kommer “katt” och “hund” att ligga relativt nära varandra – båda nära
+“tassar” – trots att de är olika djur.</p>
+<p>Det är just denna struktur som gör embeddings så kraftfulla.</p>
+<hr />
+<h2 id="ordets-matematik">Ordets matematik</h2>
+<p>Det finns något nästan magiskt med embeddings: betydelse kan
+uttryckas som matematik.</p>
+<p>Det klassiska exemplet:</p>
+<p><strong>kung - man + kvinna ≈ drottning</strong></p>
+<p>Det stämmer faktiskt. Om du tar vektorn för “kung”, subtraherar
+vektorn för “man”, och adderar vektorn för “kvinna”, hamnar du nära
+vektorn för “drottning”.</p>
+<p>Liknande relationer dyker upp överallt:</p>
+<ul>
+<li>Paris - Frankrike + Sverige ≈ Stockholm</li>
+<li>Gå - gick + springa ≈ sprang</li>
+<li>Stor - större + liten ≈ mindre</li>
+</ul>
+<p>Modellen har inte lärts att dessa relationer finns. Den har upptäckt
+dem själv, ur mönstren i hur ord används.</p>
+<hr />
+<h2 id="mentala-kartor">Mentala kartor</h2>
+<p>Neurologisk forskning visar att mänskliga hjärnor organiserar kunskap
+på häpnadsväckande liknande sätt.</p>
+<p>Hippocampus och omgivande hjärnområden använder “kognitiva kartor” –
+mentala representationer där begrepp har positioner i förhållande till
+varandra. Vi navigerar genom idéer som om de vore platser.</p>
+<p>När du försöker komma på ett ord ligger det på tungspetsen – “det
+börjar på K, det har något med vatten att göra…” Du letar i landskapet,
+navigerar genom associationer, tills du hittar: “Kanal!”</p>
+<p>AI:ns embeddings är en matematisk version av samma princip.</p>
+<hr />
+<h2 id="vad-embeddings-inte-förstår">Vad embeddings inte förstår</h2>
+<p>Här måste vi vara ärliga med analogins gränser.</p>
+<p>Dina associationer är förankrade i upplevelser. Du vet vad en hund är
+för att du har klappat hundar, blivit slickad i ansiktet, hört dem
+skälla på natten. Ditt begrepp “hund” är kopplat till minnen, känslor,
+sinnesintryck.</p>
+<p>AI:ns embedding för “hund” är bara statistik. Den vet att “hund” ofta
+förekommer nära “skäller” och “svans” – men den har aldrig hört ett
+skall eller sett en svans.</p>
+<p>Det är som skillnaden mellan att ha en karta och att ha rest genom
+landskapet. Kartan kan visa var städerna ligger – men den kan inte
+berätta hur det känns att vara i Stockholm.</p>
+<hr />
+<h2 id="varför-det-spelar-roll">Varför det spelar roll</h2>
+<p>Embeddings är grunden för nästan allt som moderna AI-system gör.</p>
+<p><strong>Semantisk sökning</strong>: När du googlar “hur lagar man
+trasig cykel” hittar sökmotorn sidor om “cykelreparation” även om de
+inte innehåller exakt de orden – för embeddings visar att begreppen
+ligger nära.</p>
+<p><strong>RAG (Retrieval-Augmented Generation)</strong>: Moderna
+AI-system hämtar relevant information från databaser genom att jämföra
+embeddings. “Vilken fråga liknar mest det jag har information om?”</p>
+<p><strong>Rekommendationer</strong>: Netflix och Spotify använder
+embeddings för att hitta filmer och låtar som “liknar” det du gillat
+förut.</p>
+<hr />
+<h2 id="det-märkliga-med-dimensioner">Det märkliga med dimensioner</h2>
+<p>Ett ord som “hund” kan representeras i kanske 1000 dimensioner.</p>
+<p>Vad betyder det? Inte att det finns 1000 aspekter av hundar som vi
+kan lista. Dimensionerna har ingen enkel mänsklig betydelse.</p>
+<p>Men kombinationen av alla dimensioner fångar något som
+<em>fungerar</em> – den fångar mönstren i hur ord används, relationer
+mellan begrepp, associativa kopplingar.</p>
+<p>Det är som färger. En färg kan beskrivas med tre tal (röd, grön, blå)
+– men inget av talen ensamt beskriver färgen. Det är kombinationen som
+skapar upplevelsen. Embedding-dimensioner fungerar likadant.</p>
+<hr />
+<h2 id="likheten-och-begränsningen">Likheten och begränsningen</h2>
+<p>Embedding-rummet är häpnadsväckande likt våra mentala
+associationsnätverk i sin struktur.</p>
+<p>Men det saknar förankring. Det är ett karta utan landskap, ett
+nätverk utan upplevelser, relationer utan innehåll.</p>
+<p>AI:n vet att “2% avkastning” och “20% avkastning” har nästan
+identiska embeddings – orden är ju desamma förutom siffrorna. Men den
+förstår inte den enorma skillnaden i betydelse för dig om det gäller
+dina pensionspengar.</p>
+<p>Matematisk närhet är inte samma sak som mänsklig förståelse.</p>
+<hr />
+<h2 id="slutord">Slutord</h2>
+<p>Nästa gång du försöker komma ihåg ett ord och det ligger på
+tungspetsen – nära men oåtkomligt – tänk på att du navigerar i ett
+landskap.</p>
+<p>Dina begrepp är inte lagda i separata lådor. De existerar i relation
+till varandra, i ett nätverk av associationer, i ett mentalt rum där
+liknande saker ligger nära.</p>
+<p>AI:n har byggt sin egen version av detta rum, ur miljontals texter,
+utan att någonsin uppleva det som orden beskriver.</p>
+<p>Strukturen är häpnadsväckande lik. Resan dit var fundamentalt
+annorlunda.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Embeddings - <strong>Mänsklig motsvarighet</strong>: Mentala
+associationsnätverk / kognitiva kartor - <strong>Kom ihåg</strong>:
+Embeddings placerar ord som punkter i ett matematiskt rum där närhet
+motsvarar likhet i betydelse – precis som dina begrepp lever i nätverk
+av associationer.</p>
+</body>
+</html>

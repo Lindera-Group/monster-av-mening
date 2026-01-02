@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>03-temperature</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1 id="risktagaren-i-oss-ains-modighetsknapp">Risktagaren i oss: AI:ns
+modighetsknapp</h1>
+<figure>
+<img src="../assets/images/chapter-03.png"
+alt="Kapitel 3: Temperature" />
+<figcaption aria-hidden="true">Kapitel 3: Temperature</figcaption>
+</figure>
+<blockquote>
+<p>Temperature styr hur AI:n väljer mellan säkra och vågade ordval –
+precis som du väljer mellan det invanda och det oväntade.</p>
+</blockquote>
+<hr />
+<p>Du står vid frukostbuffén på ett hotell i ett främmande land. Framför
+dig: bekanta croissanter och exotiska rätter du aldrig sett förut.</p>
+<p>En del av dig vill ta det säkra – croissanten. Du vet vad du får. Den
+kommer inte överraska.</p>
+<p>En annan del av dig lockas av det okända. Det där gröna som doftar
+kryddigt. Kanske är det fantastiskt. Kanske är det äckligt. Du vet
+inte.</p>
+<p>I det ögonblicket fattar du ett beslut på en glidande skala mellan
+trygghet och äventyr.</p>
+<p>AI:n har samma skala. Den kallas <em>temperature</em>.</p>
+<hr />
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>När en språkmodell ska välja nästa ord i en mening står den inför
+hundratusentals alternativ. De flesta är uppenbara felval (“Katten satt
+på x7&amp;%!”). Några är rimliga (“Katten satt på stolen/mattan/taket”).
+Ett fåtal är ovanliga men intressanta (“Katten satt på drömmen”).</p>
+<p>Temperature bestämmer hur modellen väljer mellan dessa
+alternativ.</p>
+<p>Låg temperature: Välj det mest sannolika. Spela säkert. Ta
+croissanten.</p>
+<p>Hög temperature: Överväg även ovanliga alternativ. Ta en chans. Smaka
+på det gröna.</p>
+<hr />
+<h2 id="hur-det-fungerar">Hur det fungerar</h2>
+<p>Tekniskt sett är temperature en siffra som justerar hur “spetsi”
+eller “platt” modellens val blir.</p>
+<p>Tänk dig att du ska välja bland tre alternativ: - Alternativ A har
+60% chans att vara rätt - Alternativ B har 30% chans - Alternativ C har
+10% chans</p>
+<p><strong>Med låg temperature</strong> (säg 0.2): A blir ännu mer
+dominant. Kanske 90% mot 8% och 2%. Modellen väljer nästan alltid A.</p>
+<p><strong>Med standard temperature</strong> (1.0): Fördelningen är
+oförändrad. 60-30-10. Modellen följer sina naturliga sannolikheter.</p>
+<p><strong>Med hög temperature</strong> (2.0): Skillnaderna jämnas ut.
+Kanske 45-35-20. Plötsligt har även det osannolika alternativet C reella
+chanser.</p>
+<p>I extremfallet närmar sig temperature noll: modellen blir helt
+förutsägbar och väljer <em>alltid</em> det mest sannolika. Temperature
+högt: modellen blir nästan slumpmässig.</p>
+<hr />
+<h2 id="att-välja-rätt-läge">Att välja rätt läge</h2>
+<p>Det fascinerande är att “rätt” temperature beror helt på
+uppgiften.</p>
+<p><strong>När du vill ha precision:</strong> “Vad är huvudstaden i
+Frankrike?”</p>
+<p>Här vill du att AI:n ska svara “Paris” – inte experimentera med
+poetiska alternativ. Temperature bör vara låg.</p>
+<p><strong>När du vill ha variation:</strong> “Ge mig tre olika sätt att
+inleda ett brev.”</p>
+<p>Här vill du inte ha samma svar varje gång. Du vill ha idéer,
+alternativ, överraskningar. Temperature kan vara högre.</p>
+<p><strong>När du skriver kreativt:</strong> “Beskriv solnedgången som
+om du vore en ledsen robot.”</p>
+<p>Här kan det vara läge att skruva upp temperature – men inte för högt,
+annars tappar texten sammanhang.</p>
+<hr />
+<h2 id="missförståndet-om-kreativitet">Missförståndet om
+kreativitet</h2>
+<p>Här måste vi stanna och räta ut något viktigt.</p>
+<p>Det är lockande att säga: “Högre temperature = mer kreativ AI.” Men
+det stämmer inte riktigt.</p>
+<p>Forskning visar att hög temperature ger mer <em>variation</em> och
+<em>nyhet</em> – men också mer <em>inkoherens</em>. Texten blir
+originellare, ja, men den kan också bli svårare att förstå, mer
+slumpmässig, ibland meningslös.</p>
+<p>Det är som skillnaden mellan en jazzmusiker som tar kontrollerade
+risker inom harmonin och en som spelar helt slumpmässiga toner. Båda är
+“kreativa” i någon mening – men bara den förra skapar något
+njutbart.</p>
+<p>Verklig kreativitet kräver mer än slump. Den kräver att slumpen
+<em>filtreras</em> genom kunskap och omdöme.</p>
+<hr />
+<h2 id="din-inre-temperature">Din inre temperature</h2>
+<p>Du har också en inre temperature – och den varierar.</p>
+<p>På ett arbetsintervju väljer du försiktiga, välkända ordval. Du
+“spelar säkert” med språket. Låg temperature.</p>
+<p>Med nära vänner experimenterar du. Du testar nya uttryck, slänger ur
+dig halvfärdiga tankar, tar språkliga risker. Högre temperature.</p>
+<p>När du brainstormar ensam kan du tillåta dig att tänka det absurda,
+det omöjliga, det löjliga. Du låter tankarna flöda utan filter. Hög
+temperature.</p>
+<p>Skillnaden är att du kan <em>växla</em> medvetet. Du vet när det är
+dags att vara försiktig och när det är dags att experimentera. AI:n
+behöver bli <em>instruerad</em> att göra det.</p>
+<hr />
+<h2 id="den-obehagliga-sanningen">Den obehagliga sanningen</h2>
+<p>Här är något som temperature-metaforen avslöjar:</p>
+<p>AI:n har ingen egen känsla för när det är “rätt tid” att ta risker.
+Den har ingen instinkt för sammanhanget. Om du ber om ett allvarligt
+svar på en allvarlig fråga med hög temperature, kan resultatet bli
+opassande.</p>
+<p>Det är inte att AI:n är dum. Det är att temperature är en trubbig
+kontroll – den påverkar <em>alla</em> ordval i <em>alla</em> delar av
+svaret lika mycket. Den förstår inte att introduktionen bör vara
+konservativ medan idélistan kan vara vild.</p>
+<p>En människa känner detta intuitivt. AI:n måste övervakas.</p>
+<hr />
+<h2 id="varför-det-spelar-roll">Varför det spelar roll</h2>
+<p>Förståelsen av temperature förklarar varför samma AI kan ge så olika
+svar:</p>
+<p><strong>“Varför fick jag ett konstigt svar?”</strong> Om temperature
+var hög kunde AI:n ha valt ovanliga ordkombinationer som lät
+ogrammatiska eller förvirrande.</p>
+<p><strong>“Varför är svaret så tråkigt?”</strong> Om temperature var
+nära noll valde AI:n bara de mest uppenbara orden, utan variation eller
+finess.</p>
+<p><strong>“Varför skiljer sig svaren åt varje gång?”</strong> Med
+temperature över noll finns alltid en slumpfaktor. Samma fråga ger inte
+garanterat samma svar.</p>
+<hr />
+<h2 id="analogins-gränser">Analogins gränser</h2>
+<p>Metaforen om risktagande och val fångar det mesta – men inte
+allt.</p>
+<p>Du har ett <em>mål</em> med dina val. Du väljer croissanten för att
+du är hungrig och vet att den mättar. Du väljer den exotiska rätten för
+att du är nyfiken och vill utforska.</p>
+<p>AI:n har inget mål. Den optimerar inte för något utöver “följ
+sannolikheterna och justera enligt temperature.” Det finns ingen
+nyfikenhet, ingen hunger, ingen längtan efter det nya. Bara
+matematik.</p>
+<p>Det är som om du vid frukostbuffén valde helt mekaniskt – utan
+känsla, utan preferens, bara med en viss tendens att ta det vanliga
+eller det ovanliga beroende på en siffra någon ställt in i förväg.</p>
+<p>Effektiv. Men inte riktigt mänsklig.</p>
+<hr />
+<h2 id="slutord">Slutord</h2>
+<p>Nästa gång du justerar temperature i ett AI-verktyg, tänk på dig
+själv vid frukostbuffén.</p>
+<p>Temperature = 0.2: Du tar croissanten. Varje gång. Förutsägbart och
+tryggt.</p>
+<p>Temperature = 1.0: Du följer din magkänsla. Ibland det bekanta,
+ibland det nya.</p>
+<p>Temperature = 1.5: Du struntar i vad som är “normalt” och provar
+något vilt.</p>
+<p>Temperature = 2.0: Du sluter ögonen och pekar blint.</p>
+<p>Ingen av dessa är objektivt rätt. Det beror på vad du vill ha ut av
+måltiden – eller av samtalet med AI:n.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Temperature - <strong>Mänsklig motsvarighet</strong>: Riskvillighet i
+beslutsfattande - <strong>Kom ihåg</strong>: Temperature styr inte hur
+“smart” AI:n är – bara hur försiktig eller vågad den är när den väljer
+ord.</p>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>08-fine-tuning</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1
+id="specialisten-när-ain-går-vidare-till-högre-studier">Specialisten:
+När AI:n går vidare till högre studier</h1>
+<figure>
+<img src="../assets/images/chapter-08.png"
+alt="Kapitel 8: Fine-tuning" />
+<figcaption aria-hidden="true">Kapitel 8: Fine-tuning</figcaption>
+</figure>
+<blockquote>
+<p>Fine-tuning är AI:ns specialistutbildning – att ta en allmänutbildad
+modell och forma den för ett specifikt yrke, precis som en läkare som
+specialiserar sig till kirurg.</p>
+</blockquote>
+<hr />
+<p>Emma har gått ut läkarutbildningen. Sex års studier, praktik på
+sjukhus, tentamen efter tentamen. Hon kan grunderna: anatomi, fysiologi,
+diagnostik, behandling. Hon är en kompetent allmänläkare.</p>
+<p>Men Emma vill bli hjärtkirurg.</p>
+<p>Nu börjar specialistutbildningen. Den bygger på allt hon redan kan –
+hon behöver inte lära sig läsa röntgenbilder från början eller repetera
+kemiska formler. Istället fokuserar hon djupt på hjärtat: dess specifika
+anatomi, de kirurgiska teknikerna, de särskilda komplikationerna.</p>
+<p>Det tar år, inte årtionden. Det är specialisering, inte omstart.</p>
+<p>Och det är exakt vad fine-tuning är för AI.</p>
+<hr />
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>En stor språkmodell som GPT eller Claude har genomgått massiv
+grundträning på terabyte av text. Den har lärt sig språk, fakta,
+mönster, resonemang. Den är en generalist – kan lite om allt, expert på
+ingenting.</p>
+<p>Fine-tuning tar denna generalist och ger den specialistkunskap.</p>
+<p>Processen är snabbare och billigare än grundträningen. Istället för
+miljoner dollar och månader av beräkning kan fine-tuning kosta tusentals
+dollar och ta dagar eller veckor.</p>
+<p>Det är som skillnaden mellan att uppfostra ett barn från födseln och
+att vidareutbilda en vuxen.</p>
+<hr />
+<h2 id="hur-det-fungerar">Hur det fungerar</h2>
+<p>Det tekniska är elegant enkelt.</p>
+<p>Du tar en förtränad modell – alla dess miljarder vikter, all kunskap
+den redan har. Sen tränar du den vidare på en ny, mindre dataset.</p>
+<p>Det viktiga är att du inte börjar om. Vikterna är inte slumpmässiga,
+de är redan fyllda av användbar kunskap. Du <em>justerar</em> dem,
+<em>finjusterar</em> dem – därav namnet.</p>
+<p>Typiskt använder man en lägre inlärningshastighet. Om grundträningen
+tog stora kliv genom viktrummet, tar fine-tuning små, försiktiga steg.
+Annars förstörs den befintliga kunskapen.</p>
+<hr />
+<h2 id="tre-typer-av-specialisering">Tre typer av specialisering</h2>
+<p>Fine-tuning kan göras på olika sätt, beroende på vad du vill
+uppnå.</p>
+<p><strong>Instruction tuning</strong>: Lär modellen att följa
+instruktioner bättre. GPT-3 var en textprediktor som fortsatte meningar.
+InstructGPT blev en assistent som svarade på frågor. Det var fine-tuning
+som gjorde skillnaden.</p>
+<p><strong>Domänanpassning</strong>: Specialisera modellen för ett
+specifikt område. En allmän modell som tränas vidare på medicinska
+texter blir bättre på att förstå och producera medicinskt språk.</p>
+<p><strong>RLHF (Reinforcement Learning from Human Feedback)</strong>:
+Människor bedömer modellens svar. Modellen lär sig producera svar som
+människor föredrar. Det är detta som gör moderna chatbots hjälpsamma,
+vänliga och säkra.</p>
+<hr />
+<h2 id="rlhf-coachning-inte-undervisning">RLHF: Coachning, inte
+undervisning</h2>
+<p>RLHF är speciellt intressant. Det liknar coaching mer än traditionell
+utbildning.</p>
+<p>Tänk dig skillnaden mellan en föreläsning och en mentor.</p>
+<p>I en föreläsning får du fakta: “Så här fungerar hjärtat.”</p>
+<p>Med en mentor får du feedback: “Det där svaret var bra. Det där var
+för kortfattat. Det där var för tekniskt för patienten.”</p>
+<p>RLHF fungerar som mentorn. Människor jämför modellens olika svar och
+väljer vilket som var bättre. Modellen lär sig producera svar som
+<em>uppskattas</em> – inte bara svar som är tekniskt korrekta, utan svar
+som är hjälpsamma, tydliga, säkra.</p>
+<p>Det är därför ChatGPT känns så annorlunda än GPT-3, trots att de
+bygger på samma grund.</p>
+<hr />
+<h2 id="risken-att-glömma-det-gamla">Risken: Att glömma det gamla</h2>
+<p>Här uppstår ett problem som inte har någon perfekt mänsklig
+motsvarighet.</p>
+<p>Om du specialiserar dig på hjärtkirurgi glömmer du inte hur man tar
+blodtryck. Din allmänmedicinska kunskap finns kvar, under
+specialiseringen.</p>
+<p>AI:n har det svårare. När vikterna justeras för specialistkunskap kan
+de <em>förlora</em> generalistkunskapen. Det kallas <em>catastrophic
+forgetting</em> – katastrofal glömska.</p>
+<p>En modell som fine-tunas hårt på juridiska texter kan bli sämre på
+att prata vardagligt. En modell som specialiseras på medicinsk
+diagnostik kan börja hallucinera mer om geografi.</p>
+<p>Det finns sätt att mildra detta – bland annat en teknik kallad LoRA
+som lägger på ett separat “lager” av specialisering utan att röra
+originalvikterna – men problemet försvinner aldrig helt.</p>
+<hr />
+<h2 id="lora-att-lära-sig-ett-nytt-språk">LoRA: Att lära sig ett nytt
+språk</h2>
+<p>LoRA (Low-Rank Adaptation) är en smart lösning på glömskrisken.</p>
+<p>Tänk på det så här. Emma, hjärtkirurgen, lär sig använda ett nytt
+datasystem på sjukhuset. Hon lär sig nya rutiner, nya formulär, nya
+genvägstangenter.</p>
+<p>Detta ersätter inte hennes medicinska kunskap. Det <em>läggs
+ovanpå</em>. Om hon byter sjukhus kan hon “stänga av” kunskapen om det
+gamla systemet och lära sig det nya – den grundläggande kirurgiska
+kompetensen är oförändrad.</p>
+<p>LoRA fungerar likadant. Istället för att ändra modellens
+originalvikter lägger man till små separata viktmatriser.
+Specialiseringen är ett tillägg, inte en förändring.</p>
+<p>Det gör det möjligt att snabbt växla mellan specialiseringar – samma
+grundmodell kan ha en “juridik-adapter”, en “medicin-adapter”, och en
+“kodnings-adapter”, utan att någon av dem förstör de andra.</p>
+<hr />
+<h2 id="när-behövs-fine-tuning">När behövs fine-tuning?</h2>
+<p>Här är en överraskande insikt: fine-tuning behövs sällan.</p>
+<p>Moderna språkmodeller är så kapabla att <em>prompt engineering</em> –
+att formulera frågan rätt – ofta räcker. Vill du att modellen ska skriva
+i en viss stil? Beskriv stilen. Vill du ha specifika fakta inkluderade?
+Ge dem i prompten.</p>
+<p>RAG (hämta relevant information och inkludera i frågan) löser många
+problem som tidigare krävde fine-tuning.</p>
+<p>Fine-tuning är en sista utväg. Dyrt, tidskrävande, med risk för
+oförutsedda bieffekter.</p>
+<p>Den rekommenderade progressionen är: Prompt engineering → RAG →
+Fine-tuning.</p>
+<hr />
+<h2 id="vad-fine-tuning-inte-gör">Vad fine-tuning inte gör</h2>
+<p>Ett vanligt missförstånd: “Fine-tuning gör modellen smartare.”</p>
+<p>Nej. Fine-tuning gör modellen mer <em>specialiserad</em>, inte mer
+<em>intelligent</em>.</p>
+<p>En fine-tunad GPT-3.5 kan bli bättre på att skriva juridiska avtal.
+Men den blir inte bättre på att resonera abstrakt eller förstå komplexa
+sammanhang. Dess grundläggande kapacitet är oförändrad – den har bara
+laddats med specialiserade mönster.</p>
+<p>Det är som att Emma blir en skicklig hjärtkirurg utan att hennes
+allmänna IQ förändras. Hon vet mer om hjärtan, men hon blir inte
+smartare som person.</p>
+<hr />
+<h2 id="analogins-gränser">Analogins gränser</h2>
+<p>Specialistutbildning fångar det mesta. Men det finns skillnader.</p>
+<p>Emma kan jonglera sin specialistkunskap med sin allmänkunskap. Hon
+kan se en patient med hjärtproblem och samtidigt tänka på deras
+diabetes. Människan multitaskar.</p>
+<p>AI:n är mer sårbar. Fine-tuning kan dra modellen för långt i en
+riktning. Det finns ingen “vuxen människa” som håller i tyglarna och
+säger “behåll proportionerna.”</p>
+<p>Och Emma har ett långtidsminne. Hon minns fallet som gick fel förra
+året. Modellen har bara vikter – aggregerad statistik, inga specifika
+minnen.</p>
+<hr />
+<h2 id="slutord">Slutord</h2>
+<p>Nästa gång du hör att någon “fine-tunat” en modell för ett specifikt
+syfte, tänk på specialistutbildning.</p>
+<p>Grundmodellen är allmänläkaren – bred kompetens, kan lite om
+allt.</p>
+<p>Fine-tuning skapar kirurgen, juristen, poeten,
+kundtjänstmedarbetaren.</p>
+<p>Men kom ihåg: specialisten är fortfarande bunden av generalistens
+ursprungliga kapacitet. Man kan inte fine-tuna en modell till att bli
+bättre än sin grundträning tillåter.</p>
+<p>Det är fortfarande samma hjärna – bara med annan fokusering.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Fine-tuning - <strong>Mänsklig motsvarighet</strong>:
+Specialistutbildning / vidareutbildning - <strong>Kom ihåg</strong>:
+Fine-tuning specialiserar en redan utbildad modell för specifika
+uppgifter – snabbare och billigare än grundträning, men med risk att
+förlora generalistkunskap.</p>
+</body>
+</html>

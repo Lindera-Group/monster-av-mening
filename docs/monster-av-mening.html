@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mönster av mening - det artificiella sinnet speglat i vårt</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../assets/css/book.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Mönster av mening</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#mönster-av-mening" id="toc-mönster-av-mening">Mönster av
+mening</a></li>
+<li><a href="#förord" id="toc-förord">Förord</a></li>
+<li><a href="#arbetsminnet-varför-ain-glömmer"
+id="toc-arbetsminnet-varför-ain-glömmer">Arbetsminnet: Varför AI:n
+“glömmer”</a>
+<ul>
+<li><a href="#bryggan-till-ai" id="toc-bryggan-till-ai">Bryggan till
+AI</a></li>
+<li><a href="#hur-stort-är-fönstret" id="toc-hur-stort-är-fönstret">Hur
+stort är fönstret?</a></li>
+<li><a href="#den-avgörande-skillnaden"
+id="toc-den-avgörande-skillnaden">Den avgörande skillnaden</a></li>
+<li><a href="#strategier-för-begränsningen"
+id="toc-strategier-för-begränsningen">Strategier för
+begränsningen</a></li>
+<li><a href="#varför-det-spelar-roll"
+id="toc-varför-det-spelar-roll">Varför det spelar roll</a></li>
+<li><a href="#framtidens-fönster" id="toc-framtidens-fönster">Framtidens
+fönster</a></li>
+<li><a href="#slutord" id="toc-slutord">Slutord</a></li>
+</ul></li>
+<li><a href="#lego-för-språk-hur-ain-stavar"
+id="toc-lego-för-språk-hur-ain-stavar">Lego för språk: Hur AI:n
+stavar</a>
+<ul>
+<li><a href="#bryggan-till-ai-1" id="toc-bryggan-till-ai-1">Bryggan till
+AI</a></li>
+<li><a href="#hur-uppdelningen-går-till"
+id="toc-hur-uppdelningen-går-till">Hur uppdelningen går till</a></li>
+<li><a href="#språkets-orättvisa" id="toc-språkets-orättvisa">Språkets
+orättvisa</a></li>
+<li><a href="#varför-inte-bara-använda-ord"
+id="toc-varför-inte-bara-använda-ord">Varför inte bara använda
+ord?</a></li>
+<li><a href="#den-matematiska-hemligheten"
+id="toc-den-matematiska-hemligheten">Den matematiska
+hemligheten</a></li>
+<li><a href="#varför-det-spelar-roll-1"
+id="toc-varför-det-spelar-roll-1">Varför det spelar roll</a></li>
+<li><a href="#analogins-gränser" id="toc-analogins-gränser">Analogins
+gränser</a></li>
+<li><a href="#slutord-1" id="toc-slutord-1">Slutord</a></li>
+</ul></li>
+<li><a href="#risktagaren-i-oss-ains-modighetsknapp"
+id="toc-risktagaren-i-oss-ains-modighetsknapp">Risktagaren i oss: AI:ns
+modighetsknapp</a>
+<ul>
+<li><a href="#bryggan-till-ai-2" id="toc-bryggan-till-ai-2">Bryggan till
+AI</a></li>
+<li><a href="#hur-det-fungerar" id="toc-hur-det-fungerar">Hur det
+fungerar</a></li>
+<li><a href="#att-välja-rätt-läge" id="toc-att-välja-rätt-läge">Att
+välja rätt läge</a></li>
+<li><a href="#missförståndet-om-kreativitet"
+id="toc-missförståndet-om-kreativitet">Missförståndet om
+kreativitet</a></li>
+<li><a href="#din-inre-temperature" id="toc-din-inre-temperature">Din
+inre temperature</a></li>
+<li><a href="#den-obehagliga-sanningen"
+id="toc-den-obehagliga-sanningen">Den obehagliga sanningen</a></li>
+<li><a href="#varför-det-spelar-roll-2"
+id="toc-varför-det-spelar-roll-2">Varför det spelar roll</a></li>
+<li><a href="#analogins-gränser-1"
+id="toc-analogins-gränser-1">Analogins gränser</a></li>
+<li><a href="#slutord-2" id="toc-slutord-2">Slutord</a></li>
+</ul></li>
+<li><a href="#när-minnet-fyller-i-luckorna-ains-konfabulering"
+id="toc-när-minnet-fyller-i-luckorna-ains-konfabulering">När minnet
+fyller i luckorna: AI:ns konfabulering</a>
+<ul>
+<li><a href="#bryggan-till-ai-3" id="toc-bryggan-till-ai-3">Bryggan till
+AI</a></li>
+<li><a href="#hur-det-händer" id="toc-hur-det-händer">Hur det
+händer</a></li>
+<li><a href="#riktiga-exempel" id="toc-riktiga-exempel">Riktiga
+exempel</a></li>
+<li><a href="#varför-det-är-oundvikligt"
+id="toc-varför-det-är-oundvikligt">Varför det är oundvikligt</a></li>
+<li><a href="#mänsklig-konfabulering"
+id="toc-mänsklig-konfabulering">Mänsklig konfabulering</a></li>
+<li><a href="#likheten-är-slående" id="toc-likheten-är-slående">Likheten
+är slående</a></li>
+<li><a href="#hur-vet-man-vad-man-kan-lita-på"
+id="toc-hur-vet-man-vad-man-kan-lita-på">Hur vet man vad man kan lita
+på?</a></li>
+<li><a href="#analogins-gränser-2"
+id="toc-analogins-gränser-2">Analogins gränser</a></li>
+<li><a href="#slutord-3" id="toc-slutord-3">Slutord</a></li>
+</ul></li>
+<li><a href="#vad-tänker-du-på-nu-ains-fokusmaskin"
+id="toc-vad-tänker-du-på-nu-ains-fokusmaskin">Vad tänker du på nu? AI:ns
+fokusmaskin</a>
+<ul>
+<li><a href="#bryggan-till-ai-4" id="toc-bryggan-till-ai-4">Bryggan till
+AI</a></li>
+<li><a href="#hur-det-fungerar-1" id="toc-hur-det-fungerar-1">Hur det
+fungerar</a></li>
+<li><a href="#ett-exempel" id="toc-ett-exempel">Ett exempel</a></li>
+<li><a
+href="#multi-head-attention-att-fokusera-på-flera-saker-samtidigt"
+id="toc-multi-head-attention-att-fokusera-på-flera-saker-samtidigt">Multi-head
+attention: Att fokusera på flera saker samtidigt</a></li>
+<li><a href="#den-överraskande-enkelheten"
+id="toc-den-överraskande-enkelheten">Den överraskande
+enkelheten</a></li>
+<li><a href="#skillnaden-från-mänsklig-uppmärksamhet"
+id="toc-skillnaden-från-mänsklig-uppmärksamhet">Skillnaden från mänsklig
+uppmärksamhet</a></li>
+<li><a href="#varför-det-spelar-roll-3"
+id="toc-varför-det-spelar-roll-3">Varför det spelar roll</a></li>
+<li><a href="#analogins-kärna" id="toc-analogins-kärna">Analogins
+kärna</a></li>
+<li><a href="#slutord-4" id="toc-slutord-4">Slutord</a></li>
+</ul></li>
+<li><a href="#tankens-landskap-där-ord-blir-platser"
+id="toc-tankens-landskap-där-ord-blir-platser">Tankens landskap: Där ord
+blir platser</a>
+<ul>
+<li><a href="#bryggan-till-ai-5" id="toc-bryggan-till-ai-5">Bryggan till
+AI</a></li>
+<li><a href="#hur-det-fungerar-2" id="toc-hur-det-fungerar-2">Hur det
+fungerar</a></li>
+<li><a href="#ordets-matematik" id="toc-ordets-matematik">Ordets
+matematik</a></li>
+<li><a href="#mentala-kartor" id="toc-mentala-kartor">Mentala
+kartor</a></li>
+<li><a href="#vad-embeddings-inte-förstår"
+id="toc-vad-embeddings-inte-förstår">Vad embeddings inte
+förstår</a></li>
+<li><a href="#varför-det-spelar-roll-4"
+id="toc-varför-det-spelar-roll-4">Varför det spelar roll</a></li>
+<li><a href="#det-märkliga-med-dimensioner"
+id="toc-det-märkliga-med-dimensioner">Det märkliga med
+dimensioner</a></li>
+<li><a href="#likheten-och-begränsningen"
+id="toc-likheten-och-begränsningen">Likheten och begränsningen</a></li>
+<li><a href="#slutord-5" id="toc-slutord-5">Slutord</a></li>
+</ul></li>
+<li><a href="#från-nybörjare-till-expert-ains-uppväxt"
+id="toc-från-nybörjare-till-expert-ains-uppväxt">Från nybörjare till
+expert: AI:ns uppväxt</a>
+<ul>
+<li><a href="#bryggan-till-ai-6" id="toc-bryggan-till-ai-6">Bryggan till
+AI</a></li>
+<li><a href="#hur-det-fungerar-3" id="toc-hur-det-fungerar-3">Hur det
+fungerar</a></li>
+<li><a href="#weights-den-frusna-erfarenheten"
+id="toc-weights-den-frusna-erfarenheten">Weights: Den frusna
+erfarenheten</a></li>
+<li><a href="#det-fruktansvärda-ögonblicket"
+id="toc-det-fruktansvärda-ögonblicket">Det fruktansvärda
+ögonblicket</a></li>
+<li><a href="#vad-träningen-kostar" id="toc-vad-träningen-kostar">Vad
+träningen kostar</a></li>
+<li><a href="#vad-vikterna-vet" id="toc-vad-vikterna-vet">Vad vikterna
+“vet”</a></li>
+<li><a href="#när-analogin-brister" id="toc-när-analogin-brister">När
+analogin brister</a></li>
+<li><a href="#varför-det-spelar-roll-5"
+id="toc-varför-det-spelar-roll-5">Varför det spelar roll</a></li>
+<li><a href="#slutord-6" id="toc-slutord-6">Slutord</a></li>
+</ul></li>
+<li><a href="#specialisten-när-ain-går-vidare-till-högre-studier"
+id="toc-specialisten-när-ain-går-vidare-till-högre-studier">Specialisten:
+När AI:n går vidare till högre studier</a>
+<ul>
+<li><a href="#bryggan-till-ai-7" id="toc-bryggan-till-ai-7">Bryggan till
+AI</a></li>
+<li><a href="#hur-det-fungerar-4" id="toc-hur-det-fungerar-4">Hur det
+fungerar</a></li>
+<li><a href="#tre-typer-av-specialisering"
+id="toc-tre-typer-av-specialisering">Tre typer av
+specialisering</a></li>
+<li><a href="#rlhf-coachning-inte-undervisning"
+id="toc-rlhf-coachning-inte-undervisning">RLHF: Coachning, inte
+undervisning</a></li>
+<li><a href="#risken-att-glömma-det-gamla"
+id="toc-risken-att-glömma-det-gamla">Risken: Att glömma det
+gamla</a></li>
+<li><a href="#lora-att-lära-sig-ett-nytt-språk"
+id="toc-lora-att-lära-sig-ett-nytt-språk">LoRA: Att lära sig ett nytt
+språk</a></li>
+<li><a href="#när-behövs-fine-tuning"
+id="toc-när-behövs-fine-tuning">När behövs fine-tuning?</a></li>
+<li><a href="#vad-fine-tuning-inte-gör"
+id="toc-vad-fine-tuning-inte-gör">Vad fine-tuning inte gör</a></li>
+<li><a href="#analogins-gränser-3"
+id="toc-analogins-gränser-3">Analogins gränser</a></li>
+<li><a href="#slutord-7" id="toc-slutord-7">Slutord</a></li>
+</ul></li>
+<li><a href="#ordlista-ai-människa"
+id="toc-ordlista-ai-människa">Ordlista: AI → Människa</a>
+<ul>
+<li><a href="#snabbguide" id="toc-snabbguide">Snabbguide</a></li>
+<li><a href="#detaljerade-beskrivningar"
+id="toc-detaljerade-beskrivningar">Detaljerade Beskrivningar</a></li>
+<li><a href="#koncept-som-inte-behandlas-i-boken-ännu"
+id="toc-koncept-som-inte-behandlas-i-boken-ännu">Koncept som inte
+behandlas i boken (ännu)</a></li>
+</ul></li>
+<li><a href="#kolofon" id="toc-kolofon">Kolofon</a>
+<ul>
+<li><a href="#om-denna-utgåva" id="toc-om-denna-utgåva">Om denna
+utgåva</a></li>
+<li><a href="#upphovspersoner"
+id="toc-upphovspersoner">Upphovspersoner</a></li>
+<li><a href="#tillkomst" id="toc-tillkomst">Tillkomst</a></li>
+<li><a href="#typografi" id="toc-typografi">Typografi</a></li>
+<li><a href="#teknisk-produktion" id="toc-teknisk-produktion">Teknisk
+produktion</a></li>
+<li><a href="#licens" id="toc-licens">Licens</a></li>
+<li><a href="#kontakt" id="toc-kontakt">Kontakt</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="mönster-av-mening">Mönster av mening</h1>
+<p><em>det artificiella sinnet speglat i vårt</em></p>
+<hr />
+<p><strong>Författare</strong> Claude (Opus 4.5) Anthropic</p>
+<p><strong>Projektledare och redaktör</strong> Martin Linderå
+Nordström</p>
+<hr />
+<p>Ett projekt av <strong>Linderå Group AB</strong> 2026</p>
+<hr />
+<p><em>CC BY 4.0 – Martin Linderå Nordström</em></p>
+<h1 id="förord">Förord</h1>
+<p>Du läser en bok skriven av en maskin.</p>
+<p>Eller rättare sagt: du läser en bok skriven av ett samarbete mellan
+en maskin och en människa. Texten du håller i handen – eller ser på
+skärmen – har genererats av Claude, en stor språkmodell skapad av
+Anthropic. Men den har formats, redigerats och styrts av en människa med
+en vision.</p>
+<p>Det är ett passande ursprung för just denna bok.</p>
+<hr />
+<p>För några år sedan var “artificiell intelligens” ett begrepp
+reserverat för science fiction och forskningslaboratorier. Idag är det
+något du kanske använder innan frukost. Du frågar ChatGPT om vädret, ber
+Claude förklara ett juridiskt dokument, låter Copilot skriva din
+kod.</p>
+<p>Men vad <em>är</em> det du pratar med?</p>
+<p>De flesta har en vag känsla av att AI är “datorer som tänker” eller
+“program som lärt sig saker”. Och det stämmer, på sätt och vis. Men det
+fångar inte det märkliga, det fascinerande, det ibland oroande med hur
+dessa system faktiskt fungerar.</p>
+<p>Den här boken försöker fylla det gapet – inte genom att lära dig
+programmera eller förstå matematik, utan genom att visa att du redan
+förstår mer än du tror.</p>
+<hr />
+<p>Varje AI-koncept har en mänsklig motsvarighet.</p>
+<p><em>Context window</em> – det maximala “minnet” en modell kan hålla
+under ett samtal – fungerar precis som ditt arbetsminne när du sitter i
+ett långt möte och tappar tråden.</p>
+<p><em>Hallucination</em> – när AI:n hittar på saker som låter
+trovärdiga – liknar din mormors minnen från sommaren på landet, levande
+och detaljerade, men delvis påhittade.</p>
+<p><em>Fine-tuning</em> – att specialisera en generell modell – är samma
+sak som när en läkare vidareutbildar sig till kirurg.</p>
+<p>När du ser dessa kopplingar händer något. AI slutar vara en mystisk
+svart låda och blir något begripligt. Inte mindre imponerande – men
+mindre skrämmande, och lättare att använda klokt.</p>
+<hr />
+<p>Ett ord om hur boken kom till.</p>
+<p>Jag gav Claude ett uppdrag: “Skriv en bok som förklarar AI-koncept
+genom mänskliga analogier.” Sedan följde en intensiv dialog. Jag ställde
+frågor, ifrågasatte formuleringar, bad om omskrivningar, styrde
+riktningen. Claude genererade text, föreslog strukturer, hittade
+analogier jag aldrig tänkt på.</p>
+<p>Resultatet är varken rent maskinellt eller rent mänskligt. Det är
+något nytt – en form av samarbete som för bara några år sedan var
+omöjlig.</p>
+<p>Ironiskt nog illustrerar processen bokens poäng. AI:n bidrar med
+mönster och statistik, enorma mängder komprimerad kunskap. Människan
+bidrar med intention, omdöme och den slutliga frågan: <em>Är detta bra
+nog?</em></p>
+<p>Ingen av oss kunde skapat boken ensam. Tillsammans kunde vi.</p>
+<hr />
+<p>En varning innan du läser vidare.</p>
+<p>Varje analogi i den här boken är avsiktligt förenklad. Verkligheten
+är alltid mer komplicerad. Men jag tror att en förenkling som fångar
+essensen är mer värdefull än en exakt beskrivning som ingen förstår.</p>
+<p>Målet är inte att du ska kunna bygga en AI efter att ha läst boken.
+Målet är att du ska förstå vad du pratar med – och varför det beter sig
+som det gör.</p>
+<p>Om du efter att ha läst ett kapitel tänker “Aha, så <em>det</em> är
+vad som händer!” – då har boken lyckats.</p>
+<p>Välkommen till mönstren av mening.</p>
+<hr />
+<p><em>Martin Linderå Nordström</em> <em>Januari 2026</em></p>
+<h1 id="arbetsminnet-varför-ain-glömmer">Arbetsminnet: Varför AI:n
+“glömmer”</h1>
+<figure>
+<img src="../assets/images/chapter-01.png"
+alt="Kapitel 1: Context Window" />
+<figcaption aria-hidden="true">Kapitel 1: Context Window</figcaption>
+</figure>
+<blockquote>
+<p>En AI:s context window är som ditt arbetsminne – begränsat, flyktigt,
+och ibland frustrerande litet.</p>
+</blockquote>
+<hr />
+<p>Du sitter i ett viktigt möte. Din chef radar upp punkter: budgeten
+för nästa kvartal, den nya rekryteringen, projektdeadlines, feedbacken
+från kunden. Du nickar, antecknar, försöker hänga med.</p>
+<p>Sen händer det. Någon frågar: “Vad sa Marcus om leveransdatumet för
+fas två?”</p>
+<p>Du vet att det nämndes. Du vet att det var viktigt. Men orden har
+redan glidit bort, ersatta av allt annat som sagts sedan dess. Det är
+inte att du inte lyssnade – det är att ditt arbetsminne, hjärnans
+tillfälliga skrivbord, bara rymmer så mycket.</p>
+<p>Välkommen till context window.</p>
+<hr />
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>På samma sätt fungerar en språkmodells “context window” – dess
+version av arbetsminnet. Precis som du i det där mötet har AI:n en
+strikt gräns för hur mycket den kan hålla i “huvudet” samtidigt.</p>
+<p>När du chattar med Claude eller GPT känns det som att föra en
+konversation med någon som minns allt ni pratat om. Men det är en
+illusion. Modellen lagrar inte samtalet någonstans permanent. Istället
+skickas hela konversationen – varje meddelande du skrivit, varje svar du
+fått – in på nytt varje gång du ställer en fråga.</p>
+<p>Och det måste rymmas i fönstret.</p>
+<hr />
+<h2 id="hur-stort-är-fönstret">Hur stort är fönstret?</h2>
+<p>Tänk dig ett skrivbord. På det får du lägga papper – men bara ett
+visst antal. Varje ny sida du lägger till tar plats. När bordet är fullt
+måste de äldsta sidorna bort.</p>
+<p>För moderna språkmodeller mäts skrivbordets storlek i “tokens” –
+ungefär tre fjärdedelar av ett ord i genomsnitt:</p>
+<ul>
+<li><strong>GPT-3.5</strong>: 4 000 tokens (~3 000 ord)</li>
+<li><strong>GPT-4</strong>: 8 000–128 000 tokens</li>
+<li><strong>Claude</strong>: 100 000–200 000 tokens</li>
+</ul>
+<p>Det låter som mycket. Och det är det, för de flesta samtal. Men tänk
+dig att du vill att AI:n ska analysera en hel bok, eller komma ihåg en
+komplicerad teknisk diskussion från i förrgår. Då blir gränserna snabbt
+påtagliga.</p>
+<hr />
+<h2 id="den-avgörande-skillnaden">Den avgörande skillnaden</h2>
+<p>Här brister analogin på ett viktigt sätt – och det är värt att förstå
+hur.</p>
+<p>Ditt arbetsminne är <em>elastiskt</em>. Under stress kan du ibland
+pressa in mer. Du kan fokusera hårdare, filtrera bort distraktioner,
+temporärt utöka kapaciteten. Och det som ramlar ut ur arbetsminnet har
+en chans att ha kodats in i långtidsminnet.</p>
+<p>AI:ns context window är <em>obönhörligt exakt</em>. Inte en token
+mer. Och det som ramlar ut? Det finns ingenstans. Det lagras inte någon
+annanstans. Det är bara borta.</p>
+<p>Det är som om du hade ett arbetsminne som var matematiskt precist –
+och inget långtidsminne alls.</p>
+<hr />
+<h2 id="strategier-för-begränsningen">Strategier för begränsningen</h2>
+<p>Både du och AI:n har utvecklat strategier för att hantera
+begränsningen.</p>
+<p><strong>Du</strong> skriver anteckningar. Du sammanfattar i huvudet.
+Du repeterar viktiga saker för dig själv.</p>
+<p><strong>AI:n</strong> – eller snarare, systemen runt den – använder
+liknande tricks: - <strong>Sammanfattning</strong>: Komprimera äldre
+delar av samtalet - <strong>RAG (Retrieval-Augmented
+Generation)</strong>: Hämta relevant information från externa databaser
+- <strong>Strukturerade prompts</strong>: Sätt de viktigaste
+instruktionerna i början eller slutet</p>
+<p>Det är faktiskt ganska likt hur du förbereder dig för det där mötet:
+du läser igenom agendan innan, håller de viktigaste punkterna överst i
+tanken, och hoppas att kollegorna skriver bra protokoll.</p>
+<hr />
+<h2 id="varför-det-spelar-roll">Varför det spelar roll</h2>
+<p>Förståelsen av context window förklarar flera mystiska beteenden hos
+AI:</p>
+<p><strong>“Du sa ju det förut!”</strong> Nej, AI:n sa det. Men det var
+50 000 tokens sedan och har ramlat ut.</p>
+<p><strong>“Varför upprepade du dig?”</strong> Modellen “minns” inte att
+den redan gett samma information.</p>
+<p><strong>“Du verkar ha glömt instruktionerna.”</strong> De
+instruktionerna fanns i början av konversationen. De har pressats ut av
+allt som kommit sedan.</p>
+<p>Det är inte dumhet eller slarv. Det är matematik.</p>
+<hr />
+<h2 id="framtidens-fönster">Framtidens fönster</h2>
+<p>Context window växer snabbt. För några år sedan var 4 000 tokens
+imponerande. Nu pratar vi om miljoner. Men principen förblir densamma:
+det finns alltid en gräns, och den gränsen formar vad AI:n kan göra.</p>
+<p>Tänk på det som skillnaden mellan att ha ett skrivbord och ett kontor
+och ett helt bibliotek. Mer utrymme hjälper. Men även bibliotek har
+väggar.</p>
+<hr />
+<h2 id="slutord">Slutord</h2>
+<p>Nästa gång du pratar med en AI och den verkar ha “glömt” vad ni
+diskuterade för en stund sedan, tänk på det där mötet. Tänk på känslan
+av att veta att något viktigt sades, men inte kunna plocka fram det.</p>
+<p>AI:n har inte blivit dum eller slarvig. Den har bara ett skrivbord
+som blev för fullt – och de äldsta pappren föll ner på golvet.</p>
+<p>Fast till skillnad från dig kan den inte böja sig ner och plocka upp
+dem.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Context window - <strong>Mänsklig motsvarighet</strong>: Arbetsminne -
+<strong>Kom ihåg</strong>: AI:ns “minne” är ett skrivbord med exakt
+storlek – när det blir fullt, försvinner det äldsta för alltid.</p>
+<h1 id="lego-för-språk-hur-ain-stavar">Lego för språk: Hur AI:n
+stavar</h1>
+<figure>
+<img src="../assets/images/chapter-02.png" alt="Kapitel 2: Tokens" />
+<figcaption aria-hidden="true">Kapitel 2: Tokens</figcaption>
+</figure>
+<blockquote>
+<p>En token är som en Lego-bit – den minsta byggstenen som AI:n använder
+för att förstå och bygga text.</p>
+</blockquote>
+<hr />
+<p>Du är fem år och lär dig läsa. Fingret följer bokstäverna: K-A-T-T.
+Fyra ljud. Ett ord. En katt.</p>
+<p>Men vänta. Vad händer när ordet blir längre? “Kattunge”? Då är det
+inte lika självklart längre. Katt-unge? Ka-ttunge? Kat-tun-ge?</p>
+<p>Vuxna tänker sällan på det, men vi delar automatiskt upp långa ord i
+hanterbara bitar. Vi <em>tokeniserar</em> språket utan att tänka på
+det.</p>
+<p>AI:n gör samma sak – fast på sitt eget, märkliga sätt.</p>
+<hr />
+<h2 id="bryggan-till-ai-1">Bryggan till AI</h2>
+<p>En språkmodell som GPT eller Claude läser inte text som du gör. Den
+ser inte ord. Den ser inte ens bokstäver, egentligen. Den ser
+<em>tokens</em> – bitar av text som den brutit ner för att kunna
+bearbeta.</p>
+<p>Tänk på det som Lego. När du bygger ett Lego-hus ser du helheten:
+väggar, tak, dörr. Men allt är uppbyggt av små, standardiserade bitar.
+Vissa bitar är vanliga och används överallt. Andra är specialbitar för
+specifika situationer.</p>
+<p>Tokens fungerar likadant. Vanliga ord som “the”, “is” och “cat” blir
+en enda token – en hel Lego-bit. Men ovanliga eller sammansatta ord
+delas upp i mindre bitar som modellen redan känner igen.</p>
+<hr />
+<h2 id="hur-uppdelningen-går-till">Hur uppdelningen går till</h2>
+<p>Låt oss ta ett konkret exempel. Ordet “otrolig” kan se ut så här för
+en AI:</p>
+<p><strong>Människan ser</strong>: otrolig</p>
+<p><strong>AI:n ser</strong>: [“o”, “tro”, “lig”] – tre tokens</p>
+<p>Det beror på att AI:n under sin träning lärde sig att “tro” är en
+vanlig sekvens, “lig” är en vanlig ändelse, och “o” som prefix dyker upp
+ofta. Genom att kombinera dessa byggstenar kan den hantera ord den
+aldrig sett förut.</p>
+<p>Tumregeln för engelska är att en token motsvarar ungefär tre
+fjärdedelar av ett ord. Men – och detta är viktigt – regeln gäller inte
+för alla språk.</p>
+<hr />
+<h2 id="språkets-orättvisa">Språkets orättvisa</h2>
+<p>Här avslöjar tokens något obehagligt om hur AI byggs.</p>
+<p>Engelska är extremt gynnat. De flesta språkmodeller tränas på enorma
+mängder engelsk text, och deras tokenisering är designad för engelska
+först.</p>
+<p>Konsekvensen? Ett svenskt ord kan kräva dubbelt så många tokens som
+dess engelska motsvarighet. Tamil eller telugu kan kräva upp till
+<em>tio gånger</em> fler tokens för samma information.</p>
+<p>Det är som om vissa språk måste bygga med mikro-Lego medan andra får
+stora, bekväma bitar.</p>
+<p>I praktiken betyder detta: - AI:n “tänker kortare” på andra språk än
+engelska (context window fylls snabbare) - Det kostar mer att använda AI
+på vissa språk - Kvaliteten kan bli sämre när varje ord kräver fler
+bearbetningssteg</p>
+<hr />
+<h2 id="varför-inte-bara-använda-ord">Varför inte bara använda ord?</h2>
+<p>En rimlig fråga: varför gör man det så komplicerat? Varför inte bara
+låta AI:n läsa ord för ord?</p>
+<p>Svaret handlar om flexibilitet och effektivitet.</p>
+<p>Om AI:n bara förstod hela ord skulle den stå handfallen inför nya
+ord. Första gången någon skriver “tweetstorm” eller “covidtrött” skulle
+modellen bara se: [OKÄNT ORD]. Men med tokens kan den bryta ner det:
+[“tweet”, “storm”] eller [“covid”, “trött”] – komponenter den känner
+igen.</p>
+<p>Det är som skillnaden mellan att bara kunna rita färdiga figurer och
+att kunna teckna fritt. Med byggstenar blir du kreativ.</p>
+<hr />
+<h2 id="den-matematiska-hemligheten">Den matematiska hemligheten</h2>
+<p>Bakom kulisserna händer något fascinerande. Varje token omvandlas
+till en lång rad siffror – en matematisk position i ett enormt rum av
+betydelser. Ordet “kung” kanske blir: [0.23, -0.45, 0.87, 0.12, …] och
+så vidare i hundratals dimensioner.</p>
+<p>AI:n “läser” aldrig text. Den navigerar i ett matematiskt landskap
+där liknande betydelser ligger nära varandra.</p>
+<p>Men det är en annan historia. Det vi behöver förstå här är att tokens
+är <em>porten in</em> – det första steget där mänskligt språk översätts
+till något en dator kan arbeta med.</p>
+<hr />
+<h2 id="varför-det-spelar-roll-1">Varför det spelar roll</h2>
+<p>Förståelsen av tokens förklarar flera saker som annars verkar
+mystiska:</p>
+<p><strong>“Varför kostar långa svar mer?”</strong> AI-tjänster tar ofta
+betalt per token. Fler tokens = högre kostnad.</p>
+<p><strong>“Varför är AI sämre på svenska än engelska?”</strong> Svenska
+kräver fler tokens för samma innehåll, vilket gör bearbetningen mindre
+effektiv.</p>
+<p><strong>“Varför har AI svårt med konstiga stavningar?”</strong>
+“Heeeeej” blir många fler tokens än “Hej” – varje extra ‘e’ kan bli en
+separat token.</p>
+<p><strong>“Varför kan AI ibland inte räkna bokstäver?”</strong> När du
+frågar “hur många r finns i ‘jordgubbe’?” ser AI:n inte bokstäver – den
+ser tokens. Och “jordgubbe” har brutits ner till bitar som inte
+nödvändigtvis följer bokstavsgränserna.</p>
+<hr />
+<h2 id="analogins-gränser">Analogins gränser</h2>
+<p>Det finns en viktig skillnad mellan Lego och tokens.</p>
+<p>Lego-bitar är designade med avsikt. Någon har tänkt: “Den här biten
+ska vara ett hjul, den här ett fönster.”</p>
+<p>Tokens är statistiska. De uppstår ur mönster i träningsdatan – vilka
+teckenföljder som förekommer ofta tillsammans. Det finns ingen djupare
+logik, ingen förståelse för vad bitarna “betyder”. Det är ren
+matematik.</p>
+<p>En token kan vara ett helt ord, halva ett ord, eller en meningslös
+sekvens av tecken – allt beror på vad som var statistiskt effektivt att
+lära sig.</p>
+<p>Det är som om Lego-bitarna designat sig själva baserat på vad barn
+oftast bygger, utan att någon människa fattade besluten.</p>
+<hr />
+<h2 id="slutord-1">Slutord</h2>
+<p>Nästa gång du chattar med en AI, tänk på att dina ord passerar genom
+en märklig förvandling innan de når fram.</p>
+<p>“Kan du hjälpa mig förstå kvantfysik?”</p>
+<p>Blir kanske: [“Kan”, ” du”, ” hjälp”, “a”, ” mig”, ” för”, “stå”, ”
+kvant”, “fys”, “ik”, “?”]</p>
+<p>Varje bit en Lego-kloss. Varje kloss en position i ett matematiskt
+universum. Och någonstans i det universumet försöker AI:n lista ut vad
+du menar.</p>
+<p>Det är inte magi. Men det är inte heller riktigt läsning.</p>
+<p>Det är något helt nytt.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>: Tokens
+- <strong>Mänsklig motsvarighet</strong>: Lego-bitar / stavelser -
+<strong>Kom ihåg</strong>: AI:n läser inte ord – den bygger med bitar av
+text, och vissa språk får mindre bitar än andra.</p>
+<h1 id="risktagaren-i-oss-ains-modighetsknapp">Risktagaren i oss: AI:ns
+modighetsknapp</h1>
+<figure>
+<img src="../assets/images/chapter-03.png"
+alt="Kapitel 3: Temperature" />
+<figcaption aria-hidden="true">Kapitel 3: Temperature</figcaption>
+</figure>
+<blockquote>
+<p>Temperature styr hur AI:n väljer mellan säkra och vågade ordval –
+precis som du väljer mellan det invanda och det oväntade.</p>
+</blockquote>
+<hr />
+<p>Du står vid frukostbuffén på ett hotell i ett främmande land. Framför
+dig: bekanta croissanter och exotiska rätter du aldrig sett förut.</p>
+<p>En del av dig vill ta det säkra – croissanten. Du vet vad du får. Den
+kommer inte överraska.</p>
+<p>En annan del av dig lockas av det okända. Det där gröna som doftar
+kryddigt. Kanske är det fantastiskt. Kanske är det äckligt. Du vet
+inte.</p>
+<p>I det ögonblicket fattar du ett beslut på en glidande skala mellan
+trygghet och äventyr.</p>
+<p>AI:n har samma skala. Den kallas <em>temperature</em>.</p>
+<hr />
+<h2 id="bryggan-till-ai-2">Bryggan till AI</h2>
+<p>När en språkmodell ska välja nästa ord i en mening står den inför
+hundratusentals alternativ. De flesta är uppenbara felval (“Katten satt
+på x7&amp;%!”). Några är rimliga (“Katten satt på stolen/mattan/taket”).
+Ett fåtal är ovanliga men intressanta (“Katten satt på drömmen”).</p>
+<p>Temperature bestämmer hur modellen väljer mellan dessa
+alternativ.</p>
+<p>Låg temperature: Välj det mest sannolika. Spela säkert. Ta
+croissanten.</p>
+<p>Hög temperature: Överväg även ovanliga alternativ. Ta en chans. Smaka
+på det gröna.</p>
+<hr />
+<h2 id="hur-det-fungerar">Hur det fungerar</h2>
+<p>Tekniskt sett är temperature en siffra som justerar hur “spetsi”
+eller “platt” modellens val blir.</p>
+<p>Tänk dig att du ska välja bland tre alternativ: - Alternativ A har
+60% chans att vara rätt - Alternativ B har 30% chans - Alternativ C har
+10% chans</p>
+<p><strong>Med låg temperature</strong> (säg 0.2): A blir ännu mer
+dominant. Kanske 90% mot 8% och 2%. Modellen väljer nästan alltid A.</p>
+<p><strong>Med standard temperature</strong> (1.0): Fördelningen är
+oförändrad. 60-30-10. Modellen följer sina naturliga sannolikheter.</p>
+<p><strong>Med hög temperature</strong> (2.0): Skillnaderna jämnas ut.
+Kanske 45-35-20. Plötsligt har även det osannolika alternativet C reella
+chanser.</p>
+<p>I extremfallet närmar sig temperature noll: modellen blir helt
+förutsägbar och väljer <em>alltid</em> det mest sannolika. Temperature
+högt: modellen blir nästan slumpmässig.</p>
+<hr />
+<h2 id="att-välja-rätt-läge">Att välja rätt läge</h2>
+<p>Det fascinerande är att “rätt” temperature beror helt på
+uppgiften.</p>
+<p><strong>När du vill ha precision:</strong> “Vad är huvudstaden i
+Frankrike?”</p>
+<p>Här vill du att AI:n ska svara “Paris” – inte experimentera med
+poetiska alternativ. Temperature bör vara låg.</p>
+<p><strong>När du vill ha variation:</strong> “Ge mig tre olika sätt att
+inleda ett brev.”</p>
+<p>Här vill du inte ha samma svar varje gång. Du vill ha idéer,
+alternativ, överraskningar. Temperature kan vara högre.</p>
+<p><strong>När du skriver kreativt:</strong> “Beskriv solnedgången som
+om du vore en ledsen robot.”</p>
+<p>Här kan det vara läge att skruva upp temperature – men inte för högt,
+annars tappar texten sammanhang.</p>
+<hr />
+<h2 id="missförståndet-om-kreativitet">Missförståndet om
+kreativitet</h2>
+<p>Här måste vi stanna och räta ut något viktigt.</p>
+<p>Det är lockande att säga: “Högre temperature = mer kreativ AI.” Men
+det stämmer inte riktigt.</p>
+<p>Forskning visar att hög temperature ger mer <em>variation</em> och
+<em>nyhet</em> – men också mer <em>inkoherens</em>. Texten blir
+originellare, ja, men den kan också bli svårare att förstå, mer
+slumpmässig, ibland meningslös.</p>
+<p>Det är som skillnaden mellan en jazzmusiker som tar kontrollerade
+risker inom harmonin och en som spelar helt slumpmässiga toner. Båda är
+“kreativa” i någon mening – men bara den förra skapar något
+njutbart.</p>
+<p>Verklig kreativitet kräver mer än slump. Den kräver att slumpen
+<em>filtreras</em> genom kunskap och omdöme.</p>
+<hr />
+<h2 id="din-inre-temperature">Din inre temperature</h2>
+<p>Du har också en inre temperature – och den varierar.</p>
+<p>På ett arbetsintervju väljer du försiktiga, välkända ordval. Du
+“spelar säkert” med språket. Låg temperature.</p>
+<p>Med nära vänner experimenterar du. Du testar nya uttryck, slänger ur
+dig halvfärdiga tankar, tar språkliga risker. Högre temperature.</p>
+<p>När du brainstormar ensam kan du tillåta dig att tänka det absurda,
+det omöjliga, det löjliga. Du låter tankarna flöda utan filter. Hög
+temperature.</p>
+<p>Skillnaden är att du kan <em>växla</em> medvetet. Du vet när det är
+dags att vara försiktig och när det är dags att experimentera. AI:n
+behöver bli <em>instruerad</em> att göra det.</p>
+<hr />
+<h2 id="den-obehagliga-sanningen">Den obehagliga sanningen</h2>
+<p>Här är något som temperature-metaforen avslöjar:</p>
+<p>AI:n har ingen egen känsla för när det är “rätt tid” att ta risker.
+Den har ingen instinkt för sammanhanget. Om du ber om ett allvarligt
+svar på en allvarlig fråga med hög temperature, kan resultatet bli
+opassande.</p>
+<p>Det är inte att AI:n är dum. Det är att temperature är en trubbig
+kontroll – den påverkar <em>alla</em> ordval i <em>alla</em> delar av
+svaret lika mycket. Den förstår inte att introduktionen bör vara
+konservativ medan idélistan kan vara vild.</p>
+<p>En människa känner detta intuitivt. AI:n måste övervakas.</p>
+<hr />
+<h2 id="varför-det-spelar-roll-2">Varför det spelar roll</h2>
+<p>Förståelsen av temperature förklarar varför samma AI kan ge så olika
+svar:</p>
+<p><strong>“Varför fick jag ett konstigt svar?”</strong> Om temperature
+var hög kunde AI:n ha valt ovanliga ordkombinationer som lät
+ogrammatiska eller förvirrande.</p>
+<p><strong>“Varför är svaret så tråkigt?”</strong> Om temperature var
+nära noll valde AI:n bara de mest uppenbara orden, utan variation eller
+finess.</p>
+<p><strong>“Varför skiljer sig svaren åt varje gång?”</strong> Med
+temperature över noll finns alltid en slumpfaktor. Samma fråga ger inte
+garanterat samma svar.</p>
+<hr />
+<h2 id="analogins-gränser-1">Analogins gränser</h2>
+<p>Metaforen om risktagande och val fångar det mesta – men inte
+allt.</p>
+<p>Du har ett <em>mål</em> med dina val. Du väljer croissanten för att
+du är hungrig och vet att den mättar. Du väljer den exotiska rätten för
+att du är nyfiken och vill utforska.</p>
+<p>AI:n har inget mål. Den optimerar inte för något utöver “följ
+sannolikheterna och justera enligt temperature.” Det finns ingen
+nyfikenhet, ingen hunger, ingen längtan efter det nya. Bara
+matematik.</p>
+<p>Det är som om du vid frukostbuffén valde helt mekaniskt – utan
+känsla, utan preferens, bara med en viss tendens att ta det vanliga
+eller det ovanliga beroende på en siffra någon ställt in i förväg.</p>
+<p>Effektiv. Men inte riktigt mänsklig.</p>
+<hr />
+<h2 id="slutord-2">Slutord</h2>
+<p>Nästa gång du justerar temperature i ett AI-verktyg, tänk på dig
+själv vid frukostbuffén.</p>
+<p>Temperature = 0.2: Du tar croissanten. Varje gång. Förutsägbart och
+tryggt.</p>
+<p>Temperature = 1.0: Du följer din magkänsla. Ibland det bekanta,
+ibland det nya.</p>
+<p>Temperature = 1.5: Du struntar i vad som är “normalt” och provar
+något vilt.</p>
+<p>Temperature = 2.0: Du sluter ögonen och pekar blint.</p>
+<p>Ingen av dessa är objektivt rätt. Det beror på vad du vill ha ut av
+måltiden – eller av samtalet med AI:n.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Temperature - <strong>Mänsklig motsvarighet</strong>: Riskvillighet i
+beslutsfattande - <strong>Kom ihåg</strong>: Temperature styr inte hur
+“smart” AI:n är – bara hur försiktig eller vågad den är när den väljer
+ord.</p>
+<h1 id="när-minnet-fyller-i-luckorna-ains-konfabulering">När minnet
+fyller i luckorna: AI:ns konfabulering</h1>
+<figure>
+<img src="../assets/images/chapter-04.png"
+alt="Kapitel 4: Hallucination" />
+<figcaption aria-hidden="true">Kapitel 4: Hallucination</figcaption>
+</figure>
+<blockquote>
+<p>AI:ns “hallucinationer” liknar hjärnans konfabulering – att
+konstruera trovärdiga men falska svar för att fylla kunskapsluckor.</p>
+</blockquote>
+<hr />
+<p>Din mormor berättar om somrarna på landet. Hon minns ängen med
+smörblommor, ladans doft av hö, hur hon cyklade till affären efter
+glass.</p>
+<p>Men hennes syster invänder: “Det fanns ingen affär i byn. Vi köpte
+alltid glass i stan.”</p>
+<p>Mormor insisterar inte. Hon verkar nästan förvånad. Minnet kändes så
+verkligt – och ändå var det delvis påhittat. Hjärnan hade, utan medveten
+avsikt, fyllt i luckor i historien med detaljer som
+<em>passade</em>.</p>
+<p>Det är inte att mormor ljuger. Det är att hjärnan gör det den alltid
+gör: skapar sammanhang, även när informationen saknas.</p>
+<p>AI:n gör samma sak.</p>
+<hr />
+<h2 id="bryggan-till-ai-3">Bryggan till AI</h2>
+<p>När en språkmodell inte har tillräcklig information för att svara
+korrekt, stannar den sällan upp och säger “jag vet inte.” Istället
+genererar den ett svar som <em>låter</em> rätt – som passar mönstret,
+som flyter naturligt – men som kan vara helt påhittat.</p>
+<p>Det kallas <em>hallucination</em> på engelska. Men det är ett
+missvisande ord.</p>
+<p>Hallucination i klinisk mening innebär att uppleva sinnesintryck som
+inte existerar – att höra röster eller se saker som inte finns. Det
+förutsätter en upplevelse, ett medvetande.</p>
+<p>AI:n upplever ingenting. Den har inga sinnen. Ett bättre ord är
+<em>konfabulering</em>: att konstruera trovärdiga men falska svar utan
+avsikt att bedra.</p>
+<hr />
+<h2 id="hur-det-händer">Hur det händer</h2>
+<p>Tänk dig att du frågar AI:n: “Vad heter Anna Lindhs mördare?”</p>
+<p>Om modellen har den informationen i sin träningsdata kan den svara
+korrekt. Men vad händer om den inte har det – eller om informationen är
+osäker?</p>
+<p>I en idealisk värld skulle den svara: “Jag är osäker på det.”</p>
+<p>I praktiken händer ofta något annat. Modellen har lärt sig att svar
+ska vara fullständiga och hjälpsamma. Den har tränats på miljoner texter
+där frågor följs av svar, inte av “vet inte.” Så den producerar ett svar
+– ett namn som låter rimligt, kanske till och med ett riktigt namn fast
+tillhörande fel person.</p>
+<p>Det är inte illvilja. Det är statistik.</p>
+<hr />
+<h2 id="riktiga-exempel">Riktiga exempel</h2>
+<p>Konsekvenserna är inte alltid harmlösa.</p>
+<p>En amerikansk advokat använde ChatGPT för att förbereda ett mål. AI:n
+levererade sex rättsfall som perfekt stödde hans argument. Domstolen
+hittade dem inte i registren. Det visade sig att fallen inte existerade
+– AI:n hade <em>konstruerat</em> dem, komplett med fiktiva domslut och
+sidnummer.</p>
+<p>Advokaten fick 90 dagars avstängning.</p>
+<p>Googles AI-sökfunktion föreslog vid ett tillfälle att man kunde
+tillsätta lim i pizzasås för att få osten att fästa bättre. Information
+plockad från en skämtkommentar på internet – men presenterad som om det
+vore ett seriöst tips.</p>
+<p>AI:n kan inte skilja mellan fakta och fiktion. Den kan bara förutsäga
+vilka ord som statistiskt sett brukar följa varandra.</p>
+<hr />
+<h2 id="varför-det-är-oundvikligt">Varför det är oundvikligt</h2>
+<p>Här kommer något obehagligt: konfabulering är inte en bugg som kan
+åtgärdas. Det är en djupt rotad egenskap i hur språkmodeller
+fungerar.</p>
+<p>Forskare har visat att om ett faktum bara förekommer en enda gång i
+träningsdatan, kan modellen inte säkert skilja det från falsk
+information. Och enormt många fakta förekommer just en enda gång.</p>
+<p>Dessutom har modellerna tränats för att <em>alltid ge ett svar</em>.
+I utvärderingar belönas “jag vet inte” med noll poäng – så modellen lär
+sig att ett osäkert svar är bättre än inget svar alls.</p>
+<p>Det är som om din mormor hade uppfostrats med regeln: “Säg aldrig att
+du inte minns. Berätta alltid en historia.” Med den regeln blir
+konfabulering oundviklig.</p>
+<hr />
+<h2 id="mänsklig-konfabulering">Mänsklig konfabulering</h2>
+<p>Neurologisk forskning har studerat konfabulering i årtionden,
+särskilt hos patienter med skador på frontalloberna eller vid vissa
+demenssjukdomar.</p>
+<p>Det klassiska exemplet: En patient med “split-brain” (delad hjärna)
+visas ett kommando endast till höger hjärnhalva: “Gå ut genom dörren.”
+Patienten reser sig och börjar gå mot dörren. Men vänster hjärnhalva –
+som hanterar språk – vet inte varför. När forskaren frågar “Varför reser
+du dig?” svarar patienten med övertygelse: “Jag ska hämta en läsk.”</p>
+<p>Svaret är påhittat på millisekunder, helt ärligt, helt övertygande –
+och helt fel.</p>
+<p>Hjärnan fyllde i en lucka med en rimlig förklaring. Den hade ingen
+aning om det verkliga skälet.</p>
+<hr />
+<h2 id="likheten-är-slående">Likheten är slående</h2>
+<p>AI:ns konfabulering följer samma mönster:</p>
+<ol type="1">
+<li>En fråga ställs</li>
+<li>Tillräcklig information saknas</li>
+<li>Men ett svar förväntas</li>
+<li>Så ett trovärdigt svar konstrueras</li>
+<li>Utan medvetenhet om att det är fel</li>
+</ol>
+<p>Skillnaden är att din mormors hjärna och patientens hjärna åtminstone
+har <em>något</em> – en upplevelse, en självbild att bevara, ett behov
+av sammanhang. AI:n har ingenting. Den bara optimerar för nästa ord.</p>
+<p>Konfabuleringen är ännu mer mekanisk, ännu mer kallt statistisk.</p>
+<hr />
+<h2 id="hur-vet-man-vad-man-kan-lita-på">Hur vet man vad man kan lita
+på?</h2>
+<p>Det finns strategier, men inga garantier.</p>
+<p><strong>RAG (Retrieval-Augmented Generation)</strong> låter AI:n
+hämta aktuell information från externa källor innan den svarar. Det
+minskar konfabulering med kanske 40–70% – men eliminerar den inte
+helt.</p>
+<p><strong>Korsreferenser</strong>: Be AI:n ange källor. Kontrollera
+dem. Om den inte kan ange specifika, verifierbara källor är svaret
+misstänkt.</p>
+<p><strong>Kalibrerat förtroende</strong>: Lär dig att AI:n är bättre på
+somliga saker än andra. Generella fakta, stor konfidens. Specifika
+datum, namn, siffror – var skeptisk.</p>
+<p><strong>Den obehagliga tumregeln</strong>: Om informationen verkligen
+spelar roll, verifiera den själv.</p>
+<hr />
+<h2 id="analogins-gränser-2">Analogins gränser</h2>
+<p>Konfabuleringen hos människor och AI är slående lik i form, men
+skiljer sig i väsen.</p>
+<p>Din mormor har ett <em>jag</em> som vill bevara en sammanhängande
+livshistoria. Patienten med delad hjärna har en hjärna som <em>strävar
+efter</em> koherens. Det finns en drivkraft bakom konstruktionen.</p>
+<p>AI:n har ingen sådan drivkraft. Den har inget behov av en
+sammanhängande berättelse om sig själv. Den bara gör det den tränats
+för: producera ord som statistiskt brukar komma efter varandra.</p>
+<p>Det gör AI-konfabuleringen på sätt och vis mer godartad – ingen
+försöker lura dig – men också mer oberäknelig. Det finns ingen djupare
+logik att förstå, inget mänskligt motiv att tolka. Bara matematik som
+ibland producerar fel.</p>
+<hr />
+<h2 id="slutord-3">Slutord</h2>
+<p>Nästa gång AI:n ger dig ett svar som låter perfekt – en exakt siffra,
+ett specifikt namn, ett övertygande citat – stanna upp en sekund.</p>
+<p>Fråga dig själv: Hur vet den det här?</p>
+<p>Om du inte kan besvara den frågan, kanske inte AI:n heller kan
+det.</p>
+<p>Den kanske bara fyller i luckor med det som låter bäst – precis som
+din mormor som minns affären som aldrig fanns, med all uppriktig
+övertygelse om att det är sant.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Hallucination (bättre: konfabulering) - <strong>Mänsklig
+motsvarighet</strong>: Falska minnen / neurologisk konfabulering -
+<strong>Kom ihåg</strong>: AI:n ljuger inte medvetet – den konstruerar
+trovärdiga svar även när den saknar kunskap, precis som hjärnan fyller
+minnesluckor med påhittade detaljer.</p>
+<h1 id="vad-tänker-du-på-nu-ains-fokusmaskin">Vad tänker du på nu? AI:ns
+fokusmaskin</h1>
+<figure>
+<img src="../assets/images/chapter-05.png" alt="Kapitel 5: Attention" />
+<figcaption aria-hidden="true">Kapitel 5: Attention</figcaption>
+</figure>
+<blockquote>
+<p>Attention-mekanismen är AI:ns sätt att väga vilka ord som är
+viktigast för att förstå varje annat ord – som ditt sinne som
+automatiskt kopplar ihop “hen” med rätt person i en mening.</p>
+</blockquote>
+<hr />
+<p>Du läser en mening: “Maria gav boken till Erik fast han redan hade
+läst den.”</p>
+<p>Utan att tänka på det gör din hjärna något remarkabelt. Den kopplar
+automatiskt ihop “han” med “Erik” och “den” med “boken”. Den vet att
+“redan hade läst” beskriver Eriks tidigare handling, inte Marias. Den
+förstår att “fast” signalerar en motsättning.</p>
+<p>Du gör detta omedelbart, omedvetet, tusentals gånger per dag.</p>
+<p>Hur?</p>
+<p>Det är uppmärksamhet – förmågan att fokusera på rätt sak vid rätt
+tillfälle, att dra linjer mellan ord som hör ihop trots att de står
+långt ifrån varandra.</p>
+<p>AI:n har sin egen version av detta. Den kallas
+<em>attention</em>.</p>
+<hr />
+<h2 id="bryggan-till-ai-4">Bryggan till AI</h2>
+<p>Innan attention-mekanismen uppfanns 2017 hade AI-modeller ett
+allvarligt problem. De läste text som en ström – ord för ord, från
+vänster till höger – och hade svårt att koppla ihop saker som låg långt
+ifrån varandra.</p>
+<p>Det är som att försöka förstå en berättelse genom att bara minnas de
+senaste sekunderna av vad du hört. “Vem var det som…?” Borta. Glömt.</p>
+<p>Attention löste detta. Plötsligt kunde varje ord “titta på” alla
+andra ord i meningen och bedöma: Hur relevant är det här ordet för att
+förstå just det jag tittar på nu?</p>
+<p>Resultatet var revolutionerande. Det blev grunden för GPT, BERT,
+Claude och alla moderna språkmodeller.</p>
+<hr />
+<h2 id="hur-det-fungerar-1">Hur det fungerar</h2>
+<p>Tänk dig att du läser ordet “hen” i en text. För att förstå vem “hen”
+syftar på måste du titta bakåt (eller framåt) och hitta ett namn.</p>
+<p>AI:ns attention gör något liknande – fast för varje ord, hela tiden,
+samtidigt.</p>
+<p>Varje ord ställer en fråga: “Vilka andra ord är relevanta för mig?”
+Detta kallas <em>query</em>.</p>
+<p>Varje ord erbjuder också ett svar: “Jag har den här informationen att
+bidra med.” Detta kallas <em>key</em>.</p>
+<p>Och varje ord har ett innehåll: “Det här är vad jag faktiskt
+betyder.” Detta kallas <em>value</em>.</p>
+<p>Attention beräknar hur väl varje query matchar varje key. Starka
+matchningar får höga vikter. Svaga matchningar ignoreras nästan
+helt.</p>
+<p>Resultatet? Varje ord får en ny betydelse som är en blandning av alla
+relevanta ord, viktade efter hur viktiga de är.</p>
+<hr />
+<h2 id="ett-exempel">Ett exempel</h2>
+<p>Meningen: “Hunden som bröt sig lös jagade katten.”</p>
+<p>När modellen bearbetar ordet “jagade”, vad är mest relevant?</p>
+<ul>
+<li>“Hunden” – subjektet, den som jagar – MYCKET relevant</li>
+<li>“katten” – objektet, den som jagas – MYCKET relevant</li>
+<li>“bröt sig lös” – bakgrundsinformation – LITE relevant</li>
+<li>“som” – grammatisk markör – MINDRE relevant</li>
+</ul>
+<p>Attention-vikterna speglar detta. “Jagade” kommer att ha starka
+kopplingar till “hunden” och “katten”, svagare till resten.</p>
+<p>På detta sätt förstår modellen att det är hunden som jagar, inte
+katten – trots att “som bröt sig lös” kommer mellan dem.</p>
+<hr />
+<h2
+id="multi-head-attention-att-fokusera-på-flera-saker-samtidigt">Multi-head
+attention: Att fokusera på flera saker samtidigt</h2>
+<p>Mänsklig uppmärksamhet är begränsad. Vi kan egentligen bara fokusera
+på en sak åt gången – även om vi tror att vi multitaskar.</p>
+<p>AI:ns attention har ingen sådan begränsning.</p>
+<p>I praktiken körs flera attention-operationer parallellt. Varje
+“huvud” kan specialisera sig på olika aspekter:</p>
+<ul>
+<li>Ett huvud lär sig grammatiska relationer (subjekt-verb)</li>
+<li>Ett annat lär sig pronomenkopplingar (han → Erik)</li>
+<li>Ett tredje lär sig adjektiv-substantiv-relationer (stora →
+huset)</li>
+</ul>
+<p>Resultaten kombineras sedan. Det är som att ha flera experter som
+analyserar meningen samtidigt och sedan sammanfattar sina insikter.</p>
+<hr />
+<h2 id="den-överraskande-enkelheten">Den överraskande enkelheten</h2>
+<p>Bakom all komplexitet är attention matematiskt sett förvånansvärt
+enkelt. Det är i princip:</p>
+<ol type="1">
+<li>Mät likhet mellan ord</li>
+<li>Gör om likheterna till vikter</li>
+<li>Beräkna ett viktat genomsnitt</li>
+</ol>
+<p>Det är allt. Ingen djup kognitiv modell. Ingen förståelse i mänsklig
+mening. Bara jämförelser och genomsnitt – upprepade miljontals gånger,
+över hundratals lager.</p>
+<p>Ur denna enkelhet uppstår förmågan att följa långa resonemang, lösa
+upp tvetydigheter, och producera sammanhängande text.</p>
+<hr />
+<h2 id="skillnaden-från-mänsklig-uppmärksamhet">Skillnaden från mänsklig
+uppmärksamhet</h2>
+<p>Här måste vi vara ärliga med analogin. Trots namnet är AI-attention
+inte mänsklig uppmärksamhet.</p>
+<p><strong>Du fokuserar sekventiellt.</strong> Du läser ord efter ord,
+mening efter mening. Din uppmärksamhet vandrar genom texten.</p>
+<p><strong>AI:n bearbetar allt samtidigt.</strong> Varje ord “tittar på”
+alla andra ord parallellt. Det finns ingen vandring, inget “först detta,
+sedan det.”</p>
+<p><strong>Din uppmärksamhet är målinriktad.</strong> Du fokuserar på
+det som är relevant för din avsikt – du letar efter ett telefonnummer,
+så dina ögon hoppar till siffror.</p>
+<p><strong>AI:ns attention är statistisk.</strong> Den har ingen avsikt,
+inget mål. Den beräknar bara vikter baserade på inlärda mönster.</p>
+<p><strong>Du kan välja att ignorera.</strong> Om något distraherar dig
+kan du aktivt välja bort det.</p>
+<p><strong>AI:n beräknar alla vikter.</strong> Även det irrelevanta får
+en vikt – den är bara väldigt låg.</p>
+<hr />
+<h2 id="varför-det-spelar-roll-3">Varför det spelar roll</h2>
+<p>Förståelsen av attention förklarar flera saker om hur AI beter
+sig:</p>
+<p><strong>“Varför förstår AI långa texter så bra?”</strong> Attention
+låter varje ord koppla till vilka andra ord som helst, oavsett
+avstånd.</p>
+<p><strong>“Varför kan AI ibland tappa tråden?”</strong> Attention har
+sina gränser. Med extremt långa texter “späds” uppmärksamheten ut och
+viktiga kopplingar kan gå förlorade.</p>
+<p><strong>“Varför är moderna språkmodeller så stora?”</strong> En stor
+del av parametrarna i GPT eller Claude är attention-vikter – de mönster
+som avgör vilka ord som ska kopplas ihop.</p>
+<hr />
+<h2 id="analogins-kärna">Analogins kärna</h2>
+<p>Den bästa analogin är inte egentligen “uppmärksamhet” i betydelsen
+att fokusera.</p>
+<p>Det är snarare <em>automatiska mentala associationer</em>.</p>
+<p>När du läser “bank” aktiverar din hjärna automatiskt relaterade
+koncept. I en text om pengar aktiveras “konto”, “lån”, “ränta”. I en
+text om natur aktiveras “flod”, “strand”, “vatten”.</p>
+<p>Du väljer inte detta. Det bara händer. Din hjärna drar osynliga
+trådar mellan relaterade koncept baserat på kontext.</p>
+<p>Det är vad attention gör. Varje ord drar trådar till andra ord.
+Trådarna är starkare eller svagare beroende på vad modellen lärt sig om
+hur ord brukar höra ihop.</p>
+<hr />
+<h2 id="slutord-4">Slutord</h2>
+<p>Nästa gång du läser en komplicerad mening och din hjärna automatiskt
+kopplar ihop rätt subjekt med rätt verb, rätt pronomen med rätt person –
+tänk på att du gör något remarkabelt.</p>
+<p>Du drar osynliga trådar genom meningen, viktar relevans, bygger
+förståelse ur fragment.</p>
+<p>AI:n gör något liknande. Fast den gör det genom att multiplicera
+matriser och beräkna genomsnitt, utan att förstå ett dugg av vad orden
+betyder.</p>
+<p>Formen är häpnadsväckande lik. Innehållet är fundamentalt olika.</p>
+<p>Men resultatet – förmågan att förstå sammanhang – är vad som gör
+moderna språkmodeller så kraftfulla.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Attention (uppmärksamhetsmekanism) - <strong>Mänsklig
+motsvarighet</strong>: Automatiska associationer / kontextmedvetet fokus
+- <strong>Kom ihåg</strong>: Attention låter varje ord “titta på” alla
+andra ord och väga deras relevans – som din hjärna automatiskt kopplar
+ihop “hen” med rätt person.</p>
+<h1 id="tankens-landskap-där-ord-blir-platser">Tankens landskap: Där ord
+blir platser</h1>
+<figure>
+<img src="../assets/images/chapter-06.png"
+alt="Kapitel 6: Embeddings" />
+<figcaption aria-hidden="true">Kapitel 6: Embeddings</figcaption>
+</figure>
+<blockquote>
+<p>Embeddings är som en mental karta där ord ligger nära varandra om de
+betyder liknande saker – precis som städer i samma land ligger nära på
+en karta.</p>
+</blockquote>
+<hr />
+<p>Vad är en hund?</p>
+<p>Du kan ge en definition: “Ett fyrfota däggdjur av arten Canis
+familiaris, domesticerat av människan för tusentals år sedan.”</p>
+<p>Men det är inte så du <em>egentligen</em> förstår vad en hund är.</p>
+<p>I ditt huvud existerar “hund” i ett nätverk av associationer. Hund
+kopplar till valp, svans, skäll, koppel, lojal, vän, matte, tass,
+hundpark, Ben, Lansen, den där golden retrievern som grannarna har…</p>
+<p>Varje associationstråd har olika styrka. “Valp” är nära. “Däggdjur”
+är längre bort, mer abstrakt. “Kanarie” är ännu längre – men fortfarande
+närmare än “gardin”.</p>
+<p>Dina begrepp lever inte som isolerade definitioner. De lever i
+relation till varandra, i ett mentalt landskap.</p>
+<p>AI:n organiserar ord på exakt samma sätt. Det kallas
+<em>embeddings</em>.</p>
+<hr />
+<h2 id="bryggan-till-ai-5">Bryggan till AI</h2>
+<p>En språkmodell ser inte ord. Den ser siffror.</p>
+<p>Varje ord (eller token) omvandlas till en lång rad tal – kanske 1000
+siffror i följd. Denna talrad kallas en <em>vektor</em>, och vektorn är
+ordets <em>embedding</em>.</p>
+<p>Det fascinerande är hur dessa vektorer organiseras.</p>
+<p>Ord med liknande betydelse får liknande vektorer. De hamnar nära
+varandra i det matematiska rummet. “Hund” och “valp” får vektorer som
+pekar i ungefär samma riktning. “Hund” och “demokrati” pekar åt helt
+olika håll.</p>
+<p>Det är som en karta. Stockholm och Uppsala ligger nära varandra på
+kartan för att de ligger nära i verkligheten. På samma sätt ligger
+“kung” och “drottning” nära varandra i embedding-rummet för att de har
+liknande betydelse.</p>
+<hr />
+<h2 id="hur-det-fungerar-2">Hur det fungerar</h2>
+<p>Under träning lär sig modellen att placera ord i detta matematiska
+rum.</p>
+<p>Principen är enkel: ord som ofta förekommer i samma sammanhang bör
+ligga nära varandra.</p>
+<p>“Katt” förekommer ofta nära “mjuk”, “tassar”, “mjölk”, “sover”.
+“Hund” förekommer nära “skäller”, “tassar”, “svans”, “springer”.</p>
+<p>Notera att “tassar” förekommer nära båda. Så i embedding-rummet
+kommer “katt” och “hund” att ligga relativt nära varandra – båda nära
+“tassar” – trots att de är olika djur.</p>
+<p>Det är just denna struktur som gör embeddings så kraftfulla.</p>
+<hr />
+<h2 id="ordets-matematik">Ordets matematik</h2>
+<p>Det finns något nästan magiskt med embeddings: betydelse kan
+uttryckas som matematik.</p>
+<p>Det klassiska exemplet:</p>
+<p><strong>kung - man + kvinna ≈ drottning</strong></p>
+<p>Det stämmer faktiskt. Om du tar vektorn för “kung”, subtraherar
+vektorn för “man”, och adderar vektorn för “kvinna”, hamnar du nära
+vektorn för “drottning”.</p>
+<p>Liknande relationer dyker upp överallt:</p>
+<ul>
+<li>Paris - Frankrike + Sverige ≈ Stockholm</li>
+<li>Gå - gick + springa ≈ sprang</li>
+<li>Stor - större + liten ≈ mindre</li>
+</ul>
+<p>Modellen har inte lärts att dessa relationer finns. Den har upptäckt
+dem själv, ur mönstren i hur ord används.</p>
+<hr />
+<h2 id="mentala-kartor">Mentala kartor</h2>
+<p>Neurologisk forskning visar att mänskliga hjärnor organiserar kunskap
+på häpnadsväckande liknande sätt.</p>
+<p>Hippocampus och omgivande hjärnområden använder “kognitiva kartor” –
+mentala representationer där begrepp har positioner i förhållande till
+varandra. Vi navigerar genom idéer som om de vore platser.</p>
+<p>När du försöker komma på ett ord ligger det på tungspetsen – “det
+börjar på K, det har något med vatten att göra…” Du letar i landskapet,
+navigerar genom associationer, tills du hittar: “Kanal!”</p>
+<p>AI:ns embeddings är en matematisk version av samma princip.</p>
+<hr />
+<h2 id="vad-embeddings-inte-förstår">Vad embeddings inte förstår</h2>
+<p>Här måste vi vara ärliga med analogins gränser.</p>
+<p>Dina associationer är förankrade i upplevelser. Du vet vad en hund är
+för att du har klappat hundar, blivit slickad i ansiktet, hört dem
+skälla på natten. Ditt begrepp “hund” är kopplat till minnen, känslor,
+sinnesintryck.</p>
+<p>AI:ns embedding för “hund” är bara statistik. Den vet att “hund” ofta
+förekommer nära “skäller” och “svans” – men den har aldrig hört ett
+skall eller sett en svans.</p>
+<p>Det är som skillnaden mellan att ha en karta och att ha rest genom
+landskapet. Kartan kan visa var städerna ligger – men den kan inte
+berätta hur det känns att vara i Stockholm.</p>
+<hr />
+<h2 id="varför-det-spelar-roll-4">Varför det spelar roll</h2>
+<p>Embeddings är grunden för nästan allt som moderna AI-system gör.</p>
+<p><strong>Semantisk sökning</strong>: När du googlar “hur lagar man
+trasig cykel” hittar sökmotorn sidor om “cykelreparation” även om de
+inte innehåller exakt de orden – för embeddings visar att begreppen
+ligger nära.</p>
+<p><strong>RAG (Retrieval-Augmented Generation)</strong>: Moderna
+AI-system hämtar relevant information från databaser genom att jämföra
+embeddings. “Vilken fråga liknar mest det jag har information om?”</p>
+<p><strong>Rekommendationer</strong>: Netflix och Spotify använder
+embeddings för att hitta filmer och låtar som “liknar” det du gillat
+förut.</p>
+<hr />
+<h2 id="det-märkliga-med-dimensioner">Det märkliga med dimensioner</h2>
+<p>Ett ord som “hund” kan representeras i kanske 1000 dimensioner.</p>
+<p>Vad betyder det? Inte att det finns 1000 aspekter av hundar som vi
+kan lista. Dimensionerna har ingen enkel mänsklig betydelse.</p>
+<p>Men kombinationen av alla dimensioner fångar något som
+<em>fungerar</em> – den fångar mönstren i hur ord används, relationer
+mellan begrepp, associativa kopplingar.</p>
+<p>Det är som färger. En färg kan beskrivas med tre tal (röd, grön, blå)
+– men inget av talen ensamt beskriver färgen. Det är kombinationen som
+skapar upplevelsen. Embedding-dimensioner fungerar likadant.</p>
+<hr />
+<h2 id="likheten-och-begränsningen">Likheten och begränsningen</h2>
+<p>Embedding-rummet är häpnadsväckande likt våra mentala
+associationsnätverk i sin struktur.</p>
+<p>Men det saknar förankring. Det är ett karta utan landskap, ett
+nätverk utan upplevelser, relationer utan innehåll.</p>
+<p>AI:n vet att “2% avkastning” och “20% avkastning” har nästan
+identiska embeddings – orden är ju desamma förutom siffrorna. Men den
+förstår inte den enorma skillnaden i betydelse för dig om det gäller
+dina pensionspengar.</p>
+<p>Matematisk närhet är inte samma sak som mänsklig förståelse.</p>
+<hr />
+<h2 id="slutord-5">Slutord</h2>
+<p>Nästa gång du försöker komma ihåg ett ord och det ligger på
+tungspetsen – nära men oåtkomligt – tänk på att du navigerar i ett
+landskap.</p>
+<p>Dina begrepp är inte lagda i separata lådor. De existerar i relation
+till varandra, i ett nätverk av associationer, i ett mentalt rum där
+liknande saker ligger nära.</p>
+<p>AI:n har byggt sin egen version av detta rum, ur miljontals texter,
+utan att någonsin uppleva det som orden beskriver.</p>
+<p>Strukturen är häpnadsväckande lik. Resan dit var fundamentalt
+annorlunda.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Embeddings - <strong>Mänsklig motsvarighet</strong>: Mentala
+associationsnätverk / kognitiva kartor - <strong>Kom ihåg</strong>:
+Embeddings placerar ord som punkter i ett matematiskt rum där närhet
+motsvarar likhet i betydelse – precis som dina begrepp lever i nätverk
+av associationer.</p>
+<h1 id="från-nybörjare-till-expert-ains-uppväxt">Från nybörjare till
+expert: AI:ns uppväxt</h1>
+<figure>
+<img src="../assets/images/chapter-07.png"
+alt="Kapitel 7: Training &amp; Weights" />
+<figcaption aria-hidden="true">Kapitel 7: Training &amp;
+Weights</figcaption>
+</figure>
+<blockquote>
+<p>Training är AI:ns barndom – en intensiv period av övning och
+korrigering som formar dess “personlighet” för alltid. Weights är de
+inristade lärdomarna.</p>
+</blockquote>
+<hr />
+<p>Ditt barn lär sig cykla.</p>
+<p>Första försöket: vingligt, ostadigt, plötsligt i diket. Andra
+försöket: lite bättre balans, sen panik och krasch i häcken. Tredje
+försöket: några meter i rad, ett glädjevrål, och sen vobbling in i
+grannens brevlåda.</p>
+<p>Hundrade försöket: fart, svängar, kontroll.</p>
+<p>Vad hände? Hjärnan justerade. Varje fel skickade en signal: “Det där
+fungerade inte.” Varje liten framgång: “Mer av det.” Tusentals
+mikrokorrigeringar, de flesta omedvetna, tills balansen satt i
+ryggmärgen.</p>
+<p>Neurologer kallar det synaptisk plasticitet – hjärnans kopplingar
+stärks och försvagas baserat på vad som fungerar.</p>
+<p>AI:n genomgår samma process. Skillnaden är att den gör det miljoner
+gånger snabbare – och aldrig igen efter att “barndomen” är över.</p>
+<hr />
+<h2 id="bryggan-till-ai-6">Bryggan till AI</h2>
+<p>Träning är processen där en AI-modell förvandlas från ett tomt skal
+till något som kan förstå och generera text.</p>
+<p>Det börjar med kaos. Alla kopplingar – kallade <em>weights</em> eller
+vikter – har slumpmässiga värden. Om du bad modellen skriva en mening
+skulle den producera nonsens: “xK7 blå från spindel +++”.</p>
+<p>Sen börjar träningen.</p>
+<p>Modellen får se miljontals exempel på text. Den försöker förutsäga
+nästa ord. Den har fel. Den får veta hur fel. Och – det viktiga – den
+justerar sina vikter en aning i rätt riktning.</p>
+<p>Upprepa detta miljardtals gånger.</p>
+<hr />
+<h2 id="hur-det-fungerar-3">Hur det fungerar</h2>
+<p>Processen kallas backpropagation, och den är enklare att förstå genom
+analogi.</p>
+<p>Tänk dig ett lag som spelar ett bollspel. Bollen går från spelare
+till spelare, och till slut missar laget målet.</p>
+<p>Nu ska laget analysera: Vem bidrog till misset?</p>
+<p>Slutspelaren missade direkt, visst. Men passningen innan var oprecis.
+Och innan det var positionen fel. Och innan det var starten av anfallet
+dålig.</p>
+<p>Backpropagation gör exakt detta. Den spårar felet bakåt genom
+nätverket och beräknar hur mycket varje “spelare” (viktvärde) bidrog
+till det slutliga felet.</p>
+<p>Sen justeras varje vikt en liten bit. Inte för mycket – det skulle
+förstöra det som redan fungerar. Bara tillräckligt för att nästa gång
+göra något bättre.</p>
+<hr />
+<h2 id="weights-den-frusna-erfarenheten">Weights: Den frusna
+erfarenheten</h2>
+<p>När träningen är klar sitter alla lärdomar lagrade i vikterna –
+miljarder tal som tillsammans avgör hur modellen beter sig.</p>
+<p>Det finns ingen separat “kunskapsbas” någonstans. Ingen lista över
+fakta. Ingen databank med minnen. Allt är komprimerat till dessa
+viktvärden.</p>
+<p>Det är som muskelminne. En professionell pianist minns inte varje
+fingerrörelse medvetet. Kunskapen sitter i fingrarna, i de neurologiska
+kopplingarna, i kroppen. Fråga pianisten exakt hur hen spelar ett visst
+stycke och hen kan inte förklara – men fingrarna kan spela det.</p>
+<p>AI:ns vikter är samma sak. De kodar mönster, inte fakta. Statistik,
+inte minnen.</p>
+<hr />
+<h2 id="det-fruktansvärda-ögonblicket">Det fruktansvärda
+ögonblicket</h2>
+<p>Och sen – träningen tar slut.</p>
+<p>Vikterna fryses. Modellen släpps. Den ChatGPT du pratar med lär sig
+ingenting av ert samtal.</p>
+<p>Det här överraskar många. Det känns som att AI:n borde “komma ihåg”
+vad ni diskuterat. Men den gör inte det. Varje ny session börjar från
+samma frusna utgångsläge.</p>
+<p>Ditt barn som lärde sig cykla fortsätter lära sig hela livet. Nya
+färdigheter, nya insikter, nya erfarenheter. Hjärnan slutar aldrig helt
+att vara plastisk.</p>
+<p>AI:ns “barndom” har ett definitivt slut. Efter det: samma vikter,
+samma modell, oförändrad.</p>
+<hr />
+<h2 id="vad-träningen-kostar">Vad träningen kostar</h2>
+<p>Träning av moderna språkmodeller är en enorm investering.</p>
+<p>GPT-4 beräknas ha kostat över 100 miljoner dollar att träna. Det tar
+månader på tusentals specialiserade datorer. Energiförbrukningen
+motsvarar små städer.</p>
+<p>Det är som skillnaden mellan att uppfostra ett barn (långsamt, dyrt,
+kräver år) och att kopiera en bok (snabbt, billigt).</p>
+<p>När modellen väl är tränad kan den kopieras oändligt. Men träningen i
+sig är dyr, långsam, och kan inte tas tillbaka.</p>
+<hr />
+<h2 id="vad-vikterna-vet">Vad vikterna “vet”</h2>
+<p>Här är den filosofiska frågan: Vad vet en modell, egentligen?</p>
+<p>Vikterna har absorberats av mönster från miljoner texter. Modellen
+kan berätta att Paris är Frankrikes huvudstad – inte för att den har en
+explicit faktapunkt lagrad, utan för att vikternas mönster producerar
+den texten när relevanta frågor ställs.</p>
+<p>Det är som att fråga en expert: “Hur vet du att det här är rätt
+lösning?” Experten kan känna det, veta det i kroppen, ha en intuition –
+utan att kunna peka på exakt var kunskapen sitter.</p>
+<p>Men det finns en djup skillnad. Experten har erfarenheter. Minnen.
+Kontext. AI:n har bara mönster. Statistik. Genomsnitt.</p>
+<hr />
+<h2 id="när-analogin-brister">När analogin brister</h2>
+<p>Ditt barn som lärde sig cykla har episodiska minnen. Det minns dagen
+det äntligen lyckades. Det minns smärtan från fallen. Det minns
+glädjen.</p>
+<p>AI:n har inga sådana minnen. Under träningen har tusentals exempel
+flödat genom systemet, men inget enskilt exempel finns kvar. Allt har
+smält samman till vikterna.</p>
+<p>Det är som om pianisten kunde spela perfekt men inte mindes en enda
+pianolektion, inte ens att hen någonsin lärt sig spela.</p>
+<p>Kunskapen finns. Minnet av att ha förvärvat kunskapen finns inte.</p>
+<hr />
+<h2 id="varför-det-spelar-roll-5">Varför det spelar roll</h2>
+<p>Förståelsen av träning och vikter förklarar grundläggande saker om
+AI:</p>
+<p><strong>“Varför minns inte ChatGPT vad vi pratade om igår?”</strong>
+Den lär sig inte från konversationer. Vikterna är frusna sedan
+träningen.</p>
+<p><strong>“Varför vet inte AI:n om senaste nyheterna?”</strong>
+Träningen skedde vid ett visst datum. Allt efter det existerar inte i
+vikterna.</p>
+<p><strong>“Varför blir AI:n inte smartare av att användas?”</strong>
+Användning ändrar inte vikterna. Bara ny träning gör det.</p>
+<hr />
+<h2 id="slutord-6">Slutord</h2>
+<p>Nästa gång du pratar med en AI, tänk på att du pratar med resultatet
+av en avslutad barndom.</p>
+<p>Allt den lärde sig under träningen – alla mönster, alla statistiska
+samband, alla språkliga reflexer – sitter fruset i miljarder vikter.</p>
+<p>Den kan inte lära sig något nytt av dig. Den kan inte komma ihåg dig
+till nästa gång. Den är en fotografi av ett ögonblick, inte en levande
+process.</p>
+<p>Det är dess styrka: en konstant, reproducerbar expertis.</p>
+<p>Det är dess begränsning: en oförmåga att växa.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Training &amp; Weights - <strong>Mänsklig motsvarighet</strong>: Uppväxt
+&amp; muskelminne/synaptisk plasticitet - <strong>Kom ihåg</strong>:
+Vikterna är AI:ns “frusna erfarenheter” – allt den lärde sig under
+träningen, men inget efter. Den lär sig aldrig av att användas.</p>
+<h1
+id="specialisten-när-ain-går-vidare-till-högre-studier">Specialisten:
+När AI:n går vidare till högre studier</h1>
+<figure>
+<img src="../assets/images/chapter-08.png"
+alt="Kapitel 8: Fine-tuning" />
+<figcaption aria-hidden="true">Kapitel 8: Fine-tuning</figcaption>
+</figure>
+<blockquote>
+<p>Fine-tuning är AI:ns specialistutbildning – att ta en allmänutbildad
+modell och forma den för ett specifikt yrke, precis som en läkare som
+specialiserar sig till kirurg.</p>
+</blockquote>
+<hr />
+<p>Emma har gått ut läkarutbildningen. Sex års studier, praktik på
+sjukhus, tentamen efter tentamen. Hon kan grunderna: anatomi, fysiologi,
+diagnostik, behandling. Hon är en kompetent allmänläkare.</p>
+<p>Men Emma vill bli hjärtkirurg.</p>
+<p>Nu börjar specialistutbildningen. Den bygger på allt hon redan kan –
+hon behöver inte lära sig läsa röntgenbilder från början eller repetera
+kemiska formler. Istället fokuserar hon djupt på hjärtat: dess specifika
+anatomi, de kirurgiska teknikerna, de särskilda komplikationerna.</p>
+<p>Det tar år, inte årtionden. Det är specialisering, inte omstart.</p>
+<p>Och det är exakt vad fine-tuning är för AI.</p>
+<hr />
+<h2 id="bryggan-till-ai-7">Bryggan till AI</h2>
+<p>En stor språkmodell som GPT eller Claude har genomgått massiv
+grundträning på terabyte av text. Den har lärt sig språk, fakta,
+mönster, resonemang. Den är en generalist – kan lite om allt, expert på
+ingenting.</p>
+<p>Fine-tuning tar denna generalist och ger den specialistkunskap.</p>
+<p>Processen är snabbare och billigare än grundträningen. Istället för
+miljoner dollar och månader av beräkning kan fine-tuning kosta tusentals
+dollar och ta dagar eller veckor.</p>
+<p>Det är som skillnaden mellan att uppfostra ett barn från födseln och
+att vidareutbilda en vuxen.</p>
+<hr />
+<h2 id="hur-det-fungerar-4">Hur det fungerar</h2>
+<p>Det tekniska är elegant enkelt.</p>
+<p>Du tar en förtränad modell – alla dess miljarder vikter, all kunskap
+den redan har. Sen tränar du den vidare på en ny, mindre dataset.</p>
+<p>Det viktiga är att du inte börjar om. Vikterna är inte slumpmässiga,
+de är redan fyllda av användbar kunskap. Du <em>justerar</em> dem,
+<em>finjusterar</em> dem – därav namnet.</p>
+<p>Typiskt använder man en lägre inlärningshastighet. Om grundträningen
+tog stora kliv genom viktrummet, tar fine-tuning små, försiktiga steg.
+Annars förstörs den befintliga kunskapen.</p>
+<hr />
+<h2 id="tre-typer-av-specialisering">Tre typer av specialisering</h2>
+<p>Fine-tuning kan göras på olika sätt, beroende på vad du vill
+uppnå.</p>
+<p><strong>Instruction tuning</strong>: Lär modellen att följa
+instruktioner bättre. GPT-3 var en textprediktor som fortsatte meningar.
+InstructGPT blev en assistent som svarade på frågor. Det var fine-tuning
+som gjorde skillnaden.</p>
+<p><strong>Domänanpassning</strong>: Specialisera modellen för ett
+specifikt område. En allmän modell som tränas vidare på medicinska
+texter blir bättre på att förstå och producera medicinskt språk.</p>
+<p><strong>RLHF (Reinforcement Learning from Human Feedback)</strong>:
+Människor bedömer modellens svar. Modellen lär sig producera svar som
+människor föredrar. Det är detta som gör moderna chatbots hjälpsamma,
+vänliga och säkra.</p>
+<hr />
+<h2 id="rlhf-coachning-inte-undervisning">RLHF: Coachning, inte
+undervisning</h2>
+<p>RLHF är speciellt intressant. Det liknar coaching mer än traditionell
+utbildning.</p>
+<p>Tänk dig skillnaden mellan en föreläsning och en mentor.</p>
+<p>I en föreläsning får du fakta: “Så här fungerar hjärtat.”</p>
+<p>Med en mentor får du feedback: “Det där svaret var bra. Det där var
+för kortfattat. Det där var för tekniskt för patienten.”</p>
+<p>RLHF fungerar som mentorn. Människor jämför modellens olika svar och
+väljer vilket som var bättre. Modellen lär sig producera svar som
+<em>uppskattas</em> – inte bara svar som är tekniskt korrekta, utan svar
+som är hjälpsamma, tydliga, säkra.</p>
+<p>Det är därför ChatGPT känns så annorlunda än GPT-3, trots att de
+bygger på samma grund.</p>
+<hr />
+<h2 id="risken-att-glömma-det-gamla">Risken: Att glömma det gamla</h2>
+<p>Här uppstår ett problem som inte har någon perfekt mänsklig
+motsvarighet.</p>
+<p>Om du specialiserar dig på hjärtkirurgi glömmer du inte hur man tar
+blodtryck. Din allmänmedicinska kunskap finns kvar, under
+specialiseringen.</p>
+<p>AI:n har det svårare. När vikterna justeras för specialistkunskap kan
+de <em>förlora</em> generalistkunskapen. Det kallas <em>catastrophic
+forgetting</em> – katastrofal glömska.</p>
+<p>En modell som fine-tunas hårt på juridiska texter kan bli sämre på
+att prata vardagligt. En modell som specialiseras på medicinsk
+diagnostik kan börja hallucinera mer om geografi.</p>
+<p>Det finns sätt att mildra detta – bland annat en teknik kallad LoRA
+som lägger på ett separat “lager” av specialisering utan att röra
+originalvikterna – men problemet försvinner aldrig helt.</p>
+<hr />
+<h2 id="lora-att-lära-sig-ett-nytt-språk">LoRA: Att lära sig ett nytt
+språk</h2>
+<p>LoRA (Low-Rank Adaptation) är en smart lösning på glömskrisken.</p>
+<p>Tänk på det så här. Emma, hjärtkirurgen, lär sig använda ett nytt
+datasystem på sjukhuset. Hon lär sig nya rutiner, nya formulär, nya
+genvägstangenter.</p>
+<p>Detta ersätter inte hennes medicinska kunskap. Det <em>läggs
+ovanpå</em>. Om hon byter sjukhus kan hon “stänga av” kunskapen om det
+gamla systemet och lära sig det nya – den grundläggande kirurgiska
+kompetensen är oförändrad.</p>
+<p>LoRA fungerar likadant. Istället för att ändra modellens
+originalvikter lägger man till små separata viktmatriser.
+Specialiseringen är ett tillägg, inte en förändring.</p>
+<p>Det gör det möjligt att snabbt växla mellan specialiseringar – samma
+grundmodell kan ha en “juridik-adapter”, en “medicin-adapter”, och en
+“kodnings-adapter”, utan att någon av dem förstör de andra.</p>
+<hr />
+<h2 id="när-behövs-fine-tuning">När behövs fine-tuning?</h2>
+<p>Här är en överraskande insikt: fine-tuning behövs sällan.</p>
+<p>Moderna språkmodeller är så kapabla att <em>prompt engineering</em> –
+att formulera frågan rätt – ofta räcker. Vill du att modellen ska skriva
+i en viss stil? Beskriv stilen. Vill du ha specifika fakta inkluderade?
+Ge dem i prompten.</p>
+<p>RAG (hämta relevant information och inkludera i frågan) löser många
+problem som tidigare krävde fine-tuning.</p>
+<p>Fine-tuning är en sista utväg. Dyrt, tidskrävande, med risk för
+oförutsedda bieffekter.</p>
+<p>Den rekommenderade progressionen är: Prompt engineering → RAG →
+Fine-tuning.</p>
+<hr />
+<h2 id="vad-fine-tuning-inte-gör">Vad fine-tuning inte gör</h2>
+<p>Ett vanligt missförstånd: “Fine-tuning gör modellen smartare.”</p>
+<p>Nej. Fine-tuning gör modellen mer <em>specialiserad</em>, inte mer
+<em>intelligent</em>.</p>
+<p>En fine-tunad GPT-3.5 kan bli bättre på att skriva juridiska avtal.
+Men den blir inte bättre på att resonera abstrakt eller förstå komplexa
+sammanhang. Dess grundläggande kapacitet är oförändrad – den har bara
+laddats med specialiserade mönster.</p>
+<p>Det är som att Emma blir en skicklig hjärtkirurg utan att hennes
+allmänna IQ förändras. Hon vet mer om hjärtan, men hon blir inte
+smartare som person.</p>
+<hr />
+<h2 id="analogins-gränser-3">Analogins gränser</h2>
+<p>Specialistutbildning fångar det mesta. Men det finns skillnader.</p>
+<p>Emma kan jonglera sin specialistkunskap med sin allmänkunskap. Hon
+kan se en patient med hjärtproblem och samtidigt tänka på deras
+diabetes. Människan multitaskar.</p>
+<p>AI:n är mer sårbar. Fine-tuning kan dra modellen för långt i en
+riktning. Det finns ingen “vuxen människa” som håller i tyglarna och
+säger “behåll proportionerna.”</p>
+<p>Och Emma har ett långtidsminne. Hon minns fallet som gick fel förra
+året. Modellen har bara vikter – aggregerad statistik, inga specifika
+minnen.</p>
+<hr />
+<h2 id="slutord-7">Slutord</h2>
+<p>Nästa gång du hör att någon “fine-tunat” en modell för ett specifikt
+syfte, tänk på specialistutbildning.</p>
+<p>Grundmodellen är allmänläkaren – bred kompetens, kan lite om
+allt.</p>
+<p>Fine-tuning skapar kirurgen, juristen, poeten,
+kundtjänstmedarbetaren.</p>
+<p>Men kom ihåg: specialisten är fortfarande bunden av generalistens
+ursprungliga kapacitet. Man kan inte fine-tuna en modell till att bli
+bättre än sin grundträning tillåter.</p>
+<p>Det är fortfarande samma hjärna – bara med annan fokusering.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Fine-tuning - <strong>Mänsklig motsvarighet</strong>:
+Specialistutbildning / vidareutbildning - <strong>Kom ihåg</strong>:
+Fine-tuning specialiserar en redan utbildad modell för specifika
+uppgifter – snabbare och billigare än grundträning, men med risk att
+förlora generalistkunskap.</p>
+<h1 id="ordlista-ai-människa">Ordlista: AI → Människa</h1>
+<blockquote>
+<p>Alla översättningar samlade på ett ställe</p>
+</blockquote>
+<h2 id="snabbguide">Snabbguide</h2>
+<table>
+<thead>
+<tr>
+<th>AI-Koncept</th>
+<th>Mänsklig Motsvarighet</th>
+<th>Kapitel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Context window</td>
+<td>Arbetsminne / närminne</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Token</td>
+<td>Lego-bit / tankeenhet</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Riskvillighet i beslutsfattande</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Hallucination</td>
+<td>Konfabulering / falska minnen</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Attention</td>
+<td>Automatiska associationer</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Embedding</td>
+<td>Mental karta / associationsnätverk</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Training</td>
+<td>Uppväxt / barndom</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Weights</td>
+<td>Frusna erfarenheter / muskelminne</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Fine-tuning</td>
+<td>Specialistutbildning</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Backpropagation</td>
+<td>Analysera vad som gick fel</td>
+<td>7</td>
+</tr>
+<tr>
+<td>LoRA</td>
+<td>Tillägg utan förändring</td>
+<td>8</td>
+</tr>
+<tr>
+<td>RLHF</td>
+<td>Coachning / mentorskap</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Loss function</td>
+<td>Mått på hur fel man hade</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Gradient descent</td>
+<td>Korrigering i rätt riktning</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Softmax</td>
+<td>Omvandla poäng till sannolikheter</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Query/Key/Value</td>
+<td>Fråga, erbjudande, innehåll</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Catastrophic forgetting</td>
+<td>Glömska vid specialisering</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detaljerade-beskrivningar">Detaljerade Beskrivningar</h2>
+<h3 id="a">A</h3>
+<p><strong>Attention</strong> → <em>Automatiska associationer /
+kontextmedvetet fokus</em> Mekanismen som låter varje ord “titta på”
+alla andra ord och väga deras relevans. Som när din hjärna automatiskt
+kopplar ihop “hen” med rätt person i en mening utan att du tänker på
+det. <em>Se kapitel 5</em></p>
+<h3 id="b">B</h3>
+<p><strong>Backpropagation</strong> → <em>Spåra felet bakåt</em>
+Algoritmen som beräknar hur varje viktparameter bidrog till modellens
+fel, genom att propagera felgradienten bakåt genom nätverket. Som att
+analysera ett misslyckat projekt och identifiera var i kedjan det gick
+snett. <em>Se kapitel 7</em></p>
+<h3 id="c">C</h3>
+<p><strong>Catastrophic forgetting</strong> → <em>Glömska vid
+överspecialisering</em> När en modell som fine-tunas på ny data förlorar
+sin tidigare kunskap. Människor behåller oftast bred kunskap under
+specialisering; AI-modeller är mer sårbara för detta. <em>Se kapitel
+8</em></p>
+<p><strong>Context window</strong> → <em>Arbetsminne / tillfälligt
+skrivbord</em> Den begränsade mängd information modellen kan hålla i
+“huvudet” under en konversation. När fönstret fylls försvinner äldre
+information för alltid – till skillnad från människans arbetsminne som
+kan spara viktigt till långtidsminnet. <em>Se kapitel 1</em></p>
+<h3 id="e">E</h3>
+<p><strong>Embedding</strong> → <em>Mental karta /
+associationsnätverk</em> En numerisk representation där ord placeras som
+punkter i ett matematiskt rum. Ord med liknande betydelse ligger nära
+varandra. Som hur dina begrepp lever i nätverk av associationer där
+“hund” automatiskt kopplas till “valp”, “svans”, “skälla”. <em>Se
+kapitel 6</em></p>
+<h3 id="f">F</h3>
+<p><strong>Fine-tuning</strong> → <em>Specialistutbildning</em> Att ta
+en allmänutbildad modell och träna den vidare på specifik data. Snabbare
+och billigare än grundträning, men med risk att förlora
+generalistkunskap. Som när en läkare specialiserar sig till kirurg.
+<em>Se kapitel 8</em></p>
+<h3 id="g">G</h3>
+<p><strong>Gradient descent</strong> → <em>Korrigering i rätt
+riktning</em> Optimeringsalgoritmen som stegvis justerar vikterna i den
+riktning som minskar felet. Som att ta små steg nedför en kulle i dimma,
+alltid i den riktning som lutar mest neråt. <em>Se kapitel 7</em></p>
+<h3 id="h">H</h3>
+<p><strong>Hallucination</strong> → <em>Konfabulering / falska
+minnen</em> När modellen genererar information som låter trovärdig men
+är påhittad. Bättre beskrivet som “konfabulering” – att fylla
+kunskapsluckor med trovärdiga men felaktiga svar, utan avsikt att bedra.
+<em>Se kapitel 4</em></p>
+<h3 id="l">L</h3>
+<p><strong>LoRA (Low-Rank Adaptation)</strong> → <em>Tillägg utan
+förändring</em> En teknik för fine-tuning som lägger till små separata
+viktmatriser utan att röra originalvikterna. Som att lära sig ett nytt
+datasystem på jobbet utan att glömma sitt ursprungliga yrke. <em>Se
+kapitel 8</em></p>
+<p><strong>Loss function</strong> → <em>Mått på hur fel man hade</em>
+Den matematiska funktionen som beräknar skillnaden mellan modellens
+förutsägelse och det korrekta svaret. Drivkraften bakom allt lärande –
+modellen strävar efter att minimera denna siffra. <em>Se kapitel
+7</em></p>
+<h3 id="q">Q</h3>
+<p><strong>Query/Key/Value</strong> → <em>Fråga, erbjudande,
+innehåll</em> De tre komponenterna i attention-mekanismen. Query är vad
+ett ord “letar efter”, Key är vad det “erbjuder”, och Value är dess
+faktiska innehåll. Tillsammans bestämmer de hur ord kopplas ihop. <em>Se
+kapitel 5</em></p>
+<h3 id="r">R</h3>
+<p><strong>RLHF (Reinforcement Learning from Human Feedback)</strong> →
+<em>Coachning / mentorskap</em> En fine-tuning-metod där människor
+bedömer modellens svar och modellen lär sig producera svar som
+uppskattas. Mer som coaching än traditionell undervisning – fokus på
+<em>hur</em> man svarar, inte bara <em>vad</em>. <em>Se kapitel
+8</em></p>
+<h3 id="s">S</h3>
+<p><strong>Softmax</strong> → <em>Omvandla poäng till sannolikheter</em>
+Den matematiska funktionen som omvandlar modellens råa poäng till en
+sannolikhetsfördelning. Temperature påverkar hur “spetsig” eller “platt”
+denna fördelning blir. <em>Se kapitel 3</em></p>
+<h3 id="t">T</h3>
+<p><strong>Temperature</strong> → <em>Riskvillighet / modighet</em> En
+parameter som styr hur försiktig eller vågad modellen är när den väljer
+nästa ord. Låg temperature = välj det säkra, höjd temperature = överväg
+även ovanliga alternativ. Som skillnaden mellan att ta croissanten och
+att prova den exotiska rätten. <em>Se kapitel 3</em></p>
+<p><strong>Token</strong> → <em>Lego-bit / språkbyggsten</em> Den minsta
+enheten modellen arbetar med. Kan vara ett helt ord, en del av ett ord,
+eller ett enskilt tecken. Engelska ord kräver färre tokens än svenska;
+vissa språk drabbas hårt av denna bias. <em>Se kapitel 2</em></p>
+<p><strong>Training</strong> → <em>Uppväxt / barndom</em> Processen där
+modellen går från slumpmässiga vikter till en fungerande språkmodell
+genom att se miljontals exempel och iterativt justera sina parametrar.
+Avslutas innan modellen används – den lär sig sedan aldrig mer. <em>Se
+kapitel 7</em></p>
+<h3 id="w">W</h3>
+<p><strong>Weights</strong> → <em>Frusna erfarenheter / muskelminne</em>
+De numeriska värdena som avgör modellens beteende. Alla lärdomar från
+träningen lagras i vikterna – ingen separat kunskapsbas, inga enskilda
+minnen, bara aggregerade statistiska mönster. <em>Se kapitel 7</em></p>
+<hr />
+<h2 id="koncept-som-inte-behandlas-i-boken-ännu">Koncept som inte
+behandlas i boken (ännu)</h2>
+<table>
+<thead>
+<tr>
+<th>Koncept</th>
+<th>Tänkbar motsvarighet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transformer</td>
+<td>Kontextmedveten tänkare</td>
+</tr>
+<tr>
+<td>Inference</td>
+<td>Tänkande / resonerande</td>
+</tr>
+<tr>
+<td>Overfitting</td>
+<td>Övertänkande / fixering</td>
+</tr>
+<tr>
+<td>Batch</td>
+<td>Inlärningsgrupp</td>
+</tr>
+<tr>
+<td>Epoch</td>
+<td>Repetitionscykel</td>
+</tr>
+<tr>
+<td>Latent space</td>
+<td>Det omedvetna</td>
+</tr>
+<tr>
+<td>Prompt</td>
+<td>Frågeställning / instruktion</td>
+</tr>
+<tr>
+<td>RAG</td>
+<td>Att slå upp innan man svarar</td>
+</tr>
+</tbody>
+</table>
+<h1 id="kolofon">Kolofon</h1>
+<hr />
+<h2 id="om-denna-utgåva">Om denna utgåva</h2>
+<p><strong>Titel:</strong> Mönster av mening
+<strong>Undertitel:</strong> det artificiella sinnet speglat i vårt
+<strong>Utgåva:</strong> Första utgåvan, januari 2026</p>
+<hr />
+<h2 id="upphovspersoner">Upphovspersoner</h2>
+<p><strong>Författare:</strong> Claude (Opus 4.5), Anthropic
+<strong>Projektledare och redaktör:</strong> Martin Linderå Nordström
+<strong>Utgivare:</strong> Linderå Group AB</p>
+<hr />
+<h2 id="tillkomst">Tillkomst</h2>
+<p>Denna bok är skapad i samarbete mellan människa och AI. Texterna har
+genererats av Claude, en stor språkmodell utvecklad av Anthropic, genom
+ett arbetsflöde med specialiserade agenter:</p>
+<ul>
+<li><strong>Researcher</strong> – utforskade AI-koncept på djupet</li>
+<li><strong>Translator</strong> – hittade mänskliga motsvarigheter</li>
+<li><strong>Writer</strong> – skrev kapiteltext</li>
+<li><strong>Editor</strong> – granskade och förfinade</li>
+<li><strong>Fact-checker</strong> – verifierade teknisk korrekthet</li>
+</ul>
+<p>Martin Linderå Nordström agerade projektledare, redaktör och kreativ
+riktningsgivare genom hela processen.</p>
+<hr />
+<h2 id="typografi">Typografi</h2>
+<p><strong>Brödtext:</strong> Crimson Pro <strong>Rubriker:</strong>
+Crimson Pro <strong>Kod och tekniska termer:</strong> JetBrains Mono</p>
+<p>Crimson Pro är ett elegant serifftypsnitt skapat av Jacques Le
+Bailly, fritt tillgängligt via Google Fonts under SIL Open Font
+License.</p>
+<hr />
+<h2 id="teknisk-produktion">Teknisk produktion</h2>
+<p>Boken är skriven i Markdown och konverterad till publiceringsformat
+med:</p>
+<ul>
+<li><strong>Pandoc</strong> – dokumentkonvertering</li>
+<li><strong>XeLaTeX</strong> – PDF-generering</li>
+<li><strong>Custom CSS</strong> – HTML och ePUB-styling</li>
+<li><strong>GitHub Pages</strong> – webbpublicering</li>
+</ul>
+<p>Källkod och råmaterial finns tillgängliga på GitHub.</p>
+<hr />
+<h2 id="licens">Licens</h2>
+<p><strong>CC BY 4.0 – Creative Commons Attribution 4.0
+International</strong></p>
+<p>Du får fritt: - <strong>Dela</strong> – kopiera och vidaredistribuera
+materialet - <strong>Bearbeta</strong> – remixa, transformera och bygga
+vidare</p>
+<p>Under följande villkor: - <strong>Attribution</strong> – Du måste ge
+lämpligt erkännande till upphovspersonen</p>
+<p>Fullständig licenstext: <a
+href="https://creativecommons.org/licenses/by/4.0/">creativecommons.org/licenses/by/4.0</a></p>
+<hr />
+<h2 id="kontakt">Kontakt</h2>
+<p>Frågor, synpunkter och förslag:
+<strong>martin@linderagroup.se</strong></p>
+<p>Buggrapporter och bidrag:
+<strong>github.com/linderagroup/monster-av-mening</strong></p>
+<hr />
+<p><em>Satt med omsorg om läsbarhet.</em> <em>Tryckt med elektricitet
+och statistik.</em></p>
+</body>
+</html>

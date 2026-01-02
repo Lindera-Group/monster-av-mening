@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>01-context-window</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1 id="arbetsminnet-varför-ain-glömmer">Arbetsminnet: Varför AI:n
+“glömmer”</h1>
+<figure>
+<img src="../assets/images/chapter-01.png"
+alt="Kapitel 1: Context Window" />
+<figcaption aria-hidden="true">Kapitel 1: Context Window</figcaption>
+</figure>
+<blockquote>
+<p>En AI:s context window är som ditt arbetsminne – begränsat, flyktigt,
+och ibland frustrerande litet.</p>
+</blockquote>
+<hr />
+<p>Du sitter i ett viktigt möte. Din chef radar upp punkter: budgeten
+för nästa kvartal, den nya rekryteringen, projektdeadlines, feedbacken
+från kunden. Du nickar, antecknar, försöker hänga med.</p>
+<p>Sen händer det. Någon frågar: “Vad sa Marcus om leveransdatumet för
+fas två?”</p>
+<p>Du vet att det nämndes. Du vet att det var viktigt. Men orden har
+redan glidit bort, ersatta av allt annat som sagts sedan dess. Det är
+inte att du inte lyssnade – det är att ditt arbetsminne, hjärnans
+tillfälliga skrivbord, bara rymmer så mycket.</p>
+<p>Välkommen till context window.</p>
+<hr />
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>På samma sätt fungerar en språkmodells “context window” – dess
+version av arbetsminnet. Precis som du i det där mötet har AI:n en
+strikt gräns för hur mycket den kan hålla i “huvudet” samtidigt.</p>
+<p>När du chattar med Claude eller GPT känns det som att föra en
+konversation med någon som minns allt ni pratat om. Men det är en
+illusion. Modellen lagrar inte samtalet någonstans permanent. Istället
+skickas hela konversationen – varje meddelande du skrivit, varje svar du
+fått – in på nytt varje gång du ställer en fråga.</p>
+<p>Och det måste rymmas i fönstret.</p>
+<hr />
+<h2 id="hur-stort-är-fönstret">Hur stort är fönstret?</h2>
+<p>Tänk dig ett skrivbord. På det får du lägga papper – men bara ett
+visst antal. Varje ny sida du lägger till tar plats. När bordet är fullt
+måste de äldsta sidorna bort.</p>
+<p>För moderna språkmodeller mäts skrivbordets storlek i “tokens” –
+ungefär tre fjärdedelar av ett ord i genomsnitt:</p>
+<ul>
+<li><strong>GPT-3.5</strong>: 4 000 tokens (~3 000 ord)</li>
+<li><strong>GPT-4</strong>: 8 000–128 000 tokens</li>
+<li><strong>Claude</strong>: 100 000–200 000 tokens</li>
+</ul>
+<p>Det låter som mycket. Och det är det, för de flesta samtal. Men tänk
+dig att du vill att AI:n ska analysera en hel bok, eller komma ihåg en
+komplicerad teknisk diskussion från i förrgår. Då blir gränserna snabbt
+påtagliga.</p>
+<hr />
+<h2 id="den-avgörande-skillnaden">Den avgörande skillnaden</h2>
+<p>Här brister analogin på ett viktigt sätt – och det är värt att förstå
+hur.</p>
+<p>Ditt arbetsminne är <em>elastiskt</em>. Under stress kan du ibland
+pressa in mer. Du kan fokusera hårdare, filtrera bort distraktioner,
+temporärt utöka kapaciteten. Och det som ramlar ut ur arbetsminnet har
+en chans att ha kodats in i långtidsminnet.</p>
+<p>AI:ns context window är <em>obönhörligt exakt</em>. Inte en token
+mer. Och det som ramlar ut? Det finns ingenstans. Det lagras inte någon
+annanstans. Det är bara borta.</p>
+<p>Det är som om du hade ett arbetsminne som var matematiskt precist –
+och inget långtidsminne alls.</p>
+<hr />
+<h2 id="strategier-för-begränsningen">Strategier för begränsningen</h2>
+<p>Både du och AI:n har utvecklat strategier för att hantera
+begränsningen.</p>
+<p><strong>Du</strong> skriver anteckningar. Du sammanfattar i huvudet.
+Du repeterar viktiga saker för dig själv.</p>
+<p><strong>AI:n</strong> – eller snarare, systemen runt den – använder
+liknande tricks: - <strong>Sammanfattning</strong>: Komprimera äldre
+delar av samtalet - <strong>RAG (Retrieval-Augmented
+Generation)</strong>: Hämta relevant information från externa databaser
+- <strong>Strukturerade prompts</strong>: Sätt de viktigaste
+instruktionerna i början eller slutet</p>
+<p>Det är faktiskt ganska likt hur du förbereder dig för det där mötet:
+du läser igenom agendan innan, håller de viktigaste punkterna överst i
+tanken, och hoppas att kollegorna skriver bra protokoll.</p>
+<hr />
+<h2 id="varför-det-spelar-roll">Varför det spelar roll</h2>
+<p>Förståelsen av context window förklarar flera mystiska beteenden hos
+AI:</p>
+<p><strong>“Du sa ju det förut!”</strong> Nej, AI:n sa det. Men det var
+50 000 tokens sedan och har ramlat ut.</p>
+<p><strong>“Varför upprepade du dig?”</strong> Modellen “minns” inte att
+den redan gett samma information.</p>
+<p><strong>“Du verkar ha glömt instruktionerna.”</strong> De
+instruktionerna fanns i början av konversationen. De har pressats ut av
+allt som kommit sedan.</p>
+<p>Det är inte dumhet eller slarv. Det är matematik.</p>
+<hr />
+<h2 id="framtidens-fönster">Framtidens fönster</h2>
+<p>Context window växer snabbt. För några år sedan var 4 000 tokens
+imponerande. Nu pratar vi om miljoner. Men principen förblir densamma:
+det finns alltid en gräns, och den gränsen formar vad AI:n kan göra.</p>
+<p>Tänk på det som skillnaden mellan att ha ett skrivbord och ett kontor
+och ett helt bibliotek. Mer utrymme hjälper. Men även bibliotek har
+väggar.</p>
+<hr />
+<h2 id="slutord">Slutord</h2>
+<p>Nästa gång du pratar med en AI och den verkar ha “glömt” vad ni
+diskuterade för en stund sedan, tänk på det där mötet. Tänk på känslan
+av att veta att något viktigt sades, men inte kunna plocka fram det.</p>
+<p>AI:n har inte blivit dum eller slarvig. Den har bara ett skrivbord
+som blev för fullt – och de äldsta pappren föll ner på golvet.</p>
+<p>Fast till skillnad från dig kan den inte böja sig ner och plocka upp
+dem.</p>
+<hr />
+<p><strong>Sammanfattning</strong> - <strong>AI-koncept</strong>:
+Context window - <strong>Mänsklig motsvarighet</strong>: Arbetsminne -
+<strong>Kom ihåg</strong>: AI:ns “minne” är ett skrivbord med exakt
+storlek – när det blir fullt, försvinner det äldsta för alltid.</p>
+</body>
+</html>
