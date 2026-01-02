@@ -1,18 +1,20 @@
 # Mönster av mening
 
-*det artificiella sinnet speglat i vårt*
-
-## Läs boken
-
-- [HTML-version](dist/monster-av-mening.html) – för webben
-- [ePUB-version](dist/monster-av-mening.epub) – för läsplattor
-- [PDF-version](dist/monster-av-mening.pdf) – för utskrift
+*– det artificiella sinnet speglat i vårt*
 
 ## Om Boken
 
 Denna bok förklarar AI-koncept genom att översätta dem till vardagliga mänskliga upplevelser. Istället för teknisk jargong använder vi analogier som läsaren känner igen från sitt eget liv.
 
 Målet är att du som läsare ska kunna säga: *"Aha, så DET är vad en LLM gör – precis som när jag..."*
+
+Läs mer på [bokens landningssida](https://lindera-group.github.io/monster-av-mening/).
+
+## Läs boken
+
+- [HTML-version](https://lindera-group.github.io/monster-av-mening/monster-av-mening.html) – för webben
+- [ePUB-version](https://lindera-group.github.io/monster-av-mening/monster-av-mening.epub) – för läsplattor
+- [PDF-version](https://lindera-group.github.io/monster-av-mening/monster-av-mening.pdf) – för utskrift
 
 ### Målgrupp
 
@@ -37,20 +39,6 @@ Bildade läsare utan teknisk bakgrund som vill förstå hur modern AI fungerar �
 | 6 | [Tankens landskap](chapters/06-embeddings.md) | Embeddings | Mental karta, associationsnätverk |
 | 7 | [Från nybörjare till expert](chapters/07-training-weights.md) | Training & Weights | Uppväxt, muskelminne |
 | 8 | [Specialisten](chapters/08-fine-tuning.md) | Fine-tuning | Specialistutbildning |
-
-## Kärnöversättningar
-
-| AI-Koncept | Mänsklig Motsvarighet |
-|------------|----------------------|
-| Context window | Arbetsminne |
-| Token | Lego-bit / tankeenhet |
-| Temperature | Riskvillighet |
-| Hallucination | Konfabulering |
-| Attention | Automatiska associationer |
-| Embeddings | Mental karta |
-| Training | Uppväxt / barndom |
-| Weights | Frusna erfarenheter |
-| Fine-tuning | Specialistutbildning |
 
 Se [ordlistan](glossary/INDEX.md) för fullständig lista med detaljerade förklaringar.
 
