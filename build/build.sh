@@ -222,6 +222,26 @@ build_website() {
     cp -r "$ASSETS_DIR/images/"* "$DOCS_DIR/images/"
   fi
 
+  # Copy and fix the complete HTML book from dist
+  if [ -f "$DIST_DIR/monster-av-mening.html" ]; then
+    cp "$DIST_DIR/monster-av-mening.html" "$DOCS_DIR/"
+    # Fix asset paths for docs/ flat structure
+    sed -i '' 's|assets/images/|images/|g; s|assets/css/|css/|g' "$DOCS_DIR/monster-av-mening.html"
+    sed -i '' 's|src="../images/|src="images/|g' "$DOCS_DIR/monster-av-mening.html"
+    log_info "Copied and fixed monster-av-mening.html"
+  fi
+
+  # Copy epub and pdf from dist
+  if [ -f "$DIST_DIR/monster-av-mening.epub" ]; then
+    cp "$DIST_DIR/monster-av-mening.epub" "$DOCS_DIR/"
+    log_info "Copied monster-av-mening.epub"
+  fi
+
+  if [ -f "$DIST_DIR/monster-av-mening.pdf" ]; then
+    cp "$DIST_DIR/monster-av-mening.pdf" "$DOCS_DIR/"
+    log_info "Copied monster-av-mening.pdf"
+  fi
+
   # Generate individual chapter pages
   for chapter in "${CHAPTERS[@]}"; do
     filename=$(basename "$chapter" .md)
