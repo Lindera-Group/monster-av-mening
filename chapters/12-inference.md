@@ -1,4 +1,4 @@
-# Tentadagen: När AI:n tillämpar sin kunskap {.chapter}
+# Tentadagen: När AI:n tillämpar sin kunskap {#ch12 .chapter}
 
 <div class="chapter-opening">
 

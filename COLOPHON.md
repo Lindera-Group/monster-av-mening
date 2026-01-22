@@ -1,4 +1,4 @@
-# Om denna utgåva
+# Om denna utgåva {#sec-kolofon .chapter}
 
 **Titel:** Mönster av mening
 **Undertitel:** det artificiella sinnet speglat i vårt

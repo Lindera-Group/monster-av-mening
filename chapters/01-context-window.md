@@ -1,4 +1,4 @@
-# Arbetsminnet: Varför AI:n "glömmer" {.chapter}
+# Arbetsminnet: Varför AI:n "glömmer" {#ch01 .chapter}
 
 <div class="chapter-opening">
 

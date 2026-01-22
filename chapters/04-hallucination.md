@@ -1,4 +1,4 @@
-# När minnet fyller i luckorna: AI:ns konfabulering {.chapter}
+# När minnet fyller i luckorna: AI:ns konfabulering {#ch04 .chapter}
 
 <div class="chapter-opening">
 

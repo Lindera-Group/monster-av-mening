@@ -1,4 +1,4 @@
-# Bokomslagstext
+# Bokomslagstext {.unnumbered .unlisted}
 
 **Vad är egentligen en "hallucination"? Varför "glömmer" ChatGPT vad ni just pratat om? Och vad menar folk när de säger att en modell är "tränad"?**
 

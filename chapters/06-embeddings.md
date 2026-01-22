@@ -1,4 +1,4 @@
-# Tankens landskap: Där ord blir platser {.chapter}
+# Tankens landskap: Där ord blir platser {#ch06 .chapter}
 
 <div class="chapter-opening">
 

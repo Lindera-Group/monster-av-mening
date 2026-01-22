@@ -1,4 +1,4 @@
-# Ordlista: AI → Människa
+# Ordlista: AI → Människa {#sec-ordlista .chapter}
 
 > Alla översättningar samlade på ett ställe
 

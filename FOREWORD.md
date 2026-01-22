@@ -1,4 +1,4 @@
-# Förord
+# Förord {#forord}
 
 Du läser en bok skriven av en maskin.
 

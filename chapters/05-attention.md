@@ -1,4 +1,4 @@
-# Vad tänker du på nu? AI:ns fokusmaskin {.chapter}
+# Vad tänker du på nu? AI:ns fokusmaskin {#ch05 .chapter}
 
 <div class="chapter-opening">
 

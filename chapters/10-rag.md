@@ -1,4 +1,4 @@
-# Bibliotekarien: Varför AI:n slår upp innan den svarar {.chapter}
+# Bibliotekarien: Varför AI:n slår upp innan den svarar {#ch10 .chapter}
 
 <div class="chapter-opening">
 

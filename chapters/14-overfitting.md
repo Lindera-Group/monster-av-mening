@@ -1,4 +1,4 @@
-# Tentaplugget: När AI lär sig svaren istället för ämnet {.chapter}
+# Tentaplugget: När AI lär sig svaren istället för ämnet {#ch14 .chapter}
 
 <div class="chapter-opening">
 

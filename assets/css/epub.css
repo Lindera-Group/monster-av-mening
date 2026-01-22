@@ -215,7 +215,7 @@ h1.chapter {
   font-size: 1.6em;
   margin-top: 1em;
   margin-bottom: 0;
-  page-break-before: always;
+  /* No page-break-before in ePUB - each chapter is already in its own file */
 }
 
 /* Chapter opening - simplified for ePUB */
@@ -380,12 +380,22 @@ img[src*="cover"] {
   page-break-after: always;
 }
 
-/* Ensure chapters start on new pages */
+/* In ePUB with split-level=1, each chapter is already in its own file.
+   No page-break-before needed - it causes blank pages in Apple Books. */
 section.level1 {
-  page-break-before: always;
+  page-break-before: auto;
 }
 
-/* First section shouldn't have page break before */
-section.level1:first-of-type {
-  page-break-before: auto;
+/* ========================================
+   Override inline page-break styles
+   These divs are for PDF/print and cause
+   empty pages in ePUB readers
+   ======================================== */
+
+div[style*="page-break-after"] {
+  page-break-after: auto !important;
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }

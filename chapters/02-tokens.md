@@ -1,4 +1,4 @@
-# Lego för språk: Hur AI:n stavar {.chapter}
+# Lego för språk: Hur AI:n stavar {#ch02 .chapter}
 
 <div class="chapter-opening">
 

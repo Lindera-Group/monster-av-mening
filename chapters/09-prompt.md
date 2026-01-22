@@ -1,4 +1,4 @@
-# Den nya assistenten: Konsten att ge instruktioner {.chapter}
+# Den nya assistenten: Konsten att ge instruktioner {#ch09 .chapter}
 
 <div class="chapter-opening">
 

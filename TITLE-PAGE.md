@@ -1,6 +1,6 @@
 <div style="page-break-after: always;">
 
-# Mönster av mening
+# Mönster av mening {.unnumbered .unlisted}
 
 *– det artificiella sinnet speglat i vårt*
 
