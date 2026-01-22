@@ -16,7 +16,7 @@ Martin Linderå Nordström
 <br /><br />
 
 **Linderå Group AB**, januari 2026<br />
-Version 2.0 – Andra upplagan
+Andra upplagan
 
 *CC BY-SA 4.0 – Martin Linderå Nordström*
 </div>
