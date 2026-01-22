@@ -1,4 +1,4 @@
-# Risktagaren i oss: AI:ns modighetsknapp {.chapter}
+# Risktagaren i oss: AI:ns modighetsknapp {#ch03 .chapter}
 
 <div class="chapter-opening">
 

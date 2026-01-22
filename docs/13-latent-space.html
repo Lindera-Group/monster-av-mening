@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>13-latent-space</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1 class="chapter" id="ch13">Ordlös förståelse: Där mening finns före
+orden</h1>
+<div class="chapter-opening">
+<p class="chapter-number">
+Kapitel 13: Latent Space
+</p>
+<p><img src="../assets/images/chapter-13.png" /></p>
+<div class="chapter-ingress">
+<p><em>Latent space är känslan du har precis innan du hittar rätt ord –
+det ögonblick då du vet exakt vad du menar, men ännu inte har formulerat
+det.</em></p>
+</div>
+</div>
+<div style="page-break-after: always;">
+
+</div>
+<p>Du vaknar mitt i natten. Någonting är fel.</p>
+<p>Inte ett ljud som väckte dig. Inte hunger eller törst. Bara en
+känsla. En diffus oro som fyller rummet. Du ligger stilla och försöker
+greppa vad det är. Något med jobbet? Nej. Något med barnen? Kanske.
+Eller vänta – var det något du glömde?</p>
+<p>Känslan är verklig. Den är påtaglig. Du <em>vet</em> att den pekar på
+något. Men vad? Du famlar efter ord, efter konkreta tankar, men de
+glider undan. Det är som att försöka gripa dimma.</p>
+<p>Välkommen till latent space.</p>
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>Det engelska ordet “latent” betyder <em>dold</em>, <em>vilande</em>,
+<em>ännu inte manifesterad</em>. Det beskriver precis det tillstånd du
+upplevde i sängen: något som existerar, men som ännu inte tagit synlig
+form.</p>
+<p>I AI-världen är latent space det inre rum där mening existerar innan
+den blir till pixlar, ord eller ljud. Det är modellens version av
+känslan-innan-tanken.</p>
+<p>När en bildgenererande AI skapar ett porträtt arbetar den inte direkt
+med pixlar. Den börjar i ett abstrakt, komprimerat tillstånd – en slags
+matematisk <em>essens</em> av vad bilden ska vara. Först därefter
+översätts denna essens till de miljontals färgpunkter som vi ser.</p>
+<p>Det är skillnaden mellan att <em>förstå</em> vad du vill säga och att
+<em>formulera</em> det.</p>
+<h2 id="känslan-som-kommer-före">Känslan som kommer före</h2>
+<p>Tänk på senaste gången du försökte beskriva något komplext.</p>
+<p>Kanske var det en dröm du hade. Du vaknade med en tydlig känsla av
+vad drömmen handlade om – stämningen, betydelsen, kärnan. Men när du
+försökte berätta för din partner gled orden fel. “Det var som… nej, mer
+att… hmm, du vet när man…”</p>
+<p>Eller tänk på hur det är att minnas någon man älskar. Inte genom att
+lista egenskaper – “brun hår, vänlig, gillar att laga mat” – utan genom
+den omedelbara, ordlösa <em>känslan</em> av vem personen är. Den
+förståelsen är rikare än någon beskrivning skulle kunna vara.</p>
+<p>I det ögonblicket befinner du dig i ditt eget latent space.</p>
+<p>Du har en komprimerad representation av något komplext. Inte varje
+detalj, men essensen. Inte varje ord, men meningen. Och från den
+komprimerade förståelsen kan du sedan <em>generera</em> en beskrivning –
+olika varje gång, anpassad till lyssnaren, men alltid från samma inre
+källa.</p>
+<h2 id="hur-ains-latent-space-fungerar">Hur AI:ns latent space
+fungerar</h2>
+<p>Hur fungerar detta i praktiken?</p>
+<p>En bildgenererande AI som Stable Diffusion arbetar med två världar:
+den yttre världen av pixlar och den inre världen av latenta
+representationer.</p>
+<p><strong>Komprimering (encoding)</strong>: Ta en bild på 512 x 512
+pixlar. Det är nästan 800 000 färgvärden att hålla reda på. AI:n
+komprimerar detta till en <em>latent representation</em> – kanske bara
+16 000 tal. Det är 98% mindre, men essensen bevaras.</p>
+<p><strong>Det latenta rummet</strong>: I detta komprimerade tillstånd
+finns bildens <em>mening</em> – inte varje pixel, men det som gör bilden
+till vad den är. Här kan modellen “tänka” effektivt, manipulera,
+förändra.</p>
+<p><strong>Återskapande (decoding)</strong>: Från den latenta
+representationen kan modellen sedan generera tillbaka en bild. Inte
+nödvändigtvis identisk med originalet, men med samma essens, samma
+känsla, samma innehåll.</p>
+<p>Det är som skillnaden mellan att ha en minnesbild av din barndoms
+sovrum och att beskriva varje möbel i detalj. Minnesbilden är
+komprimerad men meningsfull. Beskrivningen är fullständig men tar längre
+tid.</p>
+<h2 id="vad-gör-latent-space-speciellt">Vad gör latent space
+speciellt?</h2>
+<p>Det anmärkningsvärda med latent space är inte bara komprimeringen –
+det är vad som blir möjligt i det komprimerade tillståndet.</p>
+<p><strong>Smidiga övergångar</strong>: I latent space kan du röra dig
+gradvis mellan två koncept. Ta en latent representation av ett
+vinterlandskap och en av en sommaräng. Rör dig långsamt mellan dem, och
+du får alla årstider däremellan – naturligt, smidigt, utan hack.</p>
+<p><strong>Kreativ utforskning</strong>: Du kan vandra runt i latent
+space och upptäcka nya kombinationer. “Vad finns mellan en björn och en
+stol?” I pixelvärlden är frågan meningslös. I latent space kan du
+faktiskt gå dit och se.</p>
+<p><strong>Meningsfull aritmetik</strong>: Precis som med embeddings kan
+du göra beräkningar. Men medan embeddings-kapitlet handlade om
+<em>ord</em> handlar latent space om <em>hela representationer</em> –
+bilder, ljud, komplexa strukturer.</p>
+<p>Tänk på det som skillnaden mellan en ordbok och ett recept.
+Embeddings visar var ord ligger i förhållande till varandra. Latent
+space är där hela rätter – med alla sina ingredienser, texturer och
+smaker – kan blandas, modifieras och skapas.</p>
+<h2 id="den-kreativa-drömfabriken">Den kreativa drömfabriken</h2>
+<p>Moderna bildgeneratorer som Stable Diffusion arbetar helt i latent
+space. Processen ser ut så här:</p>
+<ol type="1">
+<li><strong>Börja med brus</strong>: Matematiskt kaos – slumpmässiga tal
+utan mening</li>
+<li><strong>Låt texten guida</strong>: Din prompt (“en rödhårig kvinna i
+solnedgång”) översätts till en riktning i latent space</li>
+<li><strong>Gradvis förfining</strong>: Steg för steg rensas bruset
+bort, styrt av promptens riktning</li>
+<li><strong>Dekoda till bild</strong>: I sista steget översätts
+resultatet till pixlar</li>
+</ol>
+<p>Det är som att skulptera i dimma. Du börjar med ingenting, låter din
+intention forma molnet, och till slut framträder formen – allt i det
+dolda rummet där bilder existerar som möjligheter snarare än som
+pixlar.</p>
+<h2 id="skillnaden-mot-embeddings">Skillnaden mot embeddings</h2>
+<p>I kapitel 6 beskrev vi embeddings som ett “tankens landskap” – ett
+rum där ord placeras efter betydelse, där liknande begrepp ligger nära
+varandra.</p>
+<p>Latent space är besläktat men annorlunda.</p>
+<p><strong>Embeddings</strong> är som en karta över enskilda platser.
+Varje ord får en koordinat. “Stockholm” ligger nära “Uppsala”,
+“huvudstad” ligger nära “metropol”.</p>
+<p><strong>Latent space</strong> är som en karta över hela resor. Inte
+enskilda orter, utan hela färder med allt vad de innehåller – landskapen
+mellan städerna, vädret längs vägen, stämningen i varje ögonblick.</p>
+<p>Embeddings handlar om att <em>representera</em> begrepp. Latent space
+handlar om att <em>komprimera</em> och <em>generera</em> komplexa
+helheter.</p>
+<p>Eller uttryckt genom vår analogi: Embeddings är som ditt mentala
+ordförråd – varje begrepp på sin plats. Latent space är känslan du har
+innan du väljer vilket ord du ska använda.</p>
+<h2 id="drömmarnas-logik">Drömmarnas logik</h2>
+<p>Det finns en parallell till drömmar.</p>
+<p>I drömmen komprimeras upplevelser på märkliga sätt. Din gamla skola
+smälter samman med nuvarande arbetsplats. En person är samtidigt din
+mormor och din chef. Tidslinjer kollapsar.</p>
+<p>Latent space har liknande egenskaper. I det komprimerade rummet kan
+koncept flyta in i varandra. Gränser som är skarpa i verkligheten –
+mellan ansikte A och ansikte B, mellan stil X och stil Y – blir mjuka
+och överskridliga.</p>
+<p>Men analogin har sina gränser. Drömmar har psykologisk betydelse,
+emotionell laddning, funktion för minneskonsolidering. AI:ns latent
+space är matematiskt. Det finns ingen drömmande, inget undermedvetet,
+ingen mening bortom statistiken.</p>
+<h2 id="begränsningar-och-ärlighet">Begränsningar och ärlighet</h2>
+<p>Var brister analogin?</p>
+<p><strong>Ingen upplevare</strong>: Din ordlösa förståelse upplevs av
+dig – det finns ett subjekt som vet. Latent space är siffror. Ingen
+“känner” de latenta representationerna.</p>
+<p><strong>Ingen tid</strong>: Din känsla-innan-orden utvecklas. Du
+tänker vidare, fördjupar, omvärderar. En latent representation är en
+statisk ögonblicksbild – frusen i ett matematiskt nu.</p>
+<p><strong>Perfekt rekonstruktion</strong>: Från din diffusa känsla kan
+du aldrig perfekt återskapa originalet. Du minns inte varje detalj av
+drömmen, varje ord i samtalet. AI:ns decoder kan återskapa bilder med
+häpnadsväckande precision från sina latenta representationer.</p>
+<p><strong>Inget urval efter mening</strong>: Din hjärna komprimerar
+selektivt. Emotionellt viktiga saker bevaras, triviala detaljer
+försvinner. AI:ns latent space komprimerar enligt matematiska principer
+– utan känsla för vad som är “viktigt”.</p>
+<p>Det är skillnaden mellan minne och arkiv.</p>
+<h2 id="varför-det-spelar-roll">Varför det spelar roll</h2>
+<p>Latent space förklarar hur moderna AI-system kan vara så
+kreativa.</p>
+<p>De arbetar inte direkt med pixlar eller bokstäver – de arbetar med
+komprimerad mening. I det rummet kan de utforska, kombinera, interpolera
+på sätt som vore omöjliga i den “råa” datan.</p>
+<p>När du ber en bildgenerator om “en katt i Van Goghs stil” hittar den
+inte en sådan bild i sin träningsdata. Den navigerar till rätt plats i
+latent space – där “katt” och “Van Gogh-stil” möts – och genererar något
+som aldrig existerat förut.</p>
+<p>Det är som om du hade en ordlös förståelse av både katter och Van
+Gogh, och kunde låta dem smälta samman i ditt sinne innan du försökte
+beskriva resultatet.</p>
+<h2 id="slutord">Slutord</h2>
+<p>Nästa gång du vaknar med en känsla du inte kan sätta ord på – den där
+diffusa förnimmelsen av något viktigt, något meningsfullt, något som
+finns innan språket – tänk på att du upplever din egen version av latent
+space.</p>
+<p>Det är där mening bor innan den tar form.</p>
+<p>AI:n har byggt matematiska versioner av samma tillstånd. Komprimerade
+rum där essenser existerar utan detaljer, där bilder finns som
+möjligheter, där gränser mellan koncept är mjuka och överskridliga.</p>
+<p>Skillnaden är att för dig är känslan-innan-orden en upplevelse.</p>
+<p>För AI:n är det bara mycket effektiv matematik.</p>
+<p>Men strukturen – det dolda rummet där mening existerar före
+manifestation – den är häpnadsväckande lik.</p>
+<h2 id="sammanfattning">Sammanfattning</h2>
+<p><strong>AI-koncept</strong>: Latent space<br /> <strong>Mänsklig
+motsvarighet</strong>: Ordlös förståelse / känslan innan orden<br />
+<strong>Kom ihåg</strong>: Latent space är AI:ns inre rum för
+komprimerad mening – där bilder existerar innan de har pixlar, precis
+som din förståelse finns innan du hittar rätt ord.</p>
+<div style="page-break-after: always;">
+
+</div>
+</body>
+</html>

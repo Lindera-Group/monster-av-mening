@@ -1,4 +1,4 @@
-# Specialisten: När AI:n går vidare till högre studier {.chapter}
+# Specialisten: När AI:n går vidare till högre studier {#ch08 .chapter}
 
 <div class="chapter-opening">
 

@@ -47,6 +47,7 @@ COVER_IMAGE="$ASSETS_DIR/images/cover-monster-av-mening.png"
 CHAPTERS=(
   "$ROOT_DIR/FRONT-COVER.md"
   "$ROOT_DIR/TITLE-PAGE.md"
+  "$ROOT_DIR/TOC.md"
   "$ROOT_DIR/FOREWORD.md"
   "$CHAPTERS_DIR/01-context-window.md"
   "$CHAPTERS_DIR/02-tokens.md"
@@ -56,6 +57,12 @@ CHAPTERS=(
   "$CHAPTERS_DIR/06-embeddings.md"
   "$CHAPTERS_DIR/07-training-weights.md"
   "$CHAPTERS_DIR/08-fine-tuning.md"
+  "$CHAPTERS_DIR/09-prompt.md"
+  "$CHAPTERS_DIR/10-rag.md"
+  "$CHAPTERS_DIR/11-transformer.md"
+  "$CHAPTERS_DIR/12-inference.md"
+  "$CHAPTERS_DIR/13-latent-space.md"
+  "$CHAPTERS_DIR/14-overfitting.md"
   "$ROOT_DIR/glossary/INDEX.md"
   "$ROOT_DIR/COLOPHON.md"
   "$ROOT_DIR/BACK-COVER.md"
@@ -64,6 +71,7 @@ CHAPTERS=(
 # Chapters for ePUB (without FRONT-COVER, cover handled separately)
 CHAPTERS_EPUB=(
   "$ROOT_DIR/TITLE-PAGE.md"
+  "$ROOT_DIR/TOC.md"
   "$ROOT_DIR/FOREWORD.md"
   "$CHAPTERS_DIR/01-context-window.md"
   "$CHAPTERS_DIR/02-tokens.md"
@@ -73,6 +81,12 @@ CHAPTERS_EPUB=(
   "$CHAPTERS_DIR/06-embeddings.md"
   "$CHAPTERS_DIR/07-training-weights.md"
   "$CHAPTERS_DIR/08-fine-tuning.md"
+  "$CHAPTERS_DIR/09-prompt.md"
+  "$CHAPTERS_DIR/10-rag.md"
+  "$CHAPTERS_DIR/11-transformer.md"
+  "$CHAPTERS_DIR/12-inference.md"
+  "$CHAPTERS_DIR/13-latent-space.md"
+  "$CHAPTERS_DIR/14-overfitting.md"
   "$ROOT_DIR/glossary/INDEX.md"
   "$ROOT_DIR/COLOPHON.md"
   "$ROOT_DIR/BACK-COVER.md"
@@ -126,7 +140,7 @@ build_pdf() {
     PDF_OPTS="--variable geometry:margin=1in --variable fontsize=11pt --variable mainfont='Crimson Pro' --variable monofont='JetBrains Mono'"
   elif command -v weasyprint &> /dev/null; then
     PDF_ENGINE="weasyprint"
-    PDF_OPTS=""
+    PDF_OPTS="--css=$ASSETS_DIR/css/pdf.css"
   elif command -v wkhtmltopdf &> /dev/null; then
     PDF_ENGINE="wkhtmltopdf"
     PDF_OPTS=""
@@ -203,6 +217,27 @@ build_epub() {
     --epub-cover-image="$COVER_IMAGE" \
     --resource-path="$ROOT_DIR:$ASSETS_DIR" \
     --output "$DIST_DIR/monster-av-mening.epub"
+
+  # Post-process ePUB to remove page-break divs that cause empty pages in readers
+  log_info "Removing page-break divs from ePUB..."
+  local epub_file="$DIST_DIR/monster-av-mening.epub"
+  local temp_dir=$(mktemp -d)
+
+  unzip -q "$epub_file" -d "$temp_dir"
+
+  # Remove all page-break divs from xhtml files (handles multiline)
+  for f in "$temp_dir"/EPUB/text/*.xhtml; do
+    perl -i -0777 -pe 's/<div style="page-break-after: always;">\s*<\/div>//gs' "$f"
+  done
+
+  # Recreate the ePUB (must preserve mimetype as first uncompressed entry)
+  cd "$temp_dir"
+  rm "$epub_file"
+  zip -q -X -0 "$epub_file" mimetype
+  zip -q -X -r "$epub_file" * -x mimetype
+  cd "$ROOT_DIR"
+
+  rm -rf "$temp_dir"
 
   log_info "ePUB created: $DIST_DIR/monster-av-mening.epub"
 }

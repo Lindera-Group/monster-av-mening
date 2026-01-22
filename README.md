@@ -39,6 +39,12 @@ Bildade läsare utan teknisk bakgrund som vill förstå hur modern AI fungerar �
 | 6 | [Tankens landskap](chapters/06-embeddings.md) | Embeddings | Mental karta, associationsnätverk |
 | 7 | [Från nybörjare till expert](chapters/07-training-weights.md) | Training & Weights | Uppväxt, muskelminne |
 | 8 | [Specialisten](chapters/08-fine-tuning.md) | Fine-tuning | Specialistutbildning |
+| 9 | [Den nya assistenten](chapters/09-prompt.md) | Prompt | Instruktioner till ny medarbetare |
+| 10 | [Bibliotekarien](chapters/10-rag.md) | RAG | Slå upp innan man svarar |
+| 11 | [Rundabordssamtalet](chapters/11-transformer.md) | Transformer | Alla hör alla samtidigt |
+| 12 | [Tentadagen](chapters/12-inference.md) | Inference | Tillämpa fryst kunskap |
+| 13 | [Ordlös förståelse](chapters/13-latent-space.md) | Latent Space | Känslan innan orden |
+| 14 | [Tentaplugget](chapters/14-overfitting.md) | Overfitting | Memorera utan förståelse |
 
 Se [ordlistan](glossary/INDEX.md) för fullständig lista med detaljerade förklaringar.
 
@@ -54,7 +60,13 @@ ai-human-translator/
 │   ├── 05-attention.md
 │   ├── 06-embeddings.md
 │   ├── 07-training-weights.md
-│   └── 08-fine-tuning.md
+│   ├── 08-fine-tuning.md
+│   ├── 09-prompt.md
+│   ├── 10-rag.md
+│   ├── 11-transformer.md
+│   ├── 12-inference.md
+│   ├── 13-latent-space.md
+│   └── 14-overfitting.md
 ├── research/           # Bakgrundsmaterial
 │   ├── context-window.md
 │   ├── token.md
@@ -63,7 +75,13 @@ ai-human-translator/
 │   ├── attention.md
 │   ├── embeddings.md
 │   ├── training-weights.md
-│   └── fine-tuning.md
+│   ├── fine-tuning.md
+│   ├── prompt.md
+│   ├── rag.md
+│   ├── transformer.md
+│   ├── inference.md
+│   ├── latent-space.md
+│   └── overfitting.md
 ├── glossary/           # Ordlista
 │   └── INDEX.md
 ├── assets/             # CSS och bilder
@@ -124,14 +142,13 @@ Kräver: [Pandoc](https://pandoc.org/), XeLaTeX (för PDF)
 
 ## Framtida Kapitel
 
-Potentiella ämnen för utbyggnad:
+Potentiella ämnen för framtida upplagor:
 
-- **Prompt** → Frågeställning
-- **RAG** → Att slå upp innan man svarar
-- **Transformer** → Kontextmedveten tänkare
-- **Inference** → Tänkande
-- **Latent space** → Det undermedvetna
-- **Overfitting** → Fixering / övertänkande
+- **Batch** → Inlärningsgrupp
+- **Epoch** → Repetitionscykel
+- **Gradient Descent** → Korrigering nedför kullen
+- **Regularization** → Självdisciplin
+- **Dropout** → Träna utan stödhjul
 
 ## Bidra
 

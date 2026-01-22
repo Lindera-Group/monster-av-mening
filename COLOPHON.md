@@ -1,8 +1,8 @@
-# Om denna utgåva
+# Om denna utgåva {#sec-kolofon .chapter}
 
 **Titel:** Mönster av mening
 **Undertitel:** det artificiella sinnet speglat i vårt
-**Utgåva:** Första utgåvan, januari 2026
+**Utgåva:** Andra upplagan, januari 2026
 
 ## Upphovspersoner
 

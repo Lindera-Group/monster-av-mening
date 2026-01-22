@@ -1,4 +1,4 @@
-# Från nybörjare till expert: AI:ns uppväxt {.chapter}
+# Från nybörjare till expert: AI:ns uppväxt {#ch07 .chapter}
 
 <div class="chapter-opening">
 

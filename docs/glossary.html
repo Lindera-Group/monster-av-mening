@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/book.css" />
 </head>
 <body>
-<h1 id="ordlista-ai-människa">Ordlista: AI → Människa</h1>
+<h1 class="chapter" id="sec-ordlista">Ordlista: AI → Människa</h1>
 <blockquote>
 <p>Alla översättningar samlade på ett ställe</p>
 </blockquote>
@@ -127,6 +127,36 @@
 <td>Coachning / mentorskap</td>
 <td>8</td>
 </tr>
+<tr>
+<td>Prompt</td>
+<td>Instruktioner till ny assistent</td>
+<td>9</td>
+</tr>
+<tr>
+<td>RAG</td>
+<td>Bibliotekarie som slår upp</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Transformer</td>
+<td>Rundabordssamtal</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Inference</td>
+<td>Tentamen / tillämpa kunskap</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Latent space</td>
+<td>Ordlös förståelse</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Overfitting</td>
+<td>Tentaplugg utan förståelse</td>
+<td>14</td>
+</tr>
 </tbody>
 </table>
 <div style="page-break-after: always;">
@@ -180,7 +210,18 @@ minnen</em> När modellen genererar information som låter trovärdig men
 är påhittad. Bättre beskrivet som “konfabulering” – att fylla
 kunskapsluckor med trovärdiga men felaktiga svar, utan avsikt att bedra.
 <em>Se kapitel 4</em></p>
+<h3 id="i">I</h3>
+<p><strong>Inference</strong> → <em>Tentamen / att tillämpa fryst
+kunskap</em> Processen när en tränad modell används för att generera
+svar. All kunskap är fryst – modellen kan bara använda det den redan
+lärt sig under träningen. Som att skriva prov: pluggperioden är över, nu
+måste du klara dig med det du kan. <em>Se kapitel 12</em></p>
 <h3 id="l">L</h3>
+<p><strong>Latent space</strong> → <em>Ordlös förståelse / känslan innan
+orden</em> Det dolda, komprimerade rum där komplexa koncept
+representeras innan de uttrycks. Som känslan du har när du vet exakt vad
+du menar men ännu inte hittat orden. I bildgenerering: rummet där
+ansikten kan glida mellan varandra. <em>Se kapitel 13</em></p>
 <p><strong>LoRA (Low-Rank Adaptation)</strong> → <em>Tillägg utan
 förändring</em> En teknik för fine-tuning som lägger till små separata
 viktmatriser utan att röra originalvikterna. Som att lära sig ett nytt
@@ -191,6 +232,19 @@ Den matematiska funktionen som beräknar skillnaden mellan modellens
 förutsägelse och det korrekta svaret. Drivkraften bakom allt lärande –
 modellen strävar efter att minimera denna siffra. <em>Se kapitel
 7</em></p>
+<h3 id="o">O</h3>
+<p><strong>Overfitting</strong> → <em>Tentaplugg utan förståelse</em>
+När en modell lärt sig träningsdata för väl och memorerat specifika
+exempel istället för att förstå underliggande mönster. Som att plugga
+genom att memorera gamla tentafrågor ordagrant – du klarar exakt de
+frågor du sett, men faller ihop vid minsta variation. <em>Se kapitel
+14</em></p>
+<h3 id="p">P</h3>
+<p><strong>Prompt</strong> → <em>Instruktioner till en ny assistent</em>
+Den text du ger till en AI för att styra dess svar. Eftersom AI:n saknar
+gemensam bakgrund med dig måste du vara explicit med kontext, roll och
+förväntningar – precis som när du ger uppgifter till en ny medarbetare
+första dagen. <em>Se kapitel 9</em></p>
 <h3 id="q">Q</h3>
 <p><strong>Query/Key/Value</strong> → <em>Fråga, erbjudande,
 innehåll</em> De tre komponenterna i attention-mekanismen. Query är vad
@@ -198,6 +252,11 @@ ett ord “letar efter”, Key är vad det “erbjuder”, och Value är dess
 faktiska innehåll. Tillsammans bestämmer de hur ord kopplas ihop. <em>Se
 kapitel 5</em></p>
 <h3 id="r">R</h3>
+<p><strong>RAG (Retrieval-Augmented Generation)</strong> →
+<em>Bibliotekarie som slår upp innan svar</em> En teknik där AI:n först
+söker i externa dokument innan den svarar, istället för att förlita sig
+enbart på sin träning. Som en bibliotekarie som inte försöker minnas
+allt, utan vet var man hittar rätt bok. <em>Se kapitel 10</em></p>
 <p><strong>RLHF (Reinforcement Learning from Human Feedback)</strong> →
 <em>Coachning / mentorskap</em> En fine-tuning-metod där människor
 bedömer modellens svar och modellen lär sig producera svar som
@@ -219,6 +278,11 @@ att prova den exotiska rätten. <em>Se kapitel 3</em></p>
 enheten modellen arbetar med. Kan vara ett helt ord, en del av ett ord,
 eller ett enskilt tecken. Engelska ord kräver färre tokens än svenska;
 vissa språk drabbas hårt av denna bias. <em>Se kapitel 2</em></p>
+<p><strong>Transformer</strong> → <em>Rundabordssamtal där alla hör
+alla</em> Arkitekturen bakom moderna språkmodeller. Till skillnad från
+äldre modeller som läste ord i sekvens kan Transformern se alla ord
+samtidigt och låta dem kommunicera direkt med varandra – som ett
+konferensrum istället för en telefonkedja. <em>Se kapitel 11</em></p>
 <p><strong>Training</strong> → <em>Uppväxt / barndom</em> Processen där
 modellen går från slumpmässiga vikter till en fungerande språkmodell
 genom att se miljontals exempel och iterativt justera sina parametrar.
@@ -229,8 +293,8 @@ kapitel 7</em></p>
 De numeriska värdena som avgör modellens beteende. Alla lärdomar från
 träningen lagras i vikterna – ingen separat kunskapsbas, inga enskilda
 minnen, bara aggregerade statistiska mönster. <em>Se kapitel 7</em></p>
-<h2 id="koncept-som-inte-behandlas-i-denna-första-upplaga">Koncept som
-inte behandlas i denna första upplaga</h2>
+<h2 id="koncept-för-framtida-upplagor">Koncept för framtida
+upplagor</h2>
 <table>
 <thead>
 <tr>
@@ -240,18 +304,6 @@ inte behandlas i denna första upplaga</h2>
 </thead>
 <tbody>
 <tr>
-<td>Transformer</td>
-<td>Kontextmedveten tänkare</td>
-</tr>
-<tr>
-<td>Inference</td>
-<td>Tänkande / resonerande</td>
-</tr>
-<tr>
-<td>Overfitting</td>
-<td>Övertänkande / fixering</td>
-</tr>
-<tr>
 <td>Batch</td>
 <td>Inlärningsgrupp</td>
 </tr>
@@ -260,16 +312,12 @@ inte behandlas i denna första upplaga</h2>
 <td>Repetitionscykel</td>
 </tr>
 <tr>
-<td>Latent space</td>
-<td>Det omedvetna</td>
+<td>Regularization</td>
+<td>Självdisciplin</td>
 </tr>
 <tr>
-<td>Prompt</td>
-<td>Frågeställning / instruktion</td>
-</tr>
-<tr>
-<td>RAG</td>
-<td>Att slå upp innan man svarar</td>
+<td>Dropout</td>
+<td>Träna utan stödhjul</td>
 </tr>
 </tbody>
 </table>

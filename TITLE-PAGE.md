@@ -1,6 +1,6 @@
 <div style="page-break-after: always;">
 
-# Mönster av mening
+# Mönster av mening {.unnumbered .unlisted}
 
 *– det artificiella sinnet speglat i vårt*
 
@@ -16,7 +16,7 @@ Martin Linderå Nordström
 <br /><br />
 
 **Linderå Group AB**, januari 2026<br />
-Version 1.0
+Andra upplagan
 
 *CC BY-SA 4.0 – Martin Linderå Nordström*
 </div>

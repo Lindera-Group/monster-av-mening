@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>10-rag</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1 class="chapter" id="ch10">Bibliotekarien: Varför AI:n slår upp innan
+den svarar</h1>
+<div class="chapter-opening">
+<p class="chapter-number">
+Kapitel 10: RAG
+</p>
+<p><img src="../assets/images/chapter-10.png" /></p>
+<div class="chapter-ingress">
+<p><em>RAG är som en bibliotekarie som slår upp i böcker innan hen
+svarar – istället för att gissa från minnet.</em></p>
+</div>
+</div>
+<div style="page-break-after: always;">
+
+</div>
+<p>Du står vid informationsdisken på stadsbiblioteket. Framför dig
+sitter en kvinna i fyrtioårsåldern, glasögon uppskjutna i pannan,
+omgiven av bokhyllornas labyrint.</p>
+<p>“Jag funderar på att installera bergvärme”, säger du. “Vad kostar
+det? Hur djupt måste man borra? Behöver man tillstånd?”</p>
+<p>Bibliotekarien kunde svara direkt från minnet. Hon har sett tusentals
+frågor genom åren, snappat upp kunskapsbitar från samtal och nyheter.
+Hon kunde säga: “Jag tror det kostar runt 150 000, och man borrar kanske
+100 meter.”</p>
+<p>Men det gör hon inte.</p>
+<p>Istället reser hon sig, går till datorn, söker i bibliotekskatalogen.
+Hon går till fackhyllan, plockar ner tre böcker om jordvärme och en om
+bygglov. Hon bläddrar snabbt, hittar relevanta kapitel, läser ett par
+stycken. Sen återvänder hon till dig.</p>
+<p>“Enligt Energimyndighetens guide från förra året ligger kostnaden
+mellan 120 000 och 200 000 kronor beroende på djup och
+markförhållandena. Standarddjup är 80-200 meter. Och ja – i de flesta
+kommuner krävs anmälan till miljönämnden, ibland tillstånd om du bor
+nära vattentäkt. Vill du låna någon av de här?”</p>
+<p>Välkommen till RAG – Retrieval-Augmented Generation.</p>
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>På precis samma sätt kan en språkmodell arbeta. Istället för att
+svara enbart från det den lärdes under träningen – sitt “minne” – kan
+den först söka i externa databaser, hämta relevanta dokument, och
+använda dem för att formulera ett svar.</p>
+<p>Det är skillnaden mellan att gissa och att slå upp.</p>
+<p>När du chattar med en AI utan RAG svarar den från sina “minnesbilder”
+– träningsdatan som präglades in i modellens parametrar för månader
+eller år sedan. Ibland stämmer det. Ibland inte. Ibland hittar modellen
+på helt – det vi kallar hallucinationer.</p>
+<p>Men en AI med RAG gör som bibliotekarien: den läser din fråga, söker
+i en kunskapsbas, hämtar relevanta textbitar, och formulerar sedan
+svaret med den hämtade informationen som grund.</p>
+<p>Det är därför du kan prata med en AI om din organisations interna
+policyer, eller om nyheter från förra veckan – saker som omöjligt kunde
+finnas i modellens ursprungliga träning.</p>
+<h2 id="hur-bibliotekarien-arbetar">Hur bibliotekarien arbetar</h2>
+<p>Låt oss följa processen mer noggrant, för den avslöjar någonting
+fascinerande.</p>
+<h3 id="steg-1-förstå-frågan">Steg 1: Förstå frågan</h3>
+<p>När du ställer din fråga om bergvärme gör bibliotekarien först en
+<em>tolkning</em>. Hon hänger inte upp sig på de exakta orden du använde
+– hon förstår att du söker information om geotermiska värmepumpar,
+installationskostnader och myndighetskrav.</p>
+<p>På samma sätt omvandlar ett RAG-system din fråga till en “embedding”
+– en matematisk representation av <em>innebörden</em> i din fråga. Det
+är som att översätta från ord till tankemotiv.</p>
+<h3 id="steg-2-katalogen">Steg 2: Katalogen</h3>
+<p>Bibliotekarien går inte till en slumpmässig hylla. Hon använder
+katalogen – ett system där varje bok är klassificerad efter ämne,
+nyckelord och innehåll.</p>
+<p>RAG-systemet har en liknande “katalog” – en vektordatabas där varje
+textbit från kunskapsbasen har klassificerats och indexerats. När din
+fråga omvandlats till ett tankemotiv söker systemet efter textbitar med
+<em>liknande</em> tankemotiv.</p>
+<p>Och här är det eleganta: det handlar inte om att hitta exakta ord.
+“Bergvärme” hittar dokument som handlar om “geotermisk energi” eller
+“jordvärmepump” – för innebörden pekar åt samma håll, även om orden är
+olika.</p>
+<h3 id="steg-3-böcker-från-hyllan">Steg 3: Böcker från hyllan</h3>
+<p>Nu plockar bibliotekarien fram 3-7 böcker. Inte alla böcker i ämnet –
+bara de mest relevanta för just din fråga. Hon öppnar dem vid de kapitel
+som troligast innehåller svaret.</p>
+<p>RAG-systemet gör samma sak: det hämtar de 3-10 textbitar (kallade
+“chunks”) som är semantiskt närmast din fråga. Inte hela kunskapsbasen –
+det skulle vara som att lämpa hela biblioteket på skrivbordet.</p>
+<h3 id="steg-4-formulera-svaret">Steg 4: Formulera svaret</h3>
+<p>Med de öppna böckerna framför sig läser bibliotekarien relevanta
+avsnitt och sammanställer sedan ett svar. Hon kombinerar information
+från flera källor, strukturerar det för din fråga, och kan till och med
+peka på var informationen kommer från.</p>
+<p>Språkmodellen med RAG gör samma sak: den tar din ursprungliga fråga,
+kombinerar den med de hämtade textbitarna, och genererar ett svar som är
+<em>grundat</em> i konkret information – inte bara associationer från
+träningen.</p>
+<h2 id="varför-detta-är-revolutionerande">Varför detta är
+revolutionerande</h2>
+<p>Tänk på hur annorlunda detta är från en vanlig språkmodell.</p>
+<p><strong>Utan RAG</strong>: “Jag tror att bergvärme kostar ungefär 150
+000 kronor, och man borrar kanske 100 meter djupt.” (Modellen gissar
+från otydliga minnesfragment.)</p>
+<p><strong>Med RAG</strong>: “Enligt Energimyndighetens rapport från
+2024 ligger kostnaden mellan 120 000 och 200 000 kronor beroende på djup
+och markförhållanden. Borrdjupet är vanligtvis 80-200 meter.” (Modellen
+citerar en specifik källa.)</p>
+<p>Den första versionen <em>kan</em> vara rätt. Den andra versionen har
+<em>stöd</em> för att vara rätt.</p>
+<p>Det är därför RAG används i:</p>
+<ul>
+<li><strong>Kundtjänst</strong>: Chattbottar som svarar från företagens
+manualer och policyer</li>
+<li><strong>Juridik</strong>: AI-assistenter som söker i lagtexter och
+prejudikat</li>
+<li><strong>Sjukvård</strong>: System som konsulterar medicinsk
+forskningslitteratur</li>
+<li><strong>Privat kunskap</strong>: Verktyg som svarar baserat på dina
+egna anteckningar</li>
+</ul>
+<h2 id="när-fine-tuning-är-fel-val">När fine-tuning är fel val</h2>
+<p>Det finns ett annat sätt att ge en språkmodell ny kunskap:
+fine-tuning. Det är som att tvinga bibliotekarien att memorera hela
+bibliotekets innehåll utantill.</p>
+<p>Det låter kraftfullt, men har allvarliga nackdelar:</p>
+<p><strong>Kostsamt</strong>: Varje gång kunskapen uppdateras måste hela
+inlärningen göras om.</p>
+<p><strong>Stelhet</strong>: Det som lärts in är svårt att “avlära” om
+det visar sig fel.</p>
+<p><strong>Kapacitet</strong>: Även en fantastisk bibliotekarie kan inte
+minnas miljoner sidor ordagrant.</p>
+<p>RAG låter istället bibliotekarien arbeta som bibliotekarier faktiskt
+gör: med sin professionella kompetens, sin förmåga att tolka frågor och
+formulera svar – plus tillgång till ett välskött bibliotek.</p>
+<p>Det är skillnaden mellan att försöka lagra allt i huvudet och att
+veta var man hittar saker.</p>
+<h2 id="var-analogin-brister">Var analogin brister</h2>
+<p>Men analogin har sina begränsningar.</p>
+<h3 id="hastighet">Hastighet</h3>
+<p>En mänsklig bibliotekarie behöver minuter, ibland timmar, för att
+hitta och läsa relevanta texter. Ett RAG-system gör samma sak på
+millisekunder. Den omedelbarheten är en del av varför tekniken är så
+användbar – den fungerar i realtid.</p>
+<h3 id="semantisk-matchning-vs-verklig-förståelse">Semantisk matchning
+vs verklig förståelse</h3>
+<p>När bibliotekarien söker förstår hon <em>verkligen</em> vad du frågar
+om. Hon kan göra kreativa kopplingar, tänka “hmm, den här frågan belyser
+jag om jag tittar på geologi-hyllan också”.</p>
+<p>RAG-systemet gör en matematisk jämförelse i ett vektorrum. Det
+“förstår” inte – det matchar. Det är elegant och effektivt, men saknar
+bibliotekariens djupa ämneskunskap och intuition.</p>
+<h3 id="källbedömning">Källbedömning</h3>
+<p>En erfaren bibliotekarie har utvecklat ett ögonmått för källor. Hon
+vet vilka förlag som är pålitliga, vilka författare som är respekterade,
+vilka texter som är daterade. Hon kan säga: “Den här boken är från 2015
+och mycket har hänt sedan dess.”</p>
+<p>RAG-systemet behandlar som standard alla dokument i sin databas lika.
+Det kan inte intuitivt bedöma trovärdighet – allt beror på vad som lagts
+in.</p>
+<h3 id="metakognition">Metakognition</h3>
+<p>Bibliotekarien vet när hon inte vet. Hon kan säga: “Det här är inte
+riktigt mitt område – du borde prata med en VVS-installatör.”</p>
+<p>RAG-system saknar den självinsikten. De kan hämta information som är
+tangentiellt relevant och ändå presentera ett självsäkert svar. De vet
+inte att de inte vet.</p>
+<h2 id="sammanfattning">Sammanfattning</h2>
+<p><strong>AI-koncept</strong>: RAG (Retrieval-Augmented
+Generation)<br /> <strong>Mänsklig motsvarighet</strong>: Bibliotekarie
+som slår upp innan hen svarar<br /> <strong>Kom ihåg</strong>: En AI med
+RAG gissar inte från minnet – den söker, hämtar och grundar sitt svar i
+faktiska källor. Precis som en bra bibliotekarie.</p>
+<div style="page-break-after: always;">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>09-prompt</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/book.css" />
+</head>
+<body>
+<h1 class="chapter" id="ch09">Den nya assistenten: Konsten att ge
+instruktioner</h1>
+<div class="chapter-opening">
+<p class="chapter-number">
+Kapitel 9: Prompt
+</p>
+<p><img src="../assets/images/chapter-09.png" /></p>
+<div class="chapter-ingress">
+<p><em>En prompt är som instruktioner till en ny assistent – något som
+visar att hur du frågar avgör vad du får tillbaka.</em></p>
+</div>
+</div>
+<div style="page-break-after: always;">
+
+</div>
+<p>Det är din första dag med den nya assistenten. Han heter Erik, är
+nyutexaminerad från universitetet med toppbetyg, och har en energi som
+får dig att undra om han dricker kaffe intravenöst.</p>
+<p>“Kan du fixa det där med rapporten?” säger du på väg ut till
+lunch.</p>
+<p>När du kommer tillbaka har Erik lagt sjutton timmar på att skriva om
+hela årsredovisningen från grunden. Med fotnoter. På engelska.</p>
+<p>Du menade att han skulle ändra typsnittet på sidan tre.</p>
+<p>Det är inte att Erik är inkompetent. Tvärtom – han är extraordinärt
+kapabel. Problemet är att han aldrig träffat dig förut, inte känner ditt
+företag, och inte har en aning om vad “det där med rapporten” betyder i
+ditt universum. Han gjorde sitt absolut bästa med den information han
+hade.</p>
+<p>Välkommen till promptens värld.</p>
+<h2 id="bryggan-till-ai">Bryggan till AI</h2>
+<p>På exakt samma sätt fungerar kommunikationen med en språkmodell. Du
+har framför dig en otroligt kapabel assistent – en som läst miljontals
+böcker, bemästrar hundratals ämnen, och kan producera text på minuter
+som skulle ta dig timmar. Men denna assistent känner inte dig. Vet inget
+om ditt sammanhang. Har aldrig träffat dig förut.</p>
+<p>Och varje gång du startar en ny konversation? Det är första dagen på
+jobbet igen.</p>
+<p>Det du skriver till AI:n – din “prompt” – är dina instruktioner till
+denna nya, briljanta men kontextlösa assistent. Hur tydliga,
+fullständiga och genomtänkta dessa instruktioner är avgör helt vad du
+får tillbaka.</p>
+<h2 id="vad-är-egentligen-en-prompt">Vad är egentligen en prompt?</h2>
+<p>Låt oss bryta ner det. En prompt är all text du ger till en
+språkmodell för att få ett svar. Det låter enkelt. Men under ytan finns
+flera lager:</p>
+<p><strong>System prompt</strong>: Tänkbar som personalhandboken som
+alla assistenter får första dagen. Den beskriver företagets ton och
+stil, vad man får och inte får göra, grundläggande arbetssätt. Denna del
+ser du som användare sällan – den kommer från utvecklarna som byggt
+tjänsten du använder.</p>
+<p><strong>User prompt</strong>: Det du faktiskt skriver. Dagens
+uppgift. “Skriv ett mejl till kunden om förseningen.” “Sammanfatta
+gårdagens möte.” “Hjälp mig formulera det här tydligare.”</p>
+<p>Tillsammans formar dessa vad AI:n “ser” – hela dess förståelse av vad
+du vill ha.</p>
+<h2 id="hur-en-bra-instruktion-är-uppbyggd">Hur en bra instruktion är
+uppbyggd</h2>
+<p>Tänk tillbaka på Erik. Vad hade du kunnat göra annorlunda?</p>
+<p><strong>Ge bakgrund först</strong>: “Vi förbereder en
+kundpresentation för Erikssons AB…”</p>
+<p><strong>Var specifik med uppgiften</strong>: “…och jag behöver att du
+ändrar typsnittet på sidan tre till Arial…”</p>
+<p><strong>Beskriv formatet</strong>: “…så det matchar resten av
+dokumentet…”</p>
+<p><strong>Ge ett exempel om det hjälper</strong>: “…precis som vi
+gjorde med rapporten till Andersson förra veckan.”</p>
+<p>Detta mönster – bakgrund, uppgift, format, exempel – är exakt hur
+effektiva prompts struktureras. Det är ingen slump. Det är så tydlig
+kommunikation fungerar, oavsett om mottagaren är människa eller
+maskin.</p>
+<h2 id="rollens-kraft">Rollens kraft</h2>
+<p>“Från och med nu är du vår juridiska expert.”</p>
+<p>Se vad som händer när du säger detta till Erik. Hans hållning ändras.
+Han börjar tänka på risker, formuleringar, ansvar. Inte för att han
+plötsligt fått juridisk utbildning, utan för att rollen formar hur han
+närmar sig uppgiften.</p>
+<p>AI fungerar likadant. Ge den en roll – “Du är en erfaren redaktör med
+fokus på klarspråk” – och svaren får en annan karaktär. Inte för att
+modellen “blir” en redaktör, utan för att rollbeskrivningen aktiverar
+andra mönster i dess enorma träningsdata.</p>
+<p>Det är som att ge Erik en mask att bära. Masken ändrar inte vem han
+är, men den påverkar definitivt hur han spelar sin roll.</p>
+<h2 id="visa-förklara-inte">Visa, förklara inte</h2>
+<p>Föreställ dig att du ska lära Erik skriva veckorapporter i din stil.
+Du kan förklara i tio minuter: “Börja med en sammanfattning, sen tre
+huvudpunkter, avsluta med nästa steg, håll det kort men inte för kort,
+var professionell men inte stel…”</p>
+<p>Eller så kan du visa honom en rapport du skrivit och säga: “Gör det
+så här, fast för den här veckan.”</p>
+<p>Vilken tror du fungerar bättre?</p>
+<p>I AI-världen kallas detta “few-shot prompting” – att ge några exempel
+på önskad output istället för att förklara i detalj. Det är
+förvånansvärt effektivt. Ett bra exempel säger ofta mer än tusen ord av
+instruktioner.</p>
+<h2 id="att-be-om-tankegången">Att be om tankegången</h2>
+<p>Ibland räcker det inte att be om svaret. Du vill förstå hur man kom
+fram till det.</p>
+<p>“Erik, hur resonerade du när du bestämde att vi skulle gå med
+Leverantör B?”</p>
+<p>Plötsligt får du inte bara beslutet utan tankegången bakom. Du kan
+följa logiken, hitta eventuella missförstånd, lära dig för
+framtiden.</p>
+<p>För AI kallas detta “chain-of-thought prompting” – att be modellen
+tänka högt. “Låt oss gå igenom det här steg för steg…” Effekten är
+dramatisk, särskilt för komplexa problem. När modellen tvingas
+artikulera sina resonemang blir svaren bättre, mer genomtänkta, lättare
+att verifiera.</p>
+<p>Det är som skillnaden mellan att få ett svar och att få en
+förklaring.</p>
+<h2 id="ordval-spelar-roll-mer-än-du-tror">Ordval spelar roll – mer än
+du tror</h2>
+<p>Här kommer något oväntat.</p>
+<p>Om du ber Erik “sammanfatta” ett dokument eller “summera” det, får du
+ungefär samma resultat. Han förstår att du menar samma sak.</p>
+<p>AI:n? Inte alltid.</p>
+<p>Forskning visar att små ändringar i hur en prompt formuleras kan ge
+dramatiskt olika resultat – upp till 76 procentenheters skillnad i
+kvalitet enligt vissa studier. Det är inte för att modellen är dum. Det
+är för att den tolkar språk på ett fundamentalt annorlunda sätt än vi
+gör.</p>
+<p>Tänk dig att Erik läste varje ord med en bokstavlighet som gränsade
+till det absurda. “Kasta ett öga på det här” skulle få honom att undra
+var han skulle hitta ett löst öga att kasta. Det är inte riktigt så
+extremt, men riktningen stämmer.</p>
+<h2 id="var-analogin-brister">Var analogin brister</h2>
+<p>Den här bilden av assistenten är användbar. Men den har sina
+gränser.</p>
+<p><strong>Erik frågar tillbaka</strong>. När han inte förstår säger
+han: “Ursäkta, menade du A eller B?” AI:n gissar istället. Ofta gissar
+den rätt. Ibland gissar den spektakulärt fel. Och du märker kanske inte
+skillnaden förrän det är för sent.</p>
+<p><strong>Erik bygger en relation</strong>. Efterhand lär han känna
+dina preferenser, din stil, vad “det vanliga” betyder. AI:n börjar från
+noll varje konversation. Det är som om Erik fick minnesförlust varje
+morgon och du måste förklara allt från början igen.</p>
+<p><strong>Erik har sunt förnuft som säkerhetsnät</strong>. Om du av
+misstag ber honom göra något uppenbart orimligt invänder han troligen.
+AI:n saknar samma intuition för vad som är “självklart fel”.</p>
+<p><strong>Erik förstår underförstådd mening</strong>. Ironi, sarkasm,
+det som sägs mellan raderna – en mänsklig assistent plockar ofta upp
+detta. AI:n tar saker mer bokstavligt än du tänkt.</p>
+<p>Det är inte att AI:n är sämre än Erik. Det är att den är annorlunda
+på sätt som inte alltid är uppenbara.</p>
+<h2 id="från-assistent-till-samordnare">Från assistent till
+samordnare</h2>
+<p>Här händer något intressant. Bilden av den enskilda assistenten
+håller på att bli föråldrad.</p>
+<p>Modern AI-användning liknar alltmer att vara projektledare för ett
+helt team av specialister. Du ger övergripande riktlinjer. Du
+koordinerar flera agenter som arbetar parallellt. Du itererar och
+förfinar. Du hämtar in information från externa källor.</p>
+<p>Det är inte längre “ge Erik en uppgift”. Det är “led ett projekt där
+Erik, Anna och Mohammed har olika roller, och se till att de samarbetar
+effektivt.”</p>
+<p>Prompt engineering har utvecklats från “skriv en bra fråga” till
+“designa en hel arbetsprocess”. Det är fortfarande samma grundprincip –
+tydlig kommunikation avgör resultatet – men skalan har förändrats.</p>
+<h2 id="praktiska-tips">Praktiska tips</h2>
+<p>Baserat på allt detta, vad kan du göra bättre?</p>
+<p><strong>Börja med kontexten</strong>. Innan du ger uppgiften, ge
+bakgrunden. “Jag arbetar med en presentation för potentiella investerare
+i ett hälsotechföretag…”</p>
+<p><strong>Var specifik</strong>. “Sammanfatta i tre punkter” är bättre
+än “sammanfatta”. “Max 200 ord” är bättre än “håll det kort”.</p>
+<p><strong>Visa exempel</strong>. Om du har ett exempel på vad du vill
+ha, inkludera det. Det är nästan alltid effektivare än att förklara.</p>
+<p><strong>Tilldela en roll</strong>. “Du är en erfaren marknadsstrateg
+med fokus på B2B” påverkar svaren mer än du tror.</p>
+<p><strong>Be om resonemang</strong>. För komplexa frågor, lägg till
+“Tänk igenom det här steg för steg innan du svarar.”</p>
+<p><strong>Iterera</strong>. Det första svaret är sällan det bästa. Bygg
+vidare. “Bra, men kan du göra det mer koncist?” “Kan du lägga till ett
+exempel?” “Fokusera mer på ekonomin.”</p>
+<h2 id="slutord">Slutord</h2>
+<p>Nästa gång du skriver till en AI, föreställ dig Erik. Briljant,
+kapabel, ivrig att hjälpa – men helt utan kontext om vem du är och vad
+du egentligen vill.</p>
+<p>Varje prompt är instruktioner till någon som aldrig träffat dig
+förut. Någon som tar det du skriver mer bokstavligt än du tänkt. Någon
+som inte kan fråga om klargörande när något är otydligt.</p>
+<p>I den världen är tydlighet inte ett plus. Det är ett krav.</p>
+<p>Och det fina är att detta är en färdighet du redan har. Du vet hur
+man ger bra instruktioner till människor. Du vet att kontext hjälper,
+att exempel är kraftfulla, att struktur underlättar.</p>
+<p>Samma principer gäller. De är bara viktigare nu.</p>
+<h2 id="sammanfattning">Sammanfattning</h2>
+<p><strong>AI-koncept</strong>: Prompt<br /> <strong>Mänsklig
+motsvarighet</strong>: Instruktioner till en ny assistent<br />
+<strong>Kom ihåg</strong>: En prompt är instruktioner till världens mest
+kapabla assistent – som aldrig träffat dig förut, tar allt bokstavligt,
+och glömmer allt mellan samtalen. Hur du frågar avgör helt vad du
+får.</p>
+<div style="page-break-after: always;">
+
+</div>
+</body>
+</html>

@@ -26,6 +26,12 @@ Denna mapp innehåller prompter för att generera bokomslag och kapitelillustrat
 | `chapter-06-embeddings.txt` | Tankens landskap | Mentalt landskap med ord som platser |
 | `chapter-07-training-weights.txt` | Uppväxt | Barn lär sig cykla (multiexponering) |
 | `chapter-08-fine-tuning.txt` | Specialisten | Läkare blir hjärtkirurg |
+| `chapter-09-prompt.txt` | Den nya assistenten | Person ger instruktioner |
+| `chapter-10-rag.txt` | Bibliotekarien | Bibliotekarie slår upp i böcker |
+| `chapter-11-transformer.txt` | Rundabordssamtalet | Konferensbord med alla-till-alla-kopplingar |
+| `chapter-12-inference.txt` | Tentadagen | Student skriver prov med fryst kunskap |
+| `chapter-13-latent-space.txt` | Ordlös förståelse | Drömlandskap med flytande former |
+| `chapter-14-overfitting.txt` | Tentaplugget | Student med memorerade svar möter ny fråga |
 
 ## Rekommenderade verktyg
 
@@ -61,7 +67,13 @@ assets/images/
 ├── chapter-01.jpg      # Kapitel 1
 ├── chapter-02.jpg      # Kapitel 2
 ├── ...
-└── chapter-08.jpg      # Kapitel 8
+├── chapter-08.jpg      # Kapitel 8
+├── chapter-09.jpg      # Kapitel 9
+├── chapter-10.jpg      # Kapitel 10
+├── chapter-11.jpg      # Kapitel 11
+├── chapter-12.jpg      # Kapitel 12
+├── chapter-13.jpg      # Kapitel 13
+└── chapter-14.jpg      # Kapitel 14
 ```
 
 ## Stilguide
