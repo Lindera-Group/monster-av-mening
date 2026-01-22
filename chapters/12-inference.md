@@ -1,4 +1,4 @@
-# Tentadagen: Nar AI:n tillämpar sin kunskap {.chapter}
+# Tentadagen: När AI:n tillämpar sin kunskap {.chapter}
 
 <div class="chapter-opening">
 
@@ -16,11 +16,11 @@
 
 <div style="page-break-after: always;"></div>
 
-Klockan är åtta på morgonen. Du sitter i en stor sal med hundra andra studenter. Framför dig ligger tentafrågorna uppochnervända. Pulsen slår lite hårdare än vanligt.
+Klockan är åtta på morgonen. Du sitter i en stor sal med hundra andra studenter. Framför dig ligger tentafrågorna uppochnervända. Pulsen slår hårdare än vanligt.
 
-När du vänder pappret och läser första frågan händer något remarkabelt: all den kunskap du samlat under veckors pluggande aktiveras. Definitioner, samband, exempel - de flödar fram ur minnet och formar sig till svar. Du konsulterar inte kursboken. Du googlar inte. Du använder det du redan kan.
+När du vänder pappret och läser första frågan händer något anmärkningsvärt: all den kunskap du samlat under veckors pluggande aktiveras. Definitioner, samband, exempel - de flödar fram ur minnet och formar sig till svar. Du konsulterar inte kursboken. Du googlar inte. Du använder det du redan kan.
 
-Och det som inte finns där? Det kan du inte trolla fram. Missade du att plugga på kapitel sju? Då spelar det ingen roll hur smart du är i stunden. Den kunskapen finns inte tillgänglig.
+Och det som inte finns där? Det kan du inte trolla fram. Missade du kapitel sju? Då spelar det ingen roll hur smart du är i stunden. Den kunskapen finns inte tillgänglig.
 
 Välkommen till inference.
 
@@ -30,7 +30,7 @@ Välkommen till inference.
 
 På exakt samma sätt fungerar inference - det ögonblick då en AI-modell faktiskt svarar på din fråga.
 
-Modellen har redan genomgått sin "pluggperiod" - månader av träning på enorma mängder text, där den justerade sina miljarder parametrar för att bli bättre på att förutsäga nästa ord. Den perioden är över. Vikterna är satta. Kunskapen är inläst.
+Modellen har redan genomgått sin "pluggperiod" - månader av träning på enorma mängder text, där den justerade sina miljarder parametrar för att bli bättre på att förutsäga nästa ord. Den perioden är över. Den har satt vikterna. Den har läst in kunskapen.
 
 Nu sitter den vid sitt prov. Du ställer en fråga. Modellen aktiverar sina inlärda mönster, låter informationen flöda framåt genom lager efter lager av beräkningar, och producerar ett svar.
 
@@ -44,7 +44,7 @@ Detta är skillnaden mellan träning och inference. Träning är pluggperioden: 
 
 Här blir analogin ännu mer precis - och kanske mer förbluffande.
 
-Tänk dig en tenta där varje fråga beror på dina tidigare svar. Fråga ett lyder: "Skriv det första ordet i en mening om havet." Du skriver "Vågornas". Fråga två lyder: "Givet att du skrev 'Vågornas', vad är nästa ord?" Du skriver "rytm".
+Föreställ dig en tenta där varje fråga beror på dina tidigare svar. Fråga ett: "Skriv det första ordet i en mening om havet." Du skriver "Vågornas". Fråga två: "Givet att du skrev 'Vågornas', vad är nästa ord?" Du skriver "rytm".
 
 Så fortsätter det. Ord för ord. Fråga för fråga.
 
@@ -56,13 +56,13 @@ Och varje nytt ord påverkar nästa. Modellen ser allt den redan skrivit och fr�
 
 ## Den osynliga kostnaden
 
-Här kommer en insikt som överraskar många: inference är inte gratis.
+Inference är inte gratis.
 
-På tentadagen kostar det dig mental energi, koncentration, kanske stress. Men du tänker sällan på kostnaden - den känns abstrakt.
+På tentadagen kostar det dig mental energi, koncentration, stress. Men du tänker sällan på kostnaden - den känns abstrakt.
 
 För AI är kostnaden högst konkret. Varje gång du ställer en fråga till ChatGPT aktiveras tusentals datorer någonstans i världen. Miljarder matrismultiplikationer utförs. Elektricitet förbrukas. Servrar hettas upp och kyls ner.
 
-Och denna kostnad är inte trivial. Över en modells livstid kostar inference ungefär femton gånger mer än den ursprungliga träningen. Ja, du läste rätt: själva "pluggperioden" var billig i jämförelse med alla de tentor som sedan skrivs.
+Denna kostnad är inte försumbar. Över en modells livstid kostar inference ungefär femton gånger mer än den ursprungliga träningen. "Pluggperioden" var billig i jämförelse med alla de tentor som sedan skrivs.
 
 Det är därför AI-företag bryr sig så mycket om effektivitet. Varje millisekund räknas. Varje sparad beräkning är pengar i fickan. Och det är därför du ibland möter begränsningar - kortare svar, enklare modeller för enklare frågor. Resurserna är inte oändliga.
 
@@ -94,11 +94,11 @@ Låt mig ta dig med på en resa genom en inference-cykel.
 
 Du skriver: "Varför är himlen blå?"
 
-Först tokeniseras din fråga - orden bryts ner till bitar som modellen kan förstå. "Varför" blir en token. "himlen" kanske blir en. "blå" likaså. Frågetecknet för sig.
+Först tokeniseras din fråga - orden bryts ner till bitar som modellen kan förstå. "Varför" blir en token. "himlen" blir en. "blå" likaså. Frågetecknet för sig.
 
 Sedan börjar resan framåt genom nätverket. Lager för lager multipliceras dessa tokens med modellens vikter - de miljarder tal som utgör dess "kunskap". Attention-mekanismen avgör vilka delar av frågan som är viktigast. Matematiska transformationer sker i varje steg.
 
-Till slut, efter att ha passerat genom kanske hundra lager, produceras en sannolikhetsfördelning: vilka ord är mest sannolika att komma härnäst? Modellen väljer ett. Säg "Himlen".
+Till slut, efter att ha passerat genom hundra lager, produceras en sannolikhetsfördelning: vilka ord är mest sannolika att komma härnäst? Modellen väljer ett. Säg "Himlen".
 
 Nu börjar processen om. Med "Varför är himlen blå? Himlen" som utgångspunkt beräknas nästa ord. "ser". Sen "blå". Sen "ut". Och så vidare, ord för ord, tills svaret är komplett.
 

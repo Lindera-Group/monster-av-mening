@@ -18,7 +18,7 @@
 
 Du vaknar mitt i natten. Någonting är fel.
 
-Inte ett ljud som väckte dig. Inte hunger eller törst. Bara en... känsla. En diffus oro som fyller rummet. Du ligger stilla och försöker greppa vad det är. Något med jobbet? Nej. Något med barnen? Kanske. Eller vänta -- var det något du glömde?
+Inte ett ljud som väckte dig. Inte hunger eller törst. Bara en känsla. En diffus oro som fyller rummet. Du ligger stilla och försöker greppa vad det är. Något med jobbet? Nej. Något med barnen? Kanske. Eller vänta -- var det något du glömde?
 
 Känslan är verklig. Den är påtaglig. Du *vet* att den pekar på något. Men vad? Du famlar efter ord, efter konkreta tankar, men de glider undan. Det är som att försöka gripa dimma.
 
@@ -54,7 +54,7 @@ Du har en komprimerad representation av något komplext. Inte varje detalj, men 
 
 ## Hur AI:ns latent space fungerar
 
-Låt oss se hur detta fungerar i praktiken.
+Hur fungerar detta i praktiken?
 
 En bildgenererande AI som Stable Diffusion arbetar med två världar: den yttre världen av pixlar och den inre världen av latenta representationer.
 
@@ -70,7 +70,7 @@ Det är som skillnaden mellan att ha en minnesbild av din barndoms sovrum och at
 
 ## Vad gör latent space speciellt?
 
-Det fascinerande med latent space är inte bara komprimeringen -- det är vad som blir möjligt i det komprimerade tillståndet.
+Det anmärkningsvärda med latent space är inte bara komprimeringen -- det är vad som blir möjligt i det komprimerade tillståndet.
 
 **Smidiga övergångar**: I latent space kan du röra dig gradvis mellan två koncept. Ta en latent representation av ett vinterlandskap och en av en sommaräng. Rör dig långsamt mellan dem, och du får alla årstider däremellan -- naturligt, smidigt, utan hack.
 
@@ -84,16 +84,14 @@ Tänk på det som skillnaden mellan en ordbok och ett recept. Embeddings visar v
 
 ## Den kreativa drömfabriken
 
-Moderna bildgeneratorer som Stable Diffusion arbetar helt i latent space. Processen är fascinerande:
+Moderna bildgeneratorer som Stable Diffusion arbetar helt i latent space. Processen ser ut så här:
 
-1. **Börja med brus**: Rent matematiskt kaos -- slumpmässiga tal utan mening
+1. **Börja med brus**: Matematiskt kaos -- slumpmässiga tal utan mening
 2. **Låt texten guida**: Din prompt ("en rödhårig kvinna i solnedgång") översätts till en riktning i latent space
 3. **Gradvis förfining**: Steg för steg rensas bruset bort, styrt av promptens riktning
-4. **Dekoda till bild**: Först i sista steget översätts resultatet till pixlar
+4. **Dekoda till bild**: I sista steget översätts resultatet till pixlar
 
-Det är som att skulptera i dimma. Du börjar med ingenting, låter din intention forma molnet, och till slut framträder formen.
-
-Det hela sker i det komprimerade, dolda rummet -- där bilder existerar som möjligheter snarare än som pixlar.
+Det är som att skulptera i dimma. Du börjar med ingenting, låter din intention forma molnet, och till slut framträder formen -- allt i det dolda rummet där bilder existerar som möjligheter snarare än som pixlar.
 
 
 
@@ -115,21 +113,21 @@ Eller uttryckt genom vår analogi: Embeddings är som ditt mentala ordförråd -
 
 ## Drömmarnas logik
 
-Det finns en frestande parallell till drömmar.
+Det finns en parallell till drömmar.
 
 I drömmen komprimeras upplevelser på märkliga sätt. Din gamla skola smälter samman med nuvarande arbetsplats. En person är samtidigt din mormor och din chef. Tidslinjer kollapsar.
 
 Latent space har liknande egenskaper. I det komprimerade rummet kan koncept flyta in i varandra. Gränser som är skarpa i verkligheten -- mellan ansikte A och ansikte B, mellan stil X och stil Y -- blir mjuka och överskridliga.
 
-Men analogin har sina gränser. Drömmar har psykologisk betydelse, emotionell laddning, kanske till och med funktion för minneskonsolidering. AI:ns latent space är rent matematiskt. Det finns ingen drömmande, inget undermedvetet, ingen mening bortom statistiken.
+Men analogin har sina gränser. Drömmar har psykologisk betydelse, emotionell laddning, funktion för minneskonsolidering. AI:ns latent space är matematiskt. Det finns ingen drömmande, inget undermedvetet, ingen mening bortom statistiken.
 
 
 
 ## Begränsningar och ärlighet
 
-Låt oss vara tydliga med var analogin brister.
+Var brister analogin?
 
-**Ingen upplevare**: Din ordlösa förståelse upplevs av dig -- det finns ett subjekt som vet. Latent space är bara siffror. Ingen "känner" de latenta representationerna.
+**Ingen upplevare**: Din ordlösa förståelse upplevs av dig -- det finns ett subjekt som vet. Latent space är siffror. Ingen "känner" de latenta representationerna.
 
 **Ingen tid**: Din känsla-innan-orden utvecklas. Du tänker vidare, fördjupar, omvärderar. En latent representation är en statisk ögonblicksbild -- frusen i ett matematiskt nu.
 

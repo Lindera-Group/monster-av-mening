@@ -20,7 +20,7 @@ Du sitter i ett styrelsemöte. Tio personer runt bordet, var och en med sin expe
 
 Och du? Du försöker lyssna på en person i taget.
 
-Men något magiskt händer i ditt huvud. När ekonomichefen säger "ökade kostnader" kopplar du omedelbart tillbaka till vad teknikchefen sa om förseningen. När marknadsföraren nämner konkurrenten ekar det mot budgetsiffrorna. Du bygger inte förståelse linjärt, ord för ord -- du väver samman allt simultant, hittar mönster och kopplingar som ingen explicit har uttalat.
+Men din hjärna gör något märkligt. När ekonomichefen säger "ökade kostnader" kopplar du omedelbart tillbaka till vad teknikchefen sa om förseningen. När marknadsföraren nämner konkurrenten ekar det mot budgetsiffrorna. Du bygger inte förståelse linjärt, ord för ord -- du väver samman allt simultant, hittar mönster och kopplingar som ingen explicit uttalat.
 
 Det är i sådana ögonblick du tänker som en Transformer.
 

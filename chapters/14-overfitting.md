@@ -18,7 +18,7 @@
 
 Natten före tentan. Lampan lyser på skrivbordet. Du har gått igenom de senaste fem årens gamla tentafrågor så många gånger att du kan svaren utantill. Fråga 3b? Det är den med differentialekvationen -- svaret börjar med "Vi ansätter y = e^rx". Fråga 7? Termodynamikproblemet där svaret alltid blir 273 Kelvin.
 
-Du känner dig förberedd. Nej, mer än förberedd. Du äger det här.
+Du känner dig förberedd. Du äger det här.
 
 Sen kommer tentan. Och fråga 3b handlar fortfarande om differentialekvationer -- men den är formulerad annorlunda. Siffrorna är andra. Istället för att be dig "lösa" ber den dig "visa att". Din memorerade lösningsgång passar inte längre.
 
@@ -30,7 +30,7 @@ Välkommen till overfitting.
 
 ## Bryggan till AI
 
-På exakt samma sätt kan en AI-modell lura sig själv under träningen. Den exponeras för tusentals, ibland miljontals, exempel -- sin version av "gamla tentor" -- och lär sig att hantera dem med imponerande precision. Men istället för att förstå de underliggande mönstren, de principer som gör att svaren fungerar, memorerar den de specifika exemplen.
+En AI-modell kan lura sig själv på samma sätt under träningen. Den exponeras för tusentals, ibland miljontals, exempel -- sin version av "gamla tentor" -- och lär sig att hantera dem med imponerande precision. Men istället för att förstå de underliggande mönstren, de principer som gör att svaren fungerar, memorerar den de specifika exemplen.
 
 Det är som en student som inte inser skillnaden mellan att kunna rabbla formler och att förstå varför formlerna fungerar.
 
@@ -50,7 +50,7 @@ Föreställ dig att du ska lära dig känna igen katter på bilder. Det "rätta"
 
 Det "enkla" sättet är att memorera. "Bild 4721 = katt. Bild 4722 = hund. Bild 4723 = katt." Ingen abstraktion krävs. Bara ren lagring.
 
-För en AI-modell är memorering en genväg. Nätverkets vikter kan snabbt anpassa sig för att matcha specifika input-output-par utan att bygga djupare representationer. Det är som studenten som upptäcker att det går snabbare att lära sig svaren än att förstå materialet.
+För en AI-modell är memorering en genväg. Nätverkets vikter anpassar sig snabbt för att matcha specifika input-output-par utan att bygga djupare representationer. Det är som studenten som upptäcker att det går snabbare att lära sig svaren än att förstå materialet.
 
 Problemet är att verkligheten inte ger samma prov två gånger.
 

@@ -8,7 +8,7 @@
 
 <div class="chapter-ingress">
 
-*En prompt ar som instruktioner till en ny assistent - nagot som visar att hur du fragar avgor vad du far tillbaka.*
+*En prompt är som instruktioner till en ny assistent – något som visar att hur du frågar avgör vad du får tillbaka.*
 
 </div>
 
