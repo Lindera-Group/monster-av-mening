@@ -16,174 +16,174 @@
 
 <div style="page-break-after: always;"></div>
 
-Det ar din forsta dag med den nya assistenten. Hon heter Lisa, har tva masterexamina, tio ars erfarenhet fran branschledande foretag, och ett CV som far dig att undra varfor hon ens sokte jobbet.
+Det är din första dag med den nya assistenten. Hon heter Lisa, har två masterexamina, tio års erfarenhet från branschledande företag, och ett CV som får dig att undra varför hon ens sökte jobbet.
 
-"Kan du fixa det dar med rapporten?" sager du pa vag ut till lunch.
+"Kan du fixa det där med rapporten?" säger du på väg ut till lunch.
 
-Nar du kommer tillbaka har Lisa lagt sjutton timmar pa att skriva om hela arsredovisningen fran grunden. Med fotnoter. Pa engelska.
+När du kommer tillbaka har Lisa lagt sjutton timmar på att skriva om hela årsredovisningen från grunden. Med fotnoter. På engelska.
 
-Du menade att hon skulle andra typsnittet pa sidan tre.
+Du menade att hon skulle ändra typsnittet på sidan tre.
 
-Det ar inte att Lisa ar inkompetent. Tvartemot - hon ar extraordinart kapabel. Problemet ar att hon aldrig traffat dig forut, inte kanner ditt foretag, och inte har en aning om vad "det dar med rapporten" betyder i ditt universum. Hon gjorde sitt absolut basta med den information hon hade.
+Det är inte att Lisa är inkompetent. Tvärtom – hon är extraordinärt kapabel. Problemet är att hon aldrig träffat dig förut, inte känner ditt företag, och inte har en aning om vad "det där med rapporten" betyder i ditt universum. Hon gjorde sitt absolut bästa med den information hon hade.
 
-Valkommen till promptens varld.
+Välkommen till promptens värld.
 
 
 
 ## Bryggan till AI
 
-Pa exakt samma satt fungerar kommunikationen med en sprakmodell. Du har framfor dig en otroligt kapabel assistent - en som last miljontals bocker, bemastrar hundratals amnen, och kan producera text pa minuter som skulle ta dig timmar. Men denna assistent kanner inte dig. Vet inget om ditt sammanhang. Har aldrig traffat dig forut.
+På exakt samma sätt fungerar kommunikationen med en språkmodell. Du har framför dig en otroligt kapabel assistent – en som läst miljontals böcker, bemästrar hundratals ämnen, och kan producera text på minuter som skulle ta dig timmar. Men denna assistent känner inte dig. Vet inget om ditt sammanhang. Har aldrig träffat dig förut.
 
-Och varje gang du startar en ny konversation? Det ar forsta dagen pa jobbet igen.
+Och varje gång du startar en ny konversation? Det är första dagen på jobbet igen.
 
-Det du skriver till AI:n - din "prompt" - ar dina instruktioner till denna nya, briljanta men kontextlosa assistent. Hur tydliga, fullstandiga och genomtankta dessa instruktioner ar avgor helt vad du far tillbaka.
-
-
-
-## Vad ar egentligen en prompt?
-
-Lat oss bryta ner det. En prompt ar all text du ger till en sprakmodell for att fa ett svar. Det later enkelt. Men under ytan finns flera lager:
-
-**System prompt**: Tankbar som personalhandboken som alla assistenter far forsta dagen. Den beskriver foretagets ton och stil, vad man far och inte far gora, grundlaggande arbetssatt. Denna del ser du som anvandare sallan - den kommer fran utvecklarna som byggt tjansten du anvander.
-
-**User prompt**: Det du faktiskt skriver. Dagens uppgift. "Skriv ett mejl till kunden om forseningen." "Sammanfatta gardagens mote." "Hjalp mig formulera det har tydligare."
-
-Tillsammans formar dessa vad AI:n "ser" - hela dess forstaelse av vad du vill ha.
+Det du skriver till AI:n – din "prompt" – är dina instruktioner till denna nya, briljanta men kontextlösa assistent. Hur tydliga, fullständiga och genomtänkta dessa instruktioner är avgör helt vad du får tillbaka.
 
 
 
-## Anatomin av en bra instruktion
+## Vad är egentligen en prompt?
 
-Tank tillbaka pa Lisa. Vad hade du kunnat gora annorlunda?
+Låt oss bryta ner det. En prompt är all text du ger till en språkmodell för att få ett svar. Det låter enkelt. Men under ytan finns flera lager:
 
-**Ge bakgrund forst**: "Vi forbereder en kundpresentation for Erikssons AB..."
+**System prompt**: Tänkbar som personalhandboken som alla assistenter får första dagen. Den beskriver företagets ton och stil, vad man får och inte får göra, grundläggande arbetssätt. Denna del ser du som användare sällan – den kommer från utvecklarna som byggt tjänsten du använder.
 
-**Var specifik med uppgiften**: "...och jag behover att du andrar typsnittet pa sidan tre till Arial..."
+**User prompt**: Det du faktiskt skriver. Dagens uppgift. "Skriv ett mejl till kunden om förseningen." "Sammanfatta gårdagens möte." "Hjälp mig formulera det här tydligare."
 
-**Beskriv formatet**: "...sa det matchar resten av dokumentet..."
+Tillsammans formar dessa vad AI:n "ser" – hela dess förståelse av vad du vill ha.
 
-**Ge ett exempel om det hjalper**: "...precis som vi gjorde med rapporten till Andersson forra veckan."
 
-Detta monster - bakgrund, uppgift, format, exempel - ar exakt hur effektiva prompts struktureras. Det ar ingen slump. Det ar sa tydlig kommunikation fungerar, oavsett om mottagaren ar manniska eller maskin.
+
+## Hur en bra instruktion är uppbyggd
+
+Tänk tillbaka på Lisa. Vad hade du kunnat göra annorlunda?
+
+**Ge bakgrund först**: "Vi förbereder en kundpresentation för Erikssons AB..."
+
+**Var specifik med uppgiften**: "...och jag behöver att du ändrar typsnittet på sidan tre till Arial..."
+
+**Beskriv formatet**: "...så det matchar resten av dokumentet..."
+
+**Ge ett exempel om det hjälper**: "...precis som vi gjorde med rapporten till Andersson förra veckan."
+
+Detta mönster – bakgrund, uppgift, format, exempel – är exakt hur effektiva prompts struktureras. Det är ingen slump. Det är så tydlig kommunikation fungerar, oavsett om mottagaren är människa eller maskin.
 
 
 
 ## Rollens kraft
 
-"Fran och med nu ar du var juridiska expert."
+"Från och med nu är du vår juridiska expert."
 
-Se vad som hander nar du sager detta till Lisa. Hennes hallning andras. Hon borjar tanka pa risker, formuleringar, ansvar. Inte for att hon plotsligt fatt juridisk utbildning, utan for att rollen formar hur hon narmar sig uppgiften.
+Se vad som händer när du säger detta till Lisa. Hennes hållning ändras. Hon börjar tänka på risker, formuleringar, ansvar. Inte för att hon plötsligt fått juridisk utbildning, utan för att rollen formar hur hon närmar sig uppgiften.
 
-AI fungerar likadant. Ge den en roll - "Du ar en erfaren redaktor med fokus pa klarsprak" - och svaren far en annan karaktar. Inte for att modellen "blir" en redaktor, utan for att rollbeskrivningen aktiverar andra monster i dess enorma traningsdata.
+AI fungerar likadant. Ge den en roll – "Du är en erfaren redaktör med fokus på klarspråk" – och svaren får en annan karaktär. Inte för att modellen "blir" en redaktör, utan för att rollbeskrivningen aktiverar andra mönster i dess enorma träningsdata.
 
-Det ar som att ge Lisa en mask att bara. Masken andrar inte vem hon ar, men den paverkar definitivt hur hon spelar sin roll.
-
-
-
-## Visa, forklara inte
-
-Forestall dig att du ska lara Lisa skriva veckorapporter i din stil. Du kan forklara i tio minuter: "Borja med en sammanfattning, sen tre huvudpunkter, avsluta med nasta steg, holl det kort men inte for kort, var professionell men inte stel..."
-
-Eller sa kan du visa henne en rapport du skrivit och saga: "Gor det sa har, fast for den har veckan."
-
-Vilken tror du fungerar battre?
-
-I AI-varlden kallas detta "few-shot prompting" - att ge nagra exempel pa onskad output istallet for att forklara i detalj. Det ar forvanansvarrt effektivt. Ett bra exempel sager ofta mer an tusen ord av instruktioner.
+Det är som att ge Lisa en mask att bära. Masken ändrar inte vem hon är, men den påverkar definitivt hur hon spelar sin roll.
 
 
 
-## Att be om tankegangen
+## Visa, förklara inte
 
-Ibland racker det inte att be om svaret. Du vill forstå hur man kom fram till det.
+Föreställ dig att du ska lära Lisa skriva veckorapporter i din stil. Du kan förklara i tio minuter: "Börja med en sammanfattning, sen tre huvudpunkter, avsluta med nästa steg, håll det kort men inte för kort, var professionell men inte stel..."
 
-"Lisa, hur resonerade du nar du bestamde att vi skulle ga med Leverantor B?"
+Eller så kan du visa henne en rapport du skrivit och säga: "Gör det så här, fast för den här veckan."
 
-Plotsligt far du inte bara beslutet utan tankegangen bakom. Du kan folja logiken, hitta eventuella missforstand, lara dig for framtiden.
+Vilken tror du fungerar bättre?
 
-For AI kallas detta "chain-of-thought prompting" - att be modellen tanka hogt. "Lat oss ga igenom det har steg for steg..." Effekten ar dramatisk, sarskilt for komplexa problem. Nar modellen tvingas artikulera sina resonemang blir svaren battre, mer genomtankta, lattare att verifiera.
-
-Det ar som skillnaden mellan att fa ett svar och att fa en forklaring.
+I AI-världen kallas detta "few-shot prompting" – att ge några exempel på önskad output istället för att förklara i detalj. Det är förvånansvärt effektivt. Ett bra exempel säger ofta mer än tusen ord av instruktioner.
 
 
 
-## Ordval spelar roll - mer an du tror
+## Att be om tankegången
 
-Har kommer nagot ovantat.
+Ibland räcker det inte att be om svaret. Du vill förstå hur man kom fram till det.
 
-Om du ber Lisa "sammanfatta" ett dokument eller "summera" det, far du ungefar samma resultat. Hon forstar att du menar samma sak.
+"Lisa, hur resonerade du när du bestämde att vi skulle gå med Leverantör B?"
+
+Plötsligt får du inte bara beslutet utan tankegången bakom. Du kan följa logiken, hitta eventuella missförstånd, lära dig för framtiden.
+
+För AI kallas detta "chain-of-thought prompting" – att be modellen tänka högt. "Låt oss gå igenom det här steg för steg..." Effekten är dramatisk, särskilt för komplexa problem. När modellen tvingas artikulera sina resonemang blir svaren bättre, mer genomtänkta, lättare att verifiera.
+
+Det är som skillnaden mellan att få ett svar och att få en förklaring.
+
+
+
+## Ordval spelar roll – mer än du tror
+
+Här kommer något oväntat.
+
+Om du ber Lisa "sammanfatta" ett dokument eller "summera" det, får du ungefär samma resultat. Hon förstår att du menar samma sak.
 
 AI:n? Inte alltid.
 
-Forskning visar att sma andringar i hur en prompt formuleras kan ge dramatiskt olika resultat - upp till 76 procentenheters skillnad i kvalitet enligt vissa studier. Det ar inte for att modellen ar dum. Det ar for att den tolkar sprak pa ett fundamentalt annorlunda satt an vi gor.
+Forskning visar att små ändringar i hur en prompt formuleras kan ge dramatiskt olika resultat – upp till 76 procentenheters skillnad i kvalitet enligt vissa studier. Det är inte för att modellen är dum. Det är för att den tolkar språk på ett fundamentalt annorlunda sätt än vi gör.
 
-Tanka dig att Lisa laste varje ord med en bokstavlighet som gransade till det absurda. "Kasta ett oga pa det har" skulle fa henne att undra var hon skulle hitta ett losa oga att kasta. Det ar inte riktigt sa extremt, men riktningen stammer.
+Tänk dig att Lisa läste varje ord med en bokstavlighet som gränsade till det absurda. "Kasta ett öga på det här" skulle få henne att undra var hon skulle hitta ett löst öga att kasta. Det är inte riktigt så extremt, men riktningen stämmer.
 
 
 
 ## Var analogin brister
 
-Den har bilden av assistenten ar anvandbar. Men den har sina granser.
+Den här bilden av assistenten är användbar. Men den har sina gränser.
 
-**Lisa fragar tillbaka**. Nar hon inte forstar sager hon: "Ursakte, menade du A eller B?" AI:n gissar istallet. Ofta gissar den ratt. Ibland gissar den spektakulart fel. Och du marker kanske inte skillnaden forran det ar for sent.
+**Lisa frågar tillbaka**. När hon inte förstår säger hon: "Ursäkta, menade du A eller B?" AI:n gissar istället. Ofta gissar den rätt. Ibland gissar den spektakulärt fel. Och du märker kanske inte skillnaden förrän det är för sent.
 
-**Lisa bygger en relation**. Efterhand lar hon kanna dina preferenser, din stil, vad "det vanliga" betyder. AI:n borjar fran noll varje konversation. Det ar som om Lisa fick minnesforlust varje morgon och du maste forklara allt fran borjan igen.
+**Lisa bygger en relation**. Efterhand lär hon känna dina preferenser, din stil, vad "det vanliga" betyder. AI:n börjar från noll varje konversation. Det är som om Lisa fick minnesförlust varje morgon och du måste förklara allt från början igen.
 
-**Lisa har sunt fornuft som sakerhetsnat**. Om du av misstag ber henne gora nagot uppenbart orimligt invander hon troligen. AI:n saknar samma intuition for vad som ar "sjalvklart fel".
+**Lisa har sunt förnuft som säkerhetsnät**. Om du av misstag ber henne göra något uppenbart orimligt invänder hon troligen. AI:n saknar samma intuition för vad som är "självklart fel".
 
-**Lisa forstar underforstadd mening**. Ironi, sarkasm, det som sags mellan raderna - en mannisklig assistent plockar ofta upp detta. AI:n tar saker mer bokstavligt an du tankt.
+**Lisa förstår underförstådd mening**. Ironi, sarkasm, det som sägs mellan raderna – en mänsklig assistent plockar ofta upp detta. AI:n tar saker mer bokstavligt än du tänkt.
 
-Det ar inte att AI:n ar samre an Lisa. Det ar att den ar annorlunda pa satt som inte alltid ar uppenbara.
+Det är inte att AI:n är sämre än Lisa. Det är att den är annorlunda på sätt som inte alltid är uppenbara.
 
 
 
-## Fran assistent till orkestrator
+## Från assistent till samordnare
 
-Har hander nagot intressant. Bilden av den enskilda assistenten haller pa att bli foraldrad.
+Här händer något intressant. Bilden av den enskilda assistenten håller på att bli föråldrad.
 
-Modern AI-anvandning liknar alltmer att vara projektledare for ett helt team av specialister. Du ger overgripande riktlinjer. Du koordinerar flera agenter som arbetar parallellt. Du itererar och forfinar. Du hamtar in information fran externa kallor.
+Modern AI-användning liknar alltmer att vara projektledare för ett helt team av specialister. Du ger övergripande riktlinjer. Du koordinerar flera agenter som arbetar parallellt. Du itererar och förfinar. Du hämtar in information från externa källor.
 
-Det ar inte langre "ge Lisa en uppgift". Det ar "led ett projekt dar Lisa, Mohammed och Priya har olika roller, och se till att de samarbetar effektivt."
+Det är inte längre "ge Lisa en uppgift". Det är "led ett projekt där Lisa, Mohammed och Priya har olika roller, och se till att de samarbetar effektivt."
 
-Prompt engineering har utvecklats fran "skriv en bra fraga" till "designa en hel arbetsprocess". Det ar fortfarande samma grundprincip - tydlig kommunikation avgor resultatet - men skalan har forandrats.
+Prompt engineering har utvecklats från "skriv en bra fråga" till "designa en hel arbetsprocess". Det är fortfarande samma grundprincip – tydlig kommunikation avgör resultatet – men skalan har förändrats.
 
 
 
 ## Praktiska tips
 
-Baserat pa allt detta, vad kan du gora battre?
+Baserat på allt detta, vad kan du göra bättre?
 
-**Borja med kontexten**. Innan du ger uppgiften, ge bakgrunden. "Jag arbetar med en presentation for potentiella investerare i ett halsotechforetag..."
+**Börja med kontexten**. Innan du ger uppgiften, ge bakgrunden. "Jag arbetar med en presentation för potentiella investerare i ett hälsotechföretag..."
 
-**Var specifik**. "Sammanfatta i tre punkter" ar battre an "sammanfatta". "Max 200 ord" ar battre an "holl det kort".
+**Var specifik**. "Sammanfatta i tre punkter" är bättre än "sammanfatta". "Max 200 ord" är bättre än "håll det kort".
 
-**Visa exempel**. Om du har ett exempel pa vad du vill ha, inkludera det. Det ar nastan alltid effektivare an att forklara.
+**Visa exempel**. Om du har ett exempel på vad du vill ha, inkludera det. Det är nästan alltid effektivare än att förklara.
 
-**Tilldela en roll**. "Du ar en erfaren marknadsstrateg med fokus pa B2B" paverkar svaren mer an du tror.
+**Tilldela en roll**. "Du är en erfaren marknadsstrateg med fokus på B2B" påverkar svaren mer än du tror.
 
-**Be om resonemang**. For komplexa fragor, lagg till "Tank igenom det har steg for steg innan du svarar."
+**Be om resonemang**. För komplexa frågor, lägg till "Tänk igenom det här steg för steg innan du svarar."
 
-**Iterera**. Det forsta svaret ar sallan det basta. Bygg vidare. "Bra, men kan du gora det mer koncist?" "Kan du lagga till ett exempel?" "Fokusera mer pa ekonomin."
+**Iterera**. Det första svaret är sällan det bästa. Bygg vidare. "Bra, men kan du göra det mer koncist?" "Kan du lägga till ett exempel?" "Fokusera mer på ekonomin."
 
 
 
 ## Slutord
 
-Nasta gang du skriver till en AI, forestall dig Lisa. Briljant, kapabel, ivrig att hjalpa - men helt utan kontext om vem du ar och vad du egentligen vill.
+Nästa gång du skriver till en AI, föreställ dig Lisa. Briljant, kapabel, ivrig att hjälpa – men helt utan kontext om vem du är och vad du egentligen vill.
 
-Varje prompt ar instruktioner till nagon som aldrig traffat dig forut. Nagon som tar det du skriver mer bokstavligt an du tankt. Nagon som inte kan fraga om klargorande nar nagot ar otydligt.
+Varje prompt är instruktioner till någon som aldrig träffat dig förut. Någon som tar det du skriver mer bokstavligt än du tänkt. Någon som inte kan fråga om klargörande när något är otydligt.
 
-I den varlden ar tydlighet inte ett plus. Det ar ett krav.
+I den världen är tydlighet inte ett plus. Det är ett krav.
 
-Och det fina ar att detta ar en fardighet du redan har. Du vet hur man ger bra instruktioner till manniskor. Du vet att kontext hjalper, att exempel ar kraftfulla, att struktur underlättar.
+Och det fina är att detta är en färdighet du redan har. Du vet hur man ger bra instruktioner till människor. Du vet att kontext hjälper, att exempel är kraftfulla, att struktur underlättar.
 
-Samma principer galler. De ar bara viktigare nu.
+Samma principer gäller. De är bara viktigare nu.
 
 
 
 ## Sammanfattning
 
 **AI-koncept**: Prompt<br />
-**Mansklig motsvarighet**: Instruktioner till en ny assistent<br />
-**Kom ihag**: En prompt ar instruktioner till varldens mest kapabla assistent - som aldrig traffat dig forut, tar allt bokstavligt, och glommer allt mellan samtalen. Hur du fragar avgor helt vad du far.
+**Mänsklig motsvarighet**: Instruktioner till en ny assistent<br />
+**Kom ihåg**: En prompt är instruktioner till världens mest kapabla assistent – som aldrig träffat dig förut, tar allt bokstavligt, och glömmer allt mellan samtalen. Hur du frågar avgör helt vad du får.
 
 <div style="page-break-after: always;"></div>

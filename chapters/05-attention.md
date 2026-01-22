@@ -18,7 +18,7 @@
 
 Du läser en mening: "Maria gav boken till Erik fast han redan hade läst den."
 
-Utan att tänka på det gör din hjärna något remarkabelt. Den kopplar automatiskt ihop "han" med "Erik" och "den" med "boken". Den vet att "redan hade läst" beskriver Eriks tidigare handling, inte Marias. Den förstår att "fast" signalerar en motsättning.
+Utan att tänka på det gör din hjärna något anmärkningsvärt. Den kopplar automatiskt ihop "han" med "Erik" och "den" med "boken". Den vet att "redan hade läst" beskriver Eriks tidigare handling, inte Marias. Den förstår att "fast" signalerar en motsättning.
 
 Du gör detta omedelbart, omedvetet, tusentals gånger per dag.
 
@@ -156,7 +156,7 @@ Det är vad attention gör. Varje ord drar trådar till andra ord. Trådarna är
 
 ## Slutord
 
-Nästa gång du läser en komplicerad mening och din hjärna automatiskt kopplar ihop rätt subjekt med rätt verb, rätt pronomen med rätt person – tänk på att du gör något remarkabelt.
+Nästa gång du läser en komplicerad mening och din hjärna automatiskt kopplar ihop rätt subjekt med rätt verb, rätt pronomen med rätt person – tänk på att du gör något anmärkningsvärt.
 
 Du drar osynliga trådar genom meningen, viktar relevans, bygger förståelse ur fragment.
 
