@@ -16,15 +16,15 @@
 
 <div style="page-break-after: always;"></div>
 
-Det är din första dag med den nya assistenten. Hon heter Lisa, har två masterexamina, tio års erfarenhet från branschledande företag, och ett CV som får dig att undra varför hon ens sökte jobbet.
+Det är din första dag med den nya assistenten. Han heter Erik, är nyutexaminerad från universitetet med toppbetyg, och har en energi som får dig att undra om han dricker kaffe intravenöst.
 
 "Kan du fixa det där med rapporten?" säger du på väg ut till lunch.
 
-När du kommer tillbaka har Lisa lagt sjutton timmar på att skriva om hela årsredovisningen från grunden. Med fotnoter. På engelska.
+När du kommer tillbaka har Erik lagt sjutton timmar på att skriva om hela årsredovisningen från grunden. Med fotnoter. På engelska.
 
-Du menade att hon skulle ändra typsnittet på sidan tre.
+Du menade att han skulle ändra typsnittet på sidan tre.
 
-Det är inte att Lisa är inkompetent. Tvärtom – hon är extraordinärt kapabel. Problemet är att hon aldrig träffat dig förut, inte känner ditt företag, och inte har en aning om vad "det där med rapporten" betyder i ditt universum. Hon gjorde sitt absolut bästa med den information hon hade.
+Det är inte att Erik är inkompetent. Tvärtom – han är extraordinärt kapabel. Problemet är att han aldrig träffat dig förut, inte känner ditt företag, och inte har en aning om vad "det där med rapporten" betyder i ditt universum. Han gjorde sitt absolut bästa med den information han hade.
 
 Välkommen till promptens värld.
 
@@ -54,7 +54,7 @@ Tillsammans formar dessa vad AI:n "ser" – hela dess förståelse av vad du vil
 
 ## Hur en bra instruktion är uppbyggd
 
-Tänk tillbaka på Lisa. Vad hade du kunnat göra annorlunda?
+Tänk tillbaka på Erik. Vad hade du kunnat göra annorlunda?
 
 **Ge bakgrund först**: "Vi förbereder en kundpresentation för Erikssons AB..."
 
@@ -72,19 +72,19 @@ Detta mönster – bakgrund, uppgift, format, exempel – är exakt hur effektiv
 
 "Från och med nu är du vår juridiska expert."
 
-Se vad som händer när du säger detta till Lisa. Hennes hållning ändras. Hon börjar tänka på risker, formuleringar, ansvar. Inte för att hon plötsligt fått juridisk utbildning, utan för att rollen formar hur hon närmar sig uppgiften.
+Se vad som händer när du säger detta till Erik. Hans hållning ändras. Han börjar tänka på risker, formuleringar, ansvar. Inte för att han plötsligt fått juridisk utbildning, utan för att rollen formar hur han närmar sig uppgiften.
 
 AI fungerar likadant. Ge den en roll – "Du är en erfaren redaktör med fokus på klarspråk" – och svaren får en annan karaktär. Inte för att modellen "blir" en redaktör, utan för att rollbeskrivningen aktiverar andra mönster i dess enorma träningsdata.
 
-Det är som att ge Lisa en mask att bära. Masken ändrar inte vem hon är, men den påverkar definitivt hur hon spelar sin roll.
+Det är som att ge Erik en mask att bära. Masken ändrar inte vem han är, men den påverkar definitivt hur han spelar sin roll.
 
 
 
 ## Visa, förklara inte
 
-Föreställ dig att du ska lära Lisa skriva veckorapporter i din stil. Du kan förklara i tio minuter: "Börja med en sammanfattning, sen tre huvudpunkter, avsluta med nästa steg, håll det kort men inte för kort, var professionell men inte stel..."
+Föreställ dig att du ska lära Erik skriva veckorapporter i din stil. Du kan förklara i tio minuter: "Börja med en sammanfattning, sen tre huvudpunkter, avsluta med nästa steg, håll det kort men inte för kort, var professionell men inte stel..."
 
-Eller så kan du visa henne en rapport du skrivit och säga: "Gör det så här, fast för den här veckan."
+Eller så kan du visa honom en rapport du skrivit och säga: "Gör det så här, fast för den här veckan."
 
 Vilken tror du fungerar bättre?
 
@@ -96,7 +96,7 @@ I AI-världen kallas detta "few-shot prompting" – att ge några exempel på ö
 
 Ibland räcker det inte att be om svaret. Du vill förstå hur man kom fram till det.
 
-"Lisa, hur resonerade du när du bestämde att vi skulle gå med Leverantör B?"
+"Erik, hur resonerade du när du bestämde att vi skulle gå med Leverantör B?"
 
 Plötsligt får du inte bara beslutet utan tankegången bakom. Du kan följa logiken, hitta eventuella missförstånd, lära dig för framtiden.
 
@@ -110,13 +110,13 @@ Det är som skillnaden mellan att få ett svar och att få en förklaring.
 
 Här kommer något oväntat.
 
-Om du ber Lisa "sammanfatta" ett dokument eller "summera" det, får du ungefär samma resultat. Hon förstår att du menar samma sak.
+Om du ber Erik "sammanfatta" ett dokument eller "summera" det, får du ungefär samma resultat. Han förstår att du menar samma sak.
 
 AI:n? Inte alltid.
 
 Forskning visar att små ändringar i hur en prompt formuleras kan ge dramatiskt olika resultat – upp till 76 procentenheters skillnad i kvalitet enligt vissa studier. Det är inte för att modellen är dum. Det är för att den tolkar språk på ett fundamentalt annorlunda sätt än vi gör.
 
-Tänk dig att Lisa läste varje ord med en bokstavlighet som gränsade till det absurda. "Kasta ett öga på det här" skulle få henne att undra var hon skulle hitta ett löst öga att kasta. Det är inte riktigt så extremt, men riktningen stämmer.
+Tänk dig att Erik läste varje ord med en bokstavlighet som gränsade till det absurda. "Kasta ett öga på det här" skulle få honom att undra var han skulle hitta ett löst öga att kasta. Det är inte riktigt så extremt, men riktningen stämmer.
 
 
 
@@ -124,15 +124,15 @@ Tänk dig att Lisa läste varje ord med en bokstavlighet som gränsade till det 
 
 Den här bilden av assistenten är användbar. Men den har sina gränser.
 
-**Lisa frågar tillbaka**. När hon inte förstår säger hon: "Ursäkta, menade du A eller B?" AI:n gissar istället. Ofta gissar den rätt. Ibland gissar den spektakulärt fel. Och du märker kanske inte skillnaden förrän det är för sent.
+**Erik frågar tillbaka**. När han inte förstår säger han: "Ursäkta, menade du A eller B?" AI:n gissar istället. Ofta gissar den rätt. Ibland gissar den spektakulärt fel. Och du märker kanske inte skillnaden förrän det är för sent.
 
-**Lisa bygger en relation**. Efterhand lär hon känna dina preferenser, din stil, vad "det vanliga" betyder. AI:n börjar från noll varje konversation. Det är som om Lisa fick minnesförlust varje morgon och du måste förklara allt från början igen.
+**Erik bygger en relation**. Efterhand lär han känna dina preferenser, din stil, vad "det vanliga" betyder. AI:n börjar från noll varje konversation. Det är som om Erik fick minnesförlust varje morgon och du måste förklara allt från början igen.
 
-**Lisa har sunt förnuft som säkerhetsnät**. Om du av misstag ber henne göra något uppenbart orimligt invänder hon troligen. AI:n saknar samma intuition för vad som är "självklart fel".
+**Erik har sunt förnuft som säkerhetsnät**. Om du av misstag ber honom göra något uppenbart orimligt invänder han troligen. AI:n saknar samma intuition för vad som är "självklart fel".
 
-**Lisa förstår underförstådd mening**. Ironi, sarkasm, det som sägs mellan raderna – en mänsklig assistent plockar ofta upp detta. AI:n tar saker mer bokstavligt än du tänkt.
+**Erik förstår underförstådd mening**. Ironi, sarkasm, det som sägs mellan raderna – en mänsklig assistent plockar ofta upp detta. AI:n tar saker mer bokstavligt än du tänkt.
 
-Det är inte att AI:n är sämre än Lisa. Det är att den är annorlunda på sätt som inte alltid är uppenbara.
+Det är inte att AI:n är sämre än Erik. Det är att den är annorlunda på sätt som inte alltid är uppenbara.
 
 
 
@@ -142,7 +142,7 @@ Här händer något intressant. Bilden av den enskilda assistenten håller på a
 
 Modern AI-användning liknar alltmer att vara projektledare för ett helt team av specialister. Du ger övergripande riktlinjer. Du koordinerar flera agenter som arbetar parallellt. Du itererar och förfinar. Du hämtar in information från externa källor.
 
-Det är inte längre "ge Lisa en uppgift". Det är "led ett projekt där Lisa, Mohammed och Priya har olika roller, och se till att de samarbetar effektivt."
+Det är inte längre "ge Erik en uppgift". Det är "led ett projekt där Erik, Anna och Mohammed har olika roller, och se till att de samarbetar effektivt."
 
 Prompt engineering har utvecklats från "skriv en bra fråga" till "designa en hel arbetsprocess". Det är fortfarande samma grundprincip – tydlig kommunikation avgör resultatet – men skalan har förändrats.
 
@@ -168,7 +168,7 @@ Baserat på allt detta, vad kan du göra bättre?
 
 ## Slutord
 
-Nästa gång du skriver till en AI, föreställ dig Lisa. Briljant, kapabel, ivrig att hjälpa – men helt utan kontext om vem du är och vad du egentligen vill.
+Nästa gång du skriver till en AI, föreställ dig Erik. Briljant, kapabel, ivrig att hjälpa – men helt utan kontext om vem du är och vad du egentligen vill.
 
 Varje prompt är instruktioner till någon som aldrig träffat dig förut. Någon som tar det du skriver mer bokstavligt än du tänkt. Någon som inte kan fråga om klargörande när något är otydligt.
 

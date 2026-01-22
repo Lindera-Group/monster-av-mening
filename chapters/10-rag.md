@@ -16,15 +16,15 @@
 
 <div style="page-break-after: always;"></div>
 
-Du står vid informationsdisken på stadsbiblioteket. Framför dig sitter en man i femtioårsåldern, glasögon nedputtade på näsan, omgiven av bokhyllornas labyrint.
+Du står vid informationsdisken på stadsbiblioteket. Framför dig sitter en kvinna i fyrtioårsåldern, glasögon uppskjutna i pannan, omgiven av bokhyllornas labyrint.
 
 "Jag funderar på att installera bergvärme", säger du. "Vad kostar det? Hur djupt måste man borra? Behöver man tillstånd?"
 
-Bibliotekarien kunde svara direkt från minnet. Han har sett tusentals frågor genom åren, snappat upp kunskapsbitar från samtal och nyheter. Han kunde säga: "Jag tror det kostar runt 150 000, och man borrar kanske 100 meter."
+Bibliotekarien kunde svara direkt från minnet. Hon har sett tusentals frågor genom åren, snappat upp kunskapsbitar från samtal och nyheter. Hon kunde säga: "Jag tror det kostar runt 150 000, och man borrar kanske 100 meter."
 
-Men det gör han inte.
+Men det gör hon inte.
 
-Istället reser han sig, går till datorn, söker i bibliotekskatalogen. Han går till fackhyllan, plockar ner tre böcker om jordvärme och en om bygglov. Han bläddrar snabbt, hittar relevanta kapitel, läser ett par stycken. Sen återvänder han till dig.
+Istället reser hon sig, går till datorn, söker i bibliotekskatalogen. Hon går till fackhyllan, plockar ner tre böcker om jordvärme och en om bygglov. Hon bläddrar snabbt, hittar relevanta kapitel, läser ett par stycken. Sen återvänder hon till dig.
 
 "Enligt Energimyndighetens guide från förra året ligger kostnaden mellan 120 000 och 200 000 kronor beroende på djup och markförhållandena. Standarddjup är 80-200 meter. Och ja – i de flesta kommuner krävs anmälan till miljönämnden, ibland tillstånd om du bor nära vattentäkt. Vill du låna någon av de här?"
 
@@ -52,13 +52,13 @@ Låt oss följa processen mer noggrant, för den avslöjar någonting fascineran
 
 ### Steg 1: Förstå frågan
 
-När du ställer din fråga om bergvärme gör bibliotekarien först en *tolkning*. Han hänger inte upp sig på de exakta orden du använde – han förstår att du söker information om geotermiska värmepumpar, installationskostnader och myndighetskrav.
+När du ställer din fråga om bergvärme gör bibliotekarien först en *tolkning*. Hon hänger inte upp sig på de exakta orden du använde – hon förstår att du söker information om geotermiska värmepumpar, installationskostnader och myndighetskrav.
 
 På samma sätt omvandlar ett RAG-system din fråga till en "embedding" – en matematisk representation av *innebörden* i din fråga. Det är som att översätta från ord till tankemotiv.
 
 ### Steg 2: Katalogen
 
-Bibliotekarien går inte till en slumpmässig hylla. Han använder katalogen – ett system där varje bok är klassificerad efter ämne, nyckelord och innehåll.
+Bibliotekarien går inte till en slumpmässig hylla. Hon använder katalogen – ett system där varje bok är klassificerad efter ämne, nyckelord och innehåll.
 
 RAG-systemet har en liknande "katalog" – en vektordatabas där varje textbit från kunskapsbasen har klassificerats och indexerats. När din fråga omvandlats till ett tankemotiv söker systemet efter textbitar med *liknande* tankemotiv.
 
@@ -66,13 +66,13 @@ Och här är det eleganta: det handlar inte om att hitta exakta ord. "Bergvärme
 
 ### Steg 3: Böcker från hyllan
 
-Nu plockar bibliotekarien fram 3-7 böcker. Inte alla böcker i ämnet – bara de mest relevanta för just din fråga. Han öppnar dem vid de kapitel som troligast innehåller svaret.
+Nu plockar bibliotekarien fram 3-7 böcker. Inte alla böcker i ämnet – bara de mest relevanta för just din fråga. Hon öppnar dem vid de kapitel som troligast innehåller svaret.
 
 RAG-systemet gör samma sak: det hämtar de 3-10 textbitar (kallade "chunks") som är semantiskt närmast din fråga. Inte hela kunskapsbasen – det skulle vara som att lämpa hela biblioteket på skrivbordet.
 
 ### Steg 4: Formulera svaret
 
-Med de öppna böckerna framför sig läser bibliotekarien relevanta avsnitt och sammanställer sedan ett svar. Han kombinerar information från flera källor, strukturerar det för din fråga, och kan till och med peka på var informationen kommer från.
+Med de öppna böckerna framför sig läser bibliotekarien relevanta avsnitt och sammanställer sedan ett svar. Hon kombinerar information från flera källor, strukturerar det för din fråga, och kan till och med peka på var informationen kommer från.
 
 Språkmodellen med RAG gör samma sak: den tar din ursprungliga fråga, kombinerar den med de hämtade textbitarna, och genererar ett svar som är *grundat* i konkret information – inte bara associationer från träningen.
 
@@ -117,7 +117,7 @@ Det är skillnaden mellan att försöka lagra allt i huvudet och att veta var ma
 
 ## Var analogin brister
 
-Som alltid finns det gläntor där analogin skaver.
+Men analogin har sina begränsningar.
 
 ### Hastighet
 
@@ -125,19 +125,19 @@ En mänsklig bibliotekarie behöver minuter, ibland timmar, för att hitta och l
 
 ### Semantisk matchning vs verklig förståelse
 
-När bibliotekarien söker förstår han *verkligen* vad du frågar om. Han kan göra kreativa kopplingar, tänka "hmm, den här frågan belyser jag om jag tittar på geologi-hyllan också".
+När bibliotekarien söker förstår hon *verkligen* vad du frågar om. Hon kan göra kreativa kopplingar, tänka "hmm, den här frågan belyser jag om jag tittar på geologi-hyllan också".
 
 RAG-systemet gör en matematisk jämförelse i ett vektorrum. Det "förstår" inte – det matchar. Det är elegant och effektivt, men saknar bibliotekariens djupa ämneskunskap och intuition.
 
 ### Källbedömning
 
-En erfaren bibliotekarie har utvecklat ett ögonmått för källor. Han vet vilka förlag som är pålitliga, vilka författare som är respekterade, vilka texter som är daterade. Han kan säga: "Den här boken är från 2015 och mycket har hänt sedan dess."
+En erfaren bibliotekarie har utvecklat ett ögonmått för källor. Hon vet vilka förlag som är pålitliga, vilka författare som är respekterade, vilka texter som är daterade. Hon kan säga: "Den här boken är från 2015 och mycket har hänt sedan dess."
 
 RAG-systemet behandlar som standard alla dokument i sin databas lika. Det kan inte intuitivt bedöma trovärdighet – allt beror på vad som lagts in.
 
 ### Metakognition
 
-Bibliotekarien vet när han inte vet. Han kan säga: "Det här är inte riktigt mitt område – du borde prata med en VVS-installatör."
+Bibliotekarien vet när hon inte vet. Hon kan säga: "Det här är inte riktigt mitt område – du borde prata med en VVS-installatör."
 
 RAG-system saknar den självinsikten. De kan hämta information som är tangentiellt relevant och ändå presentera ett självsäkert svar. De vet inte att de inte vet.
 

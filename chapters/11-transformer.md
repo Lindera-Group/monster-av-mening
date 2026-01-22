@@ -16,7 +16,7 @@
 
 <div style="page-break-after: always;"></div>
 
-Du sitter i ett styrelsemöte. Tio personer runt bordet, var och en med sin expertis och sitt perspektiv. Ekonomichefen pratar om kvartalsresultatet. Marknadsföraren nämner en ny konkurrent. Teknikchefen beskriver en försenad lansering.
+Du sitter i ett styrelsemöte. Åtta personer runt bordet, var och en med sin expertis och sitt perspektiv. Ekonomichefen pratar om kvartalsresultatet. Marknadsföraren nämner en ny konkurrent. Teknikchefen beskriver en försenad lansering.
 
 Och du? Du försöker lyssna på en person i taget.
 
@@ -111,9 +111,9 @@ Men nu måste vi vara ärliga. Rundabordssamtalet är en kraftfull bild, men den
 
 **Ingen flexibel strategi.** Du anpassar dig i ett samtal. Om ämnet är känsligt lyssnar du annorlunda. Om något är irrelevant zonar du ut. Transformers kör samma algoritm för varje token, varje gång. Inget skummande, ingen prioritering, ingen anpassning.
 
-**Perfekt parallellism är omöjlig för människor.** Vi kan egentligen inte höra tio personer samtidigt. Vi växlar fokus snabbt, vilket skapar en illusion av parallellitet. Transformers har genuint parallell bearbetning -- varje tokenpar jämförs matematiskt i exakt samma ögonblick.
+**Perfekt parallellism är omöjlig för människor.** Vi kan egentligen inte höra åtta personer samtidigt. Vi växlar fokus snabbt, vilket skapar en illusion av parallellitet. Transformers har genuint parallell bearbetning -- varje tokenpar jämförs matematiskt i exakt samma ögonblick.
 
-**Kostnaden skalas kvadratiskt.** Att ha alla lyssna på alla blir exponentiellt dyrare. Med 10 deltagare finns 100 möjliga relationer. Med 1 000 tokens finns en miljon. Med 100 000 tokens finns tio miljarder. Det är därför längre context windows är så beräkningsmässigt krävande -- och varför forskare ständigt söker smartare lösningar.
+**Kostnaden skalas kvadratiskt.** Att ha alla lyssna på alla blir snabbt dyrt. Med 8 deltagare som var och en lyssnar på alla 8 (inklusive sig själv) finns 64 attention-beräkningar. Med 1 000 tokens finns en miljon. Med 100 000 tokens finns tio miljarder. Det är därför längre context windows är så beräkningsmässigt krävande -- och varför forskare ständigt söker smartare lösningar.
 
 **Ingen verklig förståelse.** Den kanske viktigaste skillnaden. Människor i ett samtal förstår semantik, kultur, ironi, undertext. De vet vad orden betyder. En Transformer har lärt sig statistiska mönster för vilka ord som brukar följa varandra -- men den begriper inte betydelsen bakom mönstren.
 
